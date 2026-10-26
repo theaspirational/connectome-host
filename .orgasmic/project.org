@@ -1,0 +1,14 @@
+#+title: theaspirational.connectome-host
+#+orgasmic_version: 2
+
+* PROJECT theaspirational.connectome-host
+:PROPERTIES:
+:PROJECT_UID:         9668ea5c-b842-4867-834e-7f4790bbf2e5
+:ID:                  theaspirational.connectome-host
+:END:
+
+** Mission
+[Describe the project's goal in 2–4 sentences.]
+
+** Operating Constraints
+[Project-specific constraints injected into every worker prompt.]
