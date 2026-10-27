@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-153K8
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Implement TASK-VNR9Y
+:PROPERTIES:
+:UID: 8c931f65-31e5-552d-afa4-37d10a1c648f
+:ID: CONV-153K8
+:PURPOSE: implement
+:OWNER: ["member","tarn2"]
+:PROVIDER: codex
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-vnr9y
+:RUNS:  run-01M5XHSBH5QT8D8KRDXSNNW2GN
+:CREATED_AT: 2026-10-27T02:07:20Z
+:END:

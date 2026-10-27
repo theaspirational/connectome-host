@@ -1,0 +1,19 @@
+#+title: orgasmic tx claims
+#+orgasmic_version: 1
+
+* TX 2026-10-27 Tue 02:07:19.933945 task.claimed TASK-VNR9Y
+:PROPERTIES:
+:TX_ID:        tx-20261027020719-ebc38a3e
+:TIME:         [2026-10-27 Tue 02:07:19.933945]
+:TYPE:         task.claimed
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-VNR9Y
+:TARGET:       .orgasmic/tasks/TASK-VNR9Y
+:RUN_ID:       run-01M5XHSBH5QT8D8KRDXSNNW2GN
+:REQUEST_ID:   tarn-host-wo2-impl-1
+:REQUESTER:    member:tarn2
+:REQUEST_IDENTITY: {"branch":"task-vnr9y-impl","credential_mode":null,"effort":"high","endpoint":"","from":"3e4cf9b39df97f00f9e62e09571201966142c0f3","governance":null,"harness":"codex","harness_args":null,"kind":"implementer","mcp_isolation":null,"model":"gpt-6.1-sol","protocol":"app-server","provider":null,"resume_from":null,"simulated":"false","speed":null,"subject":"TASK-VNR9Y","transport":"spawn","worktree":"~/.orgasmic/worktrees/theaspirational.connectome-host/task-vnr9y"}
+:EVENT_ID:     8df70e85-02d6-48e2-84e0-e69b70c9c519
+:END:
