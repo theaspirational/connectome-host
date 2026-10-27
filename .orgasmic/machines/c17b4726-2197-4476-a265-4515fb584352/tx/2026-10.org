@@ -232,3 +232,21 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     70f70ce8-32f2-4244-b6e3-d6e02181c47b
 :END:
+
+
+* TX 2026-10-27 Tue 03:01:47 run.message TASK-VNR9Y
+:PROPERTIES:
+:TX_ID:        tx-20261027-theaspirationalconnectome-deb5bfb0-2f86-4607-b509-8510428bf17d
+:TIME:         [2026-10-27 Tue 03:01:47]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-VNR9Y
+:REASON:       Manager follow-up (acknowledge by content): (1) the implementer's full-suite baseline is not clean under its restricted harness (seccomp blocked all sockets incl. loopback, scripts skipped so solid-js missing, npm absent): base 3280/413/6 vs final 3304/414/7, with one EXTRA failure on the final commit, fleet-children-file 'a child is in the record, synced, and then in the file...' (5000 ms timeout), not reproduced on base and passing alone. Please try to classify it: run that test file repeatedly on base and on cc0d1f7e in your environment, and state whether it is flaky/environmental or caused by the change. (2) Flag as an owner-visible behaviour change, not a defect: a recipe setting only {maxRetries:4} now gets membrane's default overloaded schedule for turns; confirm the exact sends/wait for a 529 under that config.
+:RUN_ID:       run-01M5XMV0FZWJQH6SZ2RBFNDKYY
+:MESSAGE_ID:   msg-21675e0e5fea45fe82262fd1720b40eb
+:FROM:         member:tarn2
+:DELIVERY:     queued
+:EVENT_ID:     379df3e0-28e1-4cfc-aa4b-163992c6ecc0
+:END:
