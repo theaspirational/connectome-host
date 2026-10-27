@@ -265,15 +265,17 @@ export interface RecipeAgent {
    * prompting structure intact. */
   formatter?: 'native' | 'anthropic-xml';
   /**
-   * Membrane retry policy for this agent's provider calls, over the host's
-   * default (`hostMembraneRetry`): membrane's base schedule (3 sends, 1 s then
-   * 2 s, for a retryable failure before anything was delivered) with its
-   * overloaded schedule off, so a 529 is retried as any other retryable
-   * failure. `{ "maxRetries": 4 }` rides out longer blips with exponential
-   * backoff (retryDelayMs 1000, x2, capped at maxRetryDelayMs 30000 by
-   * default), and `overloaded` brings back a patient schedule for 529s. Passed
-   * to Membrane over that default; see membrane's `RetryConfigInput` for every
-   * field.
+   * Retry settings for framework turns AND other provider calls (compression,
+   * retrieval, session naming). A non-empty object installs a framework-wide
+   * DefaultErrorPolicy, completing partial fields from Membrane's defaults;
+   * absent or {} leaves the turn policy untouched. It covers the resident,
+   * forks and subagents in that instance; separate fleet hosts use their own
+   * recipes. maxRetries counts total sends including the first: 4 means 4
+   * sends / 3 waits for ordinary retryable failures. Rate limits get at least
+   * 5 sends. For turns, overloaded defaults to Membrane's patient 529 schedule
+   * (7 sends, equal-jitter backoff); overloaded.maxRetries:0 uses the base
+   * schedule instead. Other calls keep hostMembraneRetry's existing default
+   * (overloaded schedule off), with recipe overrides. See RetryConfigInput.
    */
   retry?: import('@animalabs/membrane').MembraneConfig['retry'];
   /** Prefill scaffold user message appended after the conversation (e.g.
