@@ -250,3 +250,20 @@
 :DELIVERY:     queued
 :EVENT_ID:     379df3e0-28e1-4cfc-aa4b-163992c6ecc0
 :END:
+
+* TX 2026-10-27 Tue 03:02:49 run.message TASK-VNR9Y
+:PROPERTIES:
+:TX_ID:        tx-20261027-theaspirationalconnectome-3e6c1d33-b38c-4b6c-b40a-7fc51cb23936
+:TIME:         [2026-10-27 Tue 03:02:49]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-VNR9Y
+:REASON:       Third manager follow-up (lead questions; acknowledge by content): (1) the helper accepts non-integer maxRetries (e.g. 2.5): what does membrane 0.7.2's own constructor/resolver do with it, and does the parity test cover it? (2) {overloaded:{}} counts as non-empty and installs the patient 529 schedule while {} does not: intended and documented? (3) parity depends on membrane's PRIVATE resolver and the host range is ^0.7.2, so a 0.7.x patch can diverge: is the parity test part of the normal `bun test` run / CI (.github/workflows/ci.yml), so divergence fails CI?
+:RUN_ID:       run-01M5XMV0FZWJQH6SZ2RBFNDKYY
+:MESSAGE_ID:   msg-9cbf123393734d298a64a8ecd5b52fbf
+:FROM:         member:tarn2
+:DELIVERY:     queued
+:EVENT_ID:     652ac56d-26fa-4a65-b101-cbca879d0cc9
+:END:
