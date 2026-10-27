@@ -1,0 +1,25 @@
+{
+  "event_count": 451,
+  "tool_call_count": 23,
+  "unparsed_events": 0,
+  "bounded_events": 3,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-VNR9Y-reviewer-20261027T030041-run-01M5XMV0FZWJQH6SZ2RBFNDKYY.jsonl",
+    "size_bytes": 721641
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/27/rollout-2026-10-27T03-00-42-01a17b4d-8c8f-7c53-bef6-ed4c573bc453.jsonl",
+    "session_id": "01a17b4d-8c8f-7c53-bef6-ed4c573bc453",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ve checked the diff against the pinned retry implementations and read the retained gate logs. Next I’ll run an additional in-memory parity probe under the same no-network harness, reusing the listed passing gates as instructed.The parity probe passed, and the same oracle comparison rejected all eight in-memory field-resolution mutants. I found no actionable defects. The restricted full suite still has one additional fleet timeout; it passed in isolation but remains a qualification gap, not a proven regression.The manager asked for repeated base/final fleet-file runs and clarification of fractional counts, empty nested configs, and CI parity coverage. I’ll check those now and make the longer 529 retry schedule for `{maxRetries:4}` explicit as an owner-visible behavior change, not a defect.The disputed fleet failure has now reproduced on the verified base archive, while another base run passed. That supports classifying it as a pre-existing harness-sensitive flake, not a regression from this diff. Membrane also accepts and preserves `maxRetries:2.5`; the policy comparison permits three ordinary sends, matching the helper."
+    }
+  ],
+  "narrative_truncated": false
+}
