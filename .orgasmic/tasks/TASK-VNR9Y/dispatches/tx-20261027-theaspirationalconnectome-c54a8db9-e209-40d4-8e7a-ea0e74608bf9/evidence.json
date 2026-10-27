@@ -1,0 +1,25 @@
+{
+  "event_count": 761,
+  "tool_call_count": 78,
+  "unparsed_events": 0,
+  "bounded_events": 14,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-VNR9Y-implementer-20261027T020721-run-01M5XHSBH5QT8D8KRDXSNNW2GN.jsonl",
+    "size_bytes": 1059828
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/27/rollout-2026-10-27T02-07-22-01a17b1c-b7b0-7b61-a4f5-1572c3437c8b.jsonl",
+    "session_id": "01a17b1c-b7b0-7b61-a4f5-1572c3437c8b",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "The starting commit and tool versions match the brief, including the Bun binary digest. I’ll isolate dependency acquisition from credential-bearing configuration, then run the unmodified baseline before making changes.The frozen install succeeded with agent-framework 0.27.0 and membrane 0.7.2; `bun.lock` is unchanged. Membrane’s partial-config resolver is private, so I’ll use a small completion helper and pin it against Membrane’s constructor behavior.\n\nThe baseline typecheck passes. The suite is running with networking blocked to honor the brief; socket-dependent tests are failing under that restriction. I also confirmed that the pinned framework deliberately retries stream deadlines, unlike Membrane’s deadline-class decision, so the tests will document that distinction without changing framework behavior.The create-call probe produced the expected baseline: 14 controls passed and 11 new-behavior tests failed because no turn policy was supplied. The controls cover silent and empty recipes, unchanged Membrane-side settings, and validation.\n\nThe existing full suite is still running through socket-dependent tests and their timeouts under the required network block. I’m letting it finish before changing production code so the baseline remains comparable.The baseline suite finished: 3,280 passed, 413 failed, with 6 additional errors under the credential-free, network-blocked harness. After the change, the focused retry and validation tests pass: 38 passed, 0 failed; typecheck also passes.\n\nThe fix leaves `hostMembraneRetry` unchanged and adds a separate turn policy only for non-empty `agent.retry`. I’ll now record the local commit and run the final gates on that clean commit.The clean local commit is `cc0d1f7`. Typecheck, focused tests and diff checks pass on it. The final full-suite run is still working through the same network-blocked integration timeouts; I’ll compare its failures with the baseline before finalizing.The final suite finished: 3,304 passed, 414 failed, with 7 errors. All 25 added tests passed.\n\nThe failure comparison shows one additional fleet timing timeout beyond the baseline. It passes in a focused rerun on the final commit and in repeated base probes, so it remains an unresolved qualification concern—not a proven pre-existing failure. The report records the exact gates, failure names, retry sequences and source evidence. I’ll finalize without pushing."
+    }
+  ],
+  "narrative_truncated": false
+}
