@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-VNR9Y
 #+orgasmic_version: 2
 
-* IN_REVIEW TASK-VNR9Y Forward recipe agent.retry to the framework turn error policy (#470)
+* DONE TASK-VNR9Y Forward recipe agent.retry to the framework turn error policy (#470)
 :PROPERTIES:
 :UID: 8560bcab-ed69-5fd0-9572-3930598b3195
 :ID: TASK-VNR9Y
