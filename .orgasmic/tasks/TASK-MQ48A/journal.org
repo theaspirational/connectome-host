@@ -1,0 +1,33 @@
+#+title: orgasmic journal TASK-MQ48A
+#+orgasmic_version: 2
+
+* tx-20261028-theaspirationalconnectome-24efc5e2-98cd-4a22-9320-077b55a1cf31 task.created
+:PROPERTIES:
+:TX_ID:   tx-20261028-theaspirationalconnectome-24efc5e2-98cd-4a22-9320-077b55a1cf31
+:TIME:    [2026-10-28 Wed 22:04:58]
+:TYPE:    task.created
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-MQ48A
+:TARGET: .orgasmic/tasks/TASK-MQ48A/node.org
+:REASON: created task TASK-MQ48A
+:EVENT_ID: 59d05728-9086-4475-b363-b7d16d6cbd5e
+:REQUEST_REPLAY_V1: {"request_id":"tarn-wo2-rebase-1/tx","mutation":{"operation":"task.created","project_id":"theaspirational.connectome-host","payload_sha256":"074a2d306966e30c7f32243eb14a10b227e5df11c3d6c1b953bfc939281fe645"},"mutation_id":"TASK-MQ48A","written_paths":[{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-MQ48A/node.org"},{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-MQ48A/journal.org"}]}
+:END:
+
+* tx-20261028-theaspirationalconnectome-dfb2dd4e-a33a-4fcb-b15f-04a6e3e67c03 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261028-theaspirationalconnectome-dfb2dd4e-a33a-4fcb-b15f-04a6e3e67c03
+:TIME:    [2026-10-28 Wed 22:05:05]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-MQ48A
+:TARGET: .orgasmic/tasks/TASK-MQ48A/node.org
+:REASON: transition TASK-MQ48A to in_progress
+:FROM_STATE: backlog
+:TO_STATE: in_progress
+:EVENT_ID: 3c239482-8b02-45a3-9fcb-7d05b1e4b91a
+:END:

@@ -1,0 +1,17 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-MQ48A
+#+orgasmic_version: 2
+
+* IN_PROGRESS TASK-MQ48A Rebase WO-2 agent.retry fix onto upstream 0.17.0
+:PROPERTIES:
+:UID: e0767b02-7015-5357-ae67-4131dca062b0
+:ID: TASK-MQ48A
+:PRIORITY: P2
+:END:
+
+** Description
+Rebase the WO-2 fix (#470: apply agent.retry to framework turn policy), commit cc0d1f7e47c438ff9cdb7542a43492ef68e42643 on branch wo2-agent-retry (old base 3e4cf9b3), onto current upstream main 8f2bb10353757921b8b9a49c570537a764bc68de (0.17.0; fork main was fast-forwarded to it). A plain rebase conflicts in README.md and src/recipe.ts.
+** Acceptance
+- One commit on 8f2bb103 with the same intent; conflicts resolved against upstream's current code (check whether upstream changed or partly fixed retry handling meanwhile, and say so).
+- bun install --frozen-lockfile, bun test, typecheck green on base and result; the WO-2 tests still fail without the fix.
+- Upstream-ready (no internal names); author Vasyl Dovhanchyn <48733736+theaspirational@users.noreply.github.com>. No push.
