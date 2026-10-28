@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-MQ48A
 #+orgasmic_version: 2
 
-* IN_PROGRESS TASK-MQ48A Rebase WO-2 agent.retry fix onto upstream 0.17.0
+* IN_REVIEW TASK-MQ48A Rebase WO-2 agent.retry fix onto upstream 0.17.0
 :PROPERTIES:
 :UID: e0767b02-7015-5357-ae67-4131dca062b0
 :ID: TASK-MQ48A
