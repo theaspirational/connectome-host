@@ -1,0 +1,20 @@
+{
+  "event_count": 660,
+  "tool_call_count": 0,
+  "unparsed_events": 0,
+  "bounded_events": 6,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-MQ48A-reviewer-20261028T222720-run-01M629ZZA1STHPXV1Y7CTZWW2T.jsonl",
+    "size_bytes": 809970
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.claude/projects/-home-orgasmic--orgasmic-worktrees-theaspirational-connectome-host-task-mq48a/4f125e96-32db-4526-8edb-1339d2f2a46f.jsonl",
+    "session_id": "4f125e96-32db-4526-8edb-1339d2f2a46f",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [],
+  "narrative_truncated": false
+}

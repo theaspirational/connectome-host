@@ -1,0 +1,15 @@
+Your worktree is this work chain's shared tree, checked out detached at 8d068b4badcc9eebe65aabba6c1f960c8494eb03 — the commit you review. Leave it exactly as you found it: no commits, no edits, no new files (ignored build output is fine). The next round of the chain runs here, and the daemon records anything you leave behind when your dispatch is closed.
+
+Reviewed implementer evidence ($ORGASMIC_REVIEWED_EVIDENCE_DIR): /home/orgasmic/.orgasmic/runs/run-01M628Q85HN1HVBHP7H2WZ5VT6/evidence
+
+Review TASK-MQ48A: rebase of the agent.retry turn-policy fix (orig cc0d1f7e47c438ff9cdb7542a43492ef68e42643) onto upstream connectome-host 0.17.0 8f2bb10353757921b8b9a49c570537a764bc68de; new commit 8d068b4badcc9eebe65aabba6c1f960c8494eb03. Read the implementer report/evidence (run-01M628Q85HN1HVBHP7H2WZ5VT6) and the diff vs 8f2bb103 and the range-diff vs the original.
+Check: README/recipe.ts conflict resolutions are accurate against upstream's current behaviour; the claim upstream did not wire retry into turn policy; helper correctness against locked agent-framework 0.29.0 / membrane 0.8.0 (mirrored partial-config resolver); omitted/empty retry leaves framework default; tests fail without fix. Rerun yourself (no receipt reuse): bun install --frozen-lockfile, npm ci --prefix web --ignore-scripts, bun test, bun x tsc --noEmit, web typecheck; Bun 1.4.3 at /home/orgasmic/probe-kqnb1/tools/bun-linux-x64. Verdict approve/reject with HIGH/MEDIUM/LOW.
+
+## Gates already passed at this commit
+
+orgasmic recorded these gate runs in the implementer's worktree, each on a clean tree it left clean, at 8d068b4badcc9eebe65aabba6c1f960c8494eb03 — the commit your worktree is cut at — or at an ancestor of it whose gate inputs are identical to this commit's: the two trees differ only in paths this project marks as not gate inputs. Read the log instead of running the gate again. Run scoped probes and required gates that lack a reusable receipt. The manager names required gates; project policy also applies. Missing receipts do not assign a full suite.
+
+- `final-install` — exit 0 — `bun install --frozen-lockfile` (cwd `.`) — at `8d068b4badcc9eebe65aabba6c1f960c8494eb03` — log `/home/orgasmic/.orgasmic/runs/run-01M628Q85HN1HVBHP7H2WZ5VT6/evidence/gate-final-install-01M629J736C5YDF0K60Z3AWWQD.log`
+- `final-test` — exit 0 — `bun test` (cwd `.`) — at `8d068b4badcc9eebe65aabba6c1f960c8494eb03` — log `/home/orgasmic/.orgasmic/runs/run-01M628Q85HN1HVBHP7H2WZ5VT6/evidence/gate-final-test-01M629J7X5KBSA7598MF3QDF90.log`
+- `final-typecheck` — exit 0 — `bun x tsc --noEmit` (cwd `.`) — at `8d068b4badcc9eebe65aabba6c1f960c8494eb03` — log `/home/orgasmic/.orgasmic/runs/run-01M628Q85HN1HVBHP7H2WZ5VT6/evidence/gate-final-typecheck-01M629J78ST54P7AGA5XNG9FEK.log`
+- `final-web-typecheck` — exit 0 — `sh -c cd web && bun x tsc --noEmit` (cwd `.`) — at `8d068b4badcc9eebe65aabba6c1f960c8494eb03` — log `/home/orgasmic/.orgasmic/runs/run-01M628Q85HN1HVBHP7H2WZ5VT6/evidence/gate-final-web-typecheck-01M629J7MGTD6METZCMX73E3SR.log`
