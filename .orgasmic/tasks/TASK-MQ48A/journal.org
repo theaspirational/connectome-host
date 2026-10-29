@@ -47,3 +47,19 @@
 :TO_STATE: in_progress
 :EVENT_ID: e24fe115-d215-4416-8618-1644ee49b037
 :END:
+
+* tx-20261029-theaspirationalconnectome-ed376f53-f96e-4a98-b90c-2cca92beaa55 comment
+:PROPERTIES:
+:TX_ID:   tx-20261029-theaspirationalconnectome-ed376f53-f96e-4a98-b90c-2cca92beaa55
+:TIME:    [2026-10-29 Thu 05:18:20]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-MQ48A
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 0947fca6-0a29-4a7b-a54c-b83d180ca9b2
+:END:
+
+Owner wo2:main+pr. Upstream had moved 8f2bb103 -> a111f993 (Dendrite merge, 75 files); cherry-picked 172f3266 cleanly -> 925e4f70758a8d6e738bc70f0f3c1eb773be0a27 (Vasyl author/committer). Manager gates Bun 1.4.3: install, web install, tsc, web tsc ok; bun test 4290/0; retry test 25/0. Pushed fork main 8f2bb103->925e4f70 (FF) and branch agent-retry-turn-policy. Upstream then released 0.19.0 (92bf4b18, changelog/version only; merges clean). PR https://github.com/anima-research/connectome-host/pull/523
