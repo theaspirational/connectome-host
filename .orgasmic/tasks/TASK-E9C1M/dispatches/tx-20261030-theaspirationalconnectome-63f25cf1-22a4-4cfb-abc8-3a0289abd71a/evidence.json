@@ -1,0 +1,25 @@
+{
+  "event_count": 392,
+  "tool_call_count": 24,
+  "unparsed_events": 1,
+  "bounded_events": 3,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-E9C1M-implementer-20261030T201010-run-01M676Y8DFF5Q14C9VNXBEX5AP.jsonl",
+    "size_bytes": 515901
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T20-10-11-01a18e6f-25db-78d3-a5df-7a1c5cbf8a44.jsonl",
+    "session_id": "01a18e6f-25db-78d3-a5df-7a1c5cbf8a44",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll read the host/framework contracts and supplied test lists, then write the design doc and fixture spec. I won’t change production code.The narrowed B contract is channel-only: route failures keep admitted work private with a notice; they don’t refuse admission. It also has no initialize-offer or thread-target API.\n\nI’ll recommend migrating F-Slack first and adding no legacy host adapter, rather than promising v1 behavior these APIs can’t provide. The doc will make that ordering a release prerequisite.Verified the policy-shape SHA-256: `3574d8885580636a4269cadeb82bfb116695bccc62434209b62d853ecaa02911`. I’ll use those placeholders only for config examples and tests, not as observed grants.\n\nI’ve taken the AF 0.31 requirement into account: the design will require one integration commit and a reproducible, integrity-pinned fork tarball. Host `^0.30.0` does not cover AF 0.31.The draft now covers the added loss gate: pending work is separate from committed dedup, and only a known pre-storage refusal permits fresh re-admission. An uncertain ACK is quarantined, not retried.\n\nIt also records the confirmed reconnect rule: never re-resolve; stale authority keeps prose private with B’s internal agent notice. I’ll check the documentation scope and links, then commit locally."
+    }
+  ],
+  "narrative_truncated": false
+}
