@@ -148,3 +148,19 @@ F-host history guard (Soma 1793393080.399209): the range 2c396622..af8e4da7 is N
 :END:
 
 Soma 1793394439.117669 (accepted): preserving exact thread identity is an ALREADY APPROVED requirement. The missing AF/host plumbing (dynamic sub-conversation admission, native thread delivery) within the named C/E/F and the 4 authorised repos is engineering work, NOT an owner decision. Scope it, estimate it, test it. Owner decision 3 in the design must be reformulated: only a change to the observable contract, permissions, recovery guarantees, or repo scope goes to the owner. Choosing the internal API is an engineering call. B stays narrow. The dynamic-admission/native-thread boundary must be explicit in the design and in T01–T03 (parent/read/access and stale-route negatives). This goes into fix round 3 after re-review 3 (run-01M67A1W9YGHJ8AAC53DYYN1QK), together with the reviewer's estimate. 2b depends only on its own input/harness/envelope gate. No public F-host push until the clean tree AND the entire publish range pass the privacy gate.
+
+* tx-20261030-theaspirationalconnectome-1d2a127f-3718-4749-ad2c-ec57f4879f75 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-1d2a127f-3718-4749-ad2c-ec57f4879f75
+:TIME:    [2026-10-30 Fri 21:12:20]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-E9C1M
+:TARGET: .orgasmic/tasks/TASK-E9C1M/node.org
+:REASON: transition TASK-E9C1M to in_progress
+:FROM_STATE: done
+:TO_STATE: in_progress
+:EVENT_ID: 30ba41ea-b5dd-4a13-b86a-1a30d4fe5526
+:END:
