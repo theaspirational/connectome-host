@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-2339D
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Review TASK-KY73N
+:PROPERTIES:
+:UID: 03c20fc2-5e07-571f-81e5-a0d9da581121
+:ID: CONV-2339D
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: claude
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-ky73n
+:RUNS:  run-01M67F0N30RZS6XN3T25P5TQZM
+:CREATED_AT: 2026-10-30T22:31:17Z
+:END:
