@@ -1,0 +1,25 @@
+{
+  "event_count": 328,
+  "tool_call_count": 17,
+  "unparsed_events": 0,
+  "bounded_events": 5,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-E9C1M-implementer-20261030T203126-run-01M678567E7DC6YEWX7XZHETYW.jsonl",
+    "size_bytes": 391995
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T20-10-11-01a18e6f-25db-78d3-a5df-7a1c5cbf8a44.jsonl",
+    "session_id": "01a18e6f-25db-78d3-a5df-7a1c5cbf8a44",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll read the full review, verify the payload and API findings, then update the docs and fixtures in a new commit on top of `9f153044`. No production code or push.I’ll apply that correction: replace the uncommitted copy with an independently designed public fixture, and keep projection traceability only in the report. I’ll also separate stock upstream, frozen pr361, and the proposed generic pair in the compatibility matrix—absence of a stock-upstream translator does not establish preservation for pr361.The fixes are committed locally at `af8e4da79e8b728904fc0a34fbd09091419c6967`. I’m rerunning the updated docs-contract gate and a read-only check of the old payload hashes, protocol-family restriction, and CM 0.24.0 API premise. No behavioral tests or store opens are being run.Both final checks passed at the committed HEAD. The first docs-contract attempt had a false positive: it treated the prose `timer/home/module` as a `/home/` path. I corrected the checker and reran it; the failed receipt is retained.\n\nThe report will confirm the independent public fixture, the three-way compatibility matrix, and the remaining owner decisions on H1, recovery, and cutover."
+    }
+  ],
+  "narrative_truncated": false
+}
