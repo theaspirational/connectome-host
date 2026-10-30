@@ -1,0 +1,17 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-E9C1M
+#+orgasmic_version: 2
+
+* BACKLOG TASK-E9C1M F-host design: frozen host/framework API + shared connector stub contract
+:PROPERTIES:
+:UID: 9477e910-1c8d-562d-9752-cb10a5ca08bc
+:ID: TASK-E9C1M
+:PRIORITY: P1
+:END:
+
+** Description
+Generic recipient programme (owner go gen:exec, plan TASK-EM8Q2 in connectome-coordinator), slice F-host step 1: the frozen host↔framework API and shared synthetic connector stub contract that F-host and F-Slack (later F-Telegram) build against in parallel. Design doc + test fixture spec only.
+** Acceptance
+- Design doc on a branch off upstream main 5416caab (connectome-host v0.20+): host config surface for required admission, reply authority hook, context-only profile, identity; legacy v1 translator boundary; managed-launch / compatibility fence proposal with an explicit supported boundary (Soma's condition), preceded by the synthetic old-reader/new-store test plan.
+- Shared stub contract: the behaviours the synthetic connector must exhibit (from the O4 test list).
+- Reviewed by Opus.
