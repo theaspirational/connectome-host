@@ -1,0 +1,25 @@
+{
+  "event_count": 187,
+  "tool_call_count": 11,
+  "unparsed_events": 0,
+  "bounded_events": 3,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-MHQNZ-implementer-20261030T230734-run-01M67H32GBA8TE7ZXCZNX9ZC2N.jsonl",
+    "size_bytes": 263075
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T21-16-58-01a18eac-4ae1-74e0-8b03-10419cafcc20.jsonl",
+    "session_id": "01a18eac-4ae1-74e0-8b03-10419cafcc20",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll verify all pre-launch conditions and record them before running anything. If they pass, I’ll launch the approved argv once, unchanged, then report the captured diagnostic observations without making a compatibility or release claim.\n\nThe single diagnostic run has ended; the container is stopped. The checker reports **INCOMPLETE**: the first Node/Chronicle seed control failed while instrumenting `JsStore.create` (`Cannot redefine property: create`), before any case completed.\n\nThe preserved trace has 1,249 lines, with no filtering or dropped bytes. No Bun cases were reached. I will not retry or change the harness; the report will keep this instrumentation failure separate from any storage-format conclusion.\n\n"
+    }
+  ],
+  "narrative_truncated": false
+}
