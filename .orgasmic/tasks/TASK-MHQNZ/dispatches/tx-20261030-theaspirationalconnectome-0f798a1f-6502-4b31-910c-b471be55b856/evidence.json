@@ -1,0 +1,25 @@
+{
+  "event_count": 424,
+  "tool_call_count": 35,
+  "unparsed_events": 0,
+  "bounded_events": 14,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-MHQNZ-implementer-20261030T211657-run-01M67ARH8PK8QF691QCJA440VW.jsonl",
+    "size_bytes": 588065
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T21-16-58-01a18eac-4ae1-74e0-8b03-10419cafcc20.jsonl",
+    "session_id": "01a18eac-4ae1-74e0-8b03-10419cafcc20",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll inspect the frozen inputs and the required isolation setup first. I won’t open or create any store during Phase P; the container launch will run only the limits-proof command.I’ve received the additional conditions. I’ll keep operator paths and manifests in evidence only, and use declared inputs in the committed harness. I’ll also rebuild the image with `env -i` so the build receipt satisfies the new requirement. The D section remains unpinned and pending the A+B+D tarball.The no-op limits proof passed: the container reported 4 GiB memory, zero swap, a 2-CPU quota, 256 PIDs, core limit zero, empty capability sets, `NoNewPrivs=1`, and seccomp mode 2. Its mount list and inspect output also show read-only inputs, private PID/cgroup namespaces, and only loopback networking. No store code has run.Phase P is locally committed as `75d1d4d5`. The prep gate passed: nine data/mock tests, input-hash checks, and validation of the no-op limits evidence.\n\nThe full argv, hashes, image identity, deadline, and raw proof are in the report. Phase E remains stopped. Section (b) accepts a tarball parameter but is fail-closed; the final D release and D-specific adapter qualification remain pending."
+    }
+  ],
+  "narrative_truncated": false
+}
