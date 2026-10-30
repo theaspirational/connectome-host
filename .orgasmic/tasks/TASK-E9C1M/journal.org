@@ -84,3 +84,19 @@ Soma 1793391904.651999: no-translator / connector-first is a PROPOSAL, not accep
 :TO_STATE: in_progress
 :EVENT_ID: 0a87a8a8-7865-4fe9-bcab-b75d8ef0b97e
 :END:
+
+* tx-20261030-theaspirationalconnectome-b8c86be5-0863-4076-95d1-00d71e27deb7 comment
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-b8c86be5-0863-4076-95d1-00d71e27deb7
+:TIME:    [2026-10-30 Fri 20:46:06]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-E9C1M
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: aea7f6a7-10b6-4311-9355-3e4bc01096ce
+:END:
+
+F-host history guard (Soma 1793393080.399209): the range 2c396622..af8e4da7 is NOT publishable as-is. 9f153044 contains /srv/review-drop and /srv/ci-fixtures paths, and the final tree still has internal task-id report names and "orgasmic-style" wording. Publication only as a fresh commit from the reviewed final tree, after scrubbing, on the public base. Private refs stay local; no push --all, no force on main, no branch deletion. Re-scan the full range before any promotion. Hours: 52–80 h of work; critical path ≈ 34–52 h (2a → .3 → max(.4, .5) → G), plus the conditional fence; replaces C2's 1.5–2d F-host figure (Tarn's estimate).
