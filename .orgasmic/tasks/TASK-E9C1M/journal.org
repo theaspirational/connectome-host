@@ -15,3 +15,19 @@
 :EVENT_ID: 35e97aff-e6b1-413b-8d52-1077df3da59b
 :REQUEST_REPLAY_V1: {"request_id":"tarn-fhost-design-create/tx","mutation":{"operation":"task.created","project_id":"theaspirational.connectome-host","payload_sha256":"cd8e23e9144d47b510e141700c74a23eba2cc61e4aedafa003fecc07c259c665"},"mutation_id":"TASK-E9C1M","written_paths":[{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-E9C1M/node.org"},{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-E9C1M/journal.org"}]}
 :END:
+
+* tx-20261030-theaspirationalconnectome-88d7cee6-74b5-4ca5-947f-9b4f16414ed6 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-88d7cee6-74b5-4ca5-947f-9b4f16414ed6
+:TIME:    [2026-10-30 Fri 20:10:10]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-E9C1M
+:TARGET: .orgasmic/tasks/TASK-E9C1M/node.org
+:REASON: transition TASK-E9C1M to in_progress
+:FROM_STATE: backlog
+:TO_STATE: in_progress
+:EVENT_ID: 7f46df7e-a53f-42d1-bed2-d2ff19e01eca
+:END:

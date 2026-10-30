@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-ASEG8
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Implement TASK-E9C1M
+:PROPERTIES:
+:UID: 2e07aeab-6e9a-50a8-b65c-3426ae67ee1a
+:ID: CONV-ASEG8
+:PURPOSE: implement
+:OWNER: ["member","tarn2"]
+:PROVIDER: codex
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-e9c1m
+:RUNS:  run-01M676Y8DFF5Q14C9VNXBEX5AP
+:CREATED_AT: 2026-10-30T20:10:10Z
+:END:
