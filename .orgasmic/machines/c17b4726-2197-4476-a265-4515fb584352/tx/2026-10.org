@@ -1567,3 +1567,20 @@
 :TIMEOUT_SECS: 1800
 :EVENT_ID:     575f2527-d5e0-4ffa-a54a-48f8ca7ef42a
 :END:
+
+* TX 2026-10-30 Fri 20:51:45 run.answered TASK-E9C1M
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-d14732c0-d786-4d28-bf6e-9be06c5465ca
+:TIME:         [2026-10-30 Fri 20:51:45]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-E9C1M
+:REASON:       Yes, write what the sources show, with file:line evidence: the host-side shouldTriggerInference gates wake only, but the patched frozen AF (src/framework.ts:20589-20597, :20726-20744; dist framework.js; source SHA c7c7e53… matching the manifest) calls bridge.accept and refuses !decision.store BEFORE pushHandler/channelRegistry. So the frozen pair HAS a storage guard. In the report, explicitly mark that REVIEW2 M1 is factually wrong on this point and give the evidence. Then the owner decision is NOT "loss of ambient context" in general. Compare exactly the OLD storage rule (when the old bridge returns store:true/false: which channels/conditions, from host-recipient-protocol.ts) with the NEW readChannels → store mapping. If the set of stored items differs in a concrete case (for example channels the old bridge stored without waking but the new readChannels doesn't cover, or the reverse), name exactly that difference as an owner decision, plus a fixture row. If there's no difference with a correct mapping, write "no difference with mapping X" and DON'T add the owner decision; make it a mapping requirement plus a test instead. Don't invent a difference.
+:RUN_ID:       run-01M6797GCPGMBCQHR82W9DM5HG
+:ASK_ID:       ask-e770599dc0424613b114994aef8c77b8
+:MESSAGE_ID:   msg-40e4c5d389bf4795a0fc526b895e8ded
+:DELIVERY:     delivered
+:EVENT_ID:     09fb172a-c855-4c26-aac8-52905929fa84
+:END:
