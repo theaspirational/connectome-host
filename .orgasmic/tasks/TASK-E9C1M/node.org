@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-E9C1M
 #+orgasmic_version: 2
 
-* IN_REVIEW TASK-E9C1M F-host design: frozen host/framework API + shared connector stub contract
+* DONE TASK-E9C1M F-host design: frozen host/framework API + shared connector stub contract
 :PROPERTIES:
 :UID: 9477e910-1c8d-562d-9752-cb10a5ca08bc
 :ID: TASK-E9C1M
