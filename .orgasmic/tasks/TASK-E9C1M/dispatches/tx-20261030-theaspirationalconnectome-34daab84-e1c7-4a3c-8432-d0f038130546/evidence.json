@@ -1,0 +1,25 @@
+{
+  "event_count": 300,
+  "tool_call_count": 11,
+  "unparsed_events": 0,
+  "bounded_events": 10,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-E9C1M-implementer-20261030T211236-run-01M67AGJSD09ZWPPQ4GNXJ0F7E.jsonl",
+    "size_bytes": 249616
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T20-10-11-01a18e6f-25db-78d3-a5df-7a1c5cbf8a44.jsonl",
+    "session_id": "01a18e6f-25db-78d3-a5df-7a1c5cbf8a44",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll read REVIEW3, verify the new A/B pins, and reclassify the existing thread requirement as engineering work with explicit estimates. I’ll update the docs, fixtures and checks, then make a new local commit without rewriting history.A `869bb3ad` has the same `src` tree as `1d990e41`; the only whole-tree diff is `docs/required-inbound-admission.md`. B `27a32127` is descended from that A, and its channel-only API is unchanged in the relevant surface.\n\nI’ll remove the obsolete thread-gap owner decision, leaving seven owner decisions. The added engineering work is estimated at 48–78 hours, plus a conditional 8–16-hour AF slice and integration-tarball re-pin.Committed locally at `4326620b2c34c0101960c7bdd5e480ae20e422d6`. Both assigned gates passed.\n\nExcluding the design document, the original host work remains 52–80 hours; adding dynamic scope and exact-thread work brings it to 100–158 hours. The conditional AF slice brings that to 108–174 hours, before the independent launch fence. The report will include all combinations and the final seven owner decisions."
+    }
+  ],
+  "narrative_truncated": false
+}
