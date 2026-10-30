@@ -68,3 +68,19 @@ Pinned inputs (Soma 1793391370.420609):
 :END:
 
 Soma 1793391904.651999: no-translator / connector-first is a PROPOSAL, not accepted preservation equivalence. Morning framing must be by observable compatibility: a matrix of old/new host × old/new connector. For each cell: does it start, where are admission/access enforced before storage/wake, and what fails closed during a partial transition. If it is a purely internal engineering choice preserving the full approved contract, there is no owner gate. If it removes H1 compatibility or changes supported recovery/cutover, name that exact difference for the owner. No live ordering authorised. Keep H01–H12/S01–S06 and the reader-fence boundary explicit; no private-data probe. To be fed into the E9C1M fix round after the Opus review.
+
+* tx-20261030-theaspirationalconnectome-3b253bef-d230-44aa-8aae-4e0ee4a09f0c task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-3b253bef-d230-44aa-8aae-4e0ee4a09f0c
+:TIME:    [2026-10-30 Fri 20:31:25]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-E9C1M
+:TARGET: .orgasmic/tasks/TASK-E9C1M/node.org
+:REASON: transition TASK-E9C1M to in_progress
+:FROM_STATE: done
+:TO_STATE: in_progress
+:EVENT_ID: 0a87a8a8-7865-4fe9-bcab-b75d8ef0b97e
+:END:
