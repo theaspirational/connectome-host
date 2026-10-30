@@ -47,3 +47,19 @@
 :END:
 
 Soma 1793395121.295149: Phase P plus the trusted no-op limits proof are within scope; Phase E is gated on exact hashes/argv/image/deadline. Build fully offline (--pull=never, no network/package install/lifecycle hooks), empty environment, no privileges or host-session changes; any missing dependency → describe an acquisition method, don't enable networking. The operator manifest, real host paths and private traceability stay OUTSIDE the public branch/history; the harness takes declared inputs/relative mount paths. Native format and D stamp are separate; (b) waits for the A+B+D tarball. Passed to run-01M67ARH8PK8QF691QCJA440VW via run_message.
+
+* tx-20261030-theaspirationalconnectome-e8b4e876-25e1-4c99-bacb-cdebeb774d78 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-e8b4e876-25e1-4c99-bacb-cdebeb774d78
+:TIME:    [2026-10-30 Fri 21:31:11]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-MHQNZ
+:TARGET: .orgasmic/tasks/TASK-MHQNZ/node.org
+:REASON: transition TASK-MHQNZ to in_progress
+:FROM_STATE: in_review
+:TO_STATE: in_progress
+:EVENT_ID: b60c5a39-0e04-4a59-9ae4-e86bdb6e4053
+:END:
