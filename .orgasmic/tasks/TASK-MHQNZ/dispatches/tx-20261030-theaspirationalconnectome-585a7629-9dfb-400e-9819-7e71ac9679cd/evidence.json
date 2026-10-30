@@ -1,0 +1,25 @@
+{
+  "event_count": 252,
+  "tool_call_count": 18,
+  "unparsed_events": 1,
+  "bounded_events": 5,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-MHQNZ-implementer-20261030T224803-run-01M67FZBDAY9S8PY6V45EEXF07.jsonl",
+    "size_bytes": 354652
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T21-16-58-01a18eac-4ae1-74e0-8b03-10419cafcc20.jsonl",
+    "session_id": "01a18eac-4ae1-74e0-8b03-10419cafcc20",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll read the review, move the bulk tree verification out of traced workers, and make the three bounded inspect fixes. I’ll also compute the 42-child evidence estimate without opening stores or importing SDKs.\n\nBulk verification now runs in the untraced parent, including immediately before each child, as Soma preferred. The child still starts under strace before SDK imports.\n\nThe four required gates passed at clean commit `1cfe32a1`. A no-store measurement of the retained worker checks produced 428–882 trace lines per child. The 42-child model estimates 87.2 MiB against the unchanged 192 MiB threshold; SDK/store volume is an explicit modeling allowance, not a measured bound or qualification.\n\n"
+    }
+  ],
+  "narrative_truncated": false
+}
