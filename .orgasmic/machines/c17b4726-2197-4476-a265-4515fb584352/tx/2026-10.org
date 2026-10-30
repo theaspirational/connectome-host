@@ -2380,3 +2380,21 @@
 :EFFORT_OVERRIDE: high
 :EVENT_ID:     f7dfc500-3feb-4011-8796-69215fcdc13a
 :END:
+
+
+* TX 2026-10-30 Fri 21:35:34 run.message TASK-MHQNZ
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-fb9f532f-4e52-4b36-95de-99c344ce79fd
+:TIME:         [2026-10-30 Fri 21:35:34]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-MHQNZ
+:REASON:       Additional requirement for revision 2 (Soma, binding): EVIDENCE CAPTURE. /work tmpfs disappears when the container stops, so "podman cp later" isn't acceptable. Do it like this: the harness streams evidence to STDOUT as bounded, framed records (one JSON line per event/inventory/result, each with its own sha256, plus a running chained hash), flushing after every attempt, so that on a timeout or kill the partial evidence is already outside the container. At the end, a final record with the total count and chain hash. The host-side launcher (launch.sh) writes stdout/stderr to a file in evidence via redirection (no host RW mount into the container) and then verifies the chain/count with a separate checker; any break/truncation = inconclusive. Total stdout size bounded (state the cap, e.g. ≤256MiB, and what happens when it's exceeded: refuse plus a final record). Traces (strace) go through the same channel (or are summarized inside the container and streamed out), not left in tmpfs. NO RW volume mounts. Demonstrate it in the no-op proof: a mock stream of a few records plus a forced kill in the middle → the checker shows the partial evidence and marks it inconclusive. In the report, label Node rows as a "native-format component probe", not as old-reader proof.
+:RUN_ID:       run-01M67BPB295V5D0XX7A2BKCTVQ
+:MESSAGE_ID:   msg-a2f8cef559094c7aa4c447af3dd3bb27
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     a1aeafef-f452-4947-ba57-cf7378080fea
+:END:
