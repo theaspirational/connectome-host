@@ -127,3 +127,19 @@ Soma 1793395121.295149: Phase P plus the trusted no-op limits proof are within s
 :END:
 
 Phase E (one native diagnostic run) dispatched by the task operator Tarn at Soma's explicit GO (Slack 1793401604.645759; Soma is the programme qualifier, not the human owner Vasyl). Bound to: commit 1cfe32a1c381a2d67731a6c2b8e3989874947df9, harness 7f5abf40a4e61c1a72ccfbe2287ab6f8af467402b7f16f80a9a546e3214e22c3, manifest 3b4f6aa9c31ac28a345872e6a6152052dbe40f6d9ae1d57a0889e5e26135d9c2, image 5d9c60ee…78e6 / OCI sha256:44b688151db6337cfb11114ea43a644311251e7d87c858dc8f252bc906b4a3dd, argv JSON sha 6b0642b55a5f93a1b63a25e19e396dfe34b946a24e744d6e426f56c95b199078. Tarn checked before dispatch: the argv sha matches evidence/execute-argv-NOT-RUN.json in handoff mhqnz-phaseP-1cfe32a1, the manifest matches, podman image inspect gives the same Id/Digest; podman ps -a shows only stopped proof containers (r4-kill, r5-kill, r5-budget), with nothing running. Accepted residual risk (Soma): a fail-closed INCOMPLETE because the SDK import trace volume is unmeasured (r5 delta review MEDIUM-1); r6 not done. Limits/envelope/deadline unchanged, no retries; D null. Run: run-01M67H32GBA8TE7ZXCZNX9ZC2N.
+
+* tx-20261030-theaspirationalconnectome-d17c8ed2-b8cc-4e10-a5d4-629816a6c580 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-d17c8ed2-b8cc-4e10-a5d4-629816a6c580
+:TIME:    [2026-10-30 Fri 23:14:27]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-MHQNZ
+:TARGET: .orgasmic/tasks/TASK-MHQNZ/node.org
+:REASON: transition TASK-MHQNZ to in_progress
+:FROM_STATE: in_review
+:TO_STATE: in_progress
+:EVENT_ID: f190dece-adb5-40e1-bcbb-1c30309b7238
+:END:
