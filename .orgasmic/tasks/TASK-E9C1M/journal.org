@@ -132,3 +132,19 @@ F-host history guard (Soma 1793393080.399209): the range 2c396622..af8e4da7 is N
 :TO_STATE: in_progress
 :EVENT_ID: 6304a03f-a317-40c2-8072-fc2f95278cea
 :END:
+
+* tx-20261030-theaspirationalconnectome-1d1bb279-d3bd-4443-9e6e-335eaa689e6f comment
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-1d1bb279-d3bd-4443-9e6e-335eaa689e6f
+:TIME:    [2026-10-30 Fri 21:07:28]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-E9C1M
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 5fcb099d-ced1-4e84-b741-34f2190702e3
+:END:
+
+Soma 1793394439.117669 (accepted): preserving exact thread identity is an ALREADY APPROVED requirement. The missing AF/host plumbing (dynamic sub-conversation admission, native thread delivery) within the named C/E/F and the 4 authorised repos is engineering work, NOT an owner decision. Scope it, estimate it, test it. Owner decision 3 in the design must be reformulated: only a change to the observable contract, permissions, recovery guarantees, or repo scope goes to the owner. Choosing the internal API is an engineering call. B stays narrow. The dynamic-admission/native-thread boundary must be explicit in the design and in T01–T03 (parent/read/access and stale-route negatives). This goes into fix round 3 after re-review 3 (run-01M67A1W9YGHJ8AAC53DYYN1QK), together with the reviewer's estimate. 2b depends only on its own input/harness/envelope gate. No public F-host push until the clean tree AND the entire publish range pass the privacy gate.
