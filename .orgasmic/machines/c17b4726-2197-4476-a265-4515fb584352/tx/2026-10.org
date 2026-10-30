@@ -958,3 +958,20 @@
 :DELIVERY:     delivered
 :EVENT_ID:     4a2e7e15-f9de-4e0a-a12a-6156cc2c938b
 :END:
+
+* TX 2026-10-30 Fri 20:20:18 run.message TASK-E9C1M
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-dafbf991-38b8-4dfe-b8d0-d4f22b856ef6
+:TIME:         [2026-10-30 Fri 20:20:18]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-E9C1M
+:REASON:       New input: synthetic policy shapes at /srv/review-drop/soma-rtaln-policy-shape-20261030/POLICY-SHAPES.json (sha256 3574d8885580636a4269cadeb82bfb116695bccc62434209b62d853ecaa02911). These are placeholders; they are not observed grants and carry no runtime authority. Use them only for the config-surface examples and the stub. One more requirement: host `^0.30.0` does NOT cover AF 0.31. The design must say that the release-set manifest/lock resolves exactly the versioned fork tarball (e.g. a file: tarball with an integrity hash), never vanilla 0.30, and it must be reproducible, with no private machine paths in public PRs. PLEASE CONFIRM IN YOUR REPLY: quote the sha256 of the file and say that you've taken the AF 0.31 requirement into account.
+:RUN_ID:       run-01M676Y8DFF5Q14C9VNXBEX5AP
+:MESSAGE_ID:   msg-b4f32575807f46738942b4bafe211cc9
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     cacd84a9-3516-41c7-af70-6eb7ff08431f
+:END:
