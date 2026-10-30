@@ -3396,3 +3396,21 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     62da6005-9ab0-4093-aa79-11d270f68abd
 :END:
+
+
+* TX 2026-10-30 Fri 22:42:32 run.message TASK-MHQNZ
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-436b9326-9acf-48da-aead-4945ee0d3021
+:TIME:         [2026-10-30 Fri 22:42:32]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-MHQNZ
+:REASON:       An additional, CONCRETE point for this review (from Soma; a viability check, not a request for broad hardening). Phase E inputs: the old tree is 10,628 files / 204,434,930 bytes, the new one 7,149 files / 88,620,916 bytes. Check against the code at bac2ebb2: does every traced child (worker.mjs → verifyCriticalInputs and/or the tree assertion: walk/lstat/hash of the whole tree) run UNDER strace, with each syscall line becoming a separately framed/base64 record? Estimate (from the code; no runs) how many trace lines/bytes one child generates on the tree walk alone, times up to 42 operations, and whether this exhausts the 192 MiB filter threshold / 256 MiB cap BEFORE the cross-version/Bun rows (in the case order). Give the number and file:line. If confirmed, MEDIUM/HIGH with the fix direction: bulk read-only input verification (tree hashes) BEFORE the traced store operation (e.g. once in probe.mjs outside strace, bound to the manifest), keeping in the child the real executable/entry assertions and the full store-access trace; the trusted-host/no-concurrent-writer boundary is stated explicitly. If disproved, record why (with file:line).
+:RUN_ID:       run-01M67FFZAXN86SD4F84J8VKZFQ
+:MESSAGE_ID:   msg-a5962e5ef53c42a88a79731afdeeaf52
+:FROM:         member:tarn2
+:DELIVERY:     queued
+:EVENT_ID:     f7a49df5-e4c9-42cd-887d-7b27b44b563d
+:END:
