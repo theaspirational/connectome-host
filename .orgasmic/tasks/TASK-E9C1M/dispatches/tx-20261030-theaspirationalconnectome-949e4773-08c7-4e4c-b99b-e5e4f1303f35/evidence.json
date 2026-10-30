@@ -1,0 +1,25 @@
+{
+  "event_count": 97,
+  "tool_call_count": 8,
+  "unparsed_events": 0,
+  "bounded_events": 0,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-E9C1M-implementer-20261030T213154-run-01M67BKXG7E0TFERA7NB5A537K.jsonl",
+    "size_bytes": 168226
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T20-10-11-01a18e6f-25db-78d3-a5df-7a1c5cbf8a44.jsonl",
+    "session_id": "01a18e6f-25db-78d3-a5df-7a1c5cbf8a44",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll read REVIEW4, make the targeted docs/fixture changes, and rerun both gates in one new local commit. No push or history rewrite.The four fixes are committed. Both gates pass at the clean commit; I’m writing the short report and finalizing the dispatch."
+    }
+  ],
+  "narrative_truncated": false
+}
