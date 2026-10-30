@@ -1,0 +1,25 @@
+{
+  "event_count": 328,
+  "tool_call_count": 15,
+  "unparsed_events": 0,
+  "bounded_events": 8,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-MHQNZ-implementer-20261030T220138-run-01M67DABP7KS1CNCSB0SPAW9BW.jsonl",
+    "size_bytes": 377378
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T21-16-58-01a18eac-4ae1-74e0-8b03-10419cafcc20.jsonl",
+    "session_id": "01a18eac-4ae1-74e0-8b03-10419cafcc20",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ve read the full static review and verified its hash. I’ll limit revision 3 to the five requested items: argv-bound deadlines, trace-filter accounting, input verification, a no-store strace smoke, and authority-boundary documentation. I won’t run Phase E or import AF, CM, or Chronicle.The smoke test caught a real transport defect: Node’s `stdio: \"pipe\"` uses a socket, which strace cannot reopen through `/dev/fd/3`. The checker correctly reported `INCOMPLETE`.\n\nI’ll fix that fd/strace path within item 4 using a real shell pipe, preserving strace’s exit status and the unchanged sandbox. No privilege or seccomp relaxation is needed.All four gates passed at commit `e3f07c16`: check-prep, no-op with strace smoke, forced kill, and deadline-negative.\n\nThe changed launcher ran the mock under 600s/10s. Its receipt recorded those actual values, and the checker refused them against the manifest’s 1800s/30s—even though the mock stream had a normal terminal record. No store or AF/CM/Chronicle import was used."
+    }
+  ],
+  "narrative_truncated": false
+}
