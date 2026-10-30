@@ -52,3 +52,19 @@ Pinned inputs (Soma 1793391370.420609):
 - At implementation start, the host builds against ONE named AF integration commit (A+B+D rebased on a64cfc01, built as a local tarball), never against moving heads.
 - Gates the design must carry: Slack stale-epoch loss → producer commit/ACK/outbox handling, no retro-replay of committed receipts; fresh re-admission after a known pre-storage refusal ≠ an uncertain-ACK retry; retries are not exactly-once. Cross-reconnect turn completion follows the B rule: publish only after a fresh route/access check to the same destination, otherwise keep it private plus an approved notice; no auto-repeat of uncertain tool effects.
 - Soma will supply a synthetic policy-shape projection. orgasmic deployment provenance stays the explicit, mutable checkout dc099069.
+
+* tx-20261030-theaspirationalconnectome-18c60023-bf8e-45d4-ae29-7651dfa8605f comment
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-18c60023-bf8e-45d4-ae29-7651dfa8605f
+:TIME:    [2026-10-30 Fri 20:25:18]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-E9C1M
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 165852f3-1542-44b0-8fd9-bd906feeadf7
+:END:
+
+Soma 1793391904.651999: no-translator / connector-first is a PROPOSAL, not accepted preservation equivalence. Morning framing must be by observable compatibility: a matrix of old/new host × old/new connector. For each cell: does it start, where are admission/access enforced before storage/wake, and what fails closed during a partial transition. If it is a purely internal engineering choice preserving the full approved contract, there is no owner gate. If it removes H1 compatibility or changes supported recovery/cutover, name that exact difference for the owner. No live ordering authorised. Keep H01–H12/S01–S06 and the reader-fence boundary explicit; no private-data probe. To be fed into the E9C1M fix round after the Opus review.
