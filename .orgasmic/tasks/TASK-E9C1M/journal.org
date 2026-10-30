@@ -100,3 +100,35 @@ Soma 1793391904.651999: no-translator / connector-first is a PROPOSAL, not accep
 :END:
 
 F-host history guard (Soma 1793393080.399209): the range 2c396622..af8e4da7 is NOT publishable as-is. 9f153044 contains /srv/review-drop and /srv/ci-fixtures paths, and the final tree still has internal task-id report names and "orgasmic-style" wording. Publication only as a fresh commit from the reviewed final tree, after scrubbing, on the public base. Private refs stay local; no push --all, no force on main, no branch deletion. Re-scan the full range before any promotion. Hours: 52–80 h of work; critical path ≈ 34–52 h (2a → .3 → max(.4, .5) → G), plus the conditional fence; replaces C2's 1.5–2d F-host figure (Tarn's estimate).
+
+* tx-20261030-theaspirationalconnectome-0a3eb821-420f-4642-8d0d-287ae529ae59 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-0a3eb821-420f-4642-8d0d-287ae529ae59
+:TIME:    [2026-10-30 Fri 20:49:53]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-E9C1M
+:TARGET: .orgasmic/tasks/TASK-E9C1M/node.org
+:REASON: transition TASK-E9C1M to in_progress
+:FROM_STATE: in_review
+:TO_STATE: in_progress
+:EVENT_ID: 2a7be53c-51cb-4d68-a913-772dd0adf1e0
+:END:
+
+* tx-20261030-theaspirationalconnectome-cfb83052-0dc3-4940-bd46-a361e7a4175b task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-cfb83052-0dc3-4940-bd46-a361e7a4175b
+:TIME:    [2026-10-30 Fri 20:50:10]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-E9C1M
+:TARGET: .orgasmic/tasks/TASK-E9C1M/node.org
+:REASON: transition TASK-E9C1M to in_progress
+:FROM_STATE: done
+:TO_STATE: in_progress
+:EVENT_ID: 6304a03f-a317-40c2-8072-fc2f95278cea
+:END:
