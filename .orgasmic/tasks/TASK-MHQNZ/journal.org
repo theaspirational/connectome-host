@@ -159,3 +159,19 @@ Phase E (one native diagnostic run) dispatched by the task operator Tarn at Soma
 :TO_STATE: in_progress
 :EVENT_ID: f1fa2c9a-4de0-4ac5-a797-9513eb7ceedc
 :END:
+
+* tx-20261030-theaspirationalconnectome-c6eb7ad0-295f-4a4f-97a7-f9ad35202570 comment
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-c6eb7ad0-295f-4a4f-97a7-f9ad35202570
+:TIME:    [2026-10-30 Fri 23:45:53]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-MHQNZ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 5b65be06-b5cd-4a07-9d0e-6d841deee522
+:END:
+
+PARKED until INT-1 (Soma's decision as programme qualifier, Slack 1793403939.208749; not owner Vasyl's). Phase E r5 = INCOMPLETE (an instrumentation TypeError; /srv/review-drop/TASK-MHQNZ-PHASEE-1.md 2f766adb…). r6 prep 0cf9edff7810b3834cd5fc5bcde8be8c66364a0a: import-preflight 12/12 COMPLETE; the measured budget is 189.10 MiB imports + 16 = 205.10 > 192 → STOP/NOT VIABLE (/srv/review-drop/TASK-MHQNZ-PHASEP-R6.md dc2a816a…). Delta review APPROVE for the prep (/srv/review-drop/TASK-MHQNZ-R6-DELTA-REVIEW.md 76a74c88…), with informational options. Chose (b): no second native run, no six-launch go, no prep churn. Resume = the exact candidate dependency set after INT-1, a new manifest and measurements, ONE explicit aggregate time/output budget; no carry-over of CM 0.24.0 masters/evidence as CM 0.24.1 qualification. BEFORE-NEXT-EXECUTION/PUBLICATION requirements: MEDIUM-1 (committed assertions for any "no stores opened" claim) and MEDIUM-2 (a preflight failure must not emit a complete pass), fixed together with the re-pin. The r6 observations (import/cache I/O, socket references ≠ attempts/access, %network not observed) are kept separately; prep approval ≠ native compatibility.
