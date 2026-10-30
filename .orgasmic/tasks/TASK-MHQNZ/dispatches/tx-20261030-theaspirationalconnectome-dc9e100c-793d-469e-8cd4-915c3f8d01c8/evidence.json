@@ -1,0 +1,20 @@
+{
+  "event_count": 197,
+  "tool_call_count": 0,
+  "unparsed_events": 0,
+  "bounded_events": 2,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-MHQNZ-reviewer-20261030T221737-run-01M67E7KR7CK80P2TTPHS1RDRZ.jsonl",
+    "size_bytes": 383537
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.claude/projects/-home-orgasmic--orgasmic-worktrees-theaspirational-connectome-host-task-mhqnz/1b4638aa-468f-42d0-ae46-ba654e98981f.jsonl",
+    "session_id": "1b4638aa-468f-42d0-ae46-ba654e98981f",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [],
+  "narrative_truncated": false
+}
