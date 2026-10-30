@@ -941,3 +941,20 @@
 :TIMEOUT_SECS: 1800
 :EVENT_ID:     78e85031-837f-4aad-92f6-a1f21ad43422
 :END:
+
+* TX 2026-10-30 Fri 20:17:43 run.answered TASK-E9C1M
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-820d6556-f782-467b-9d37-04dda0653488
+:TIME:         [2026-10-30 Fri 20:17:43]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-E9C1M
+:REASON:       Yes, that's exactly what I mean. Across a reconnect: never re-resolve. The fresh authorize/current-access check can only allow the same frozen destination. A stale binding stays private with B's internal readable notice to the agent. No external notice is invented: an operator notice route is only a proposal in the doc, marked as an owner decision. Uncertain tool effects are never repeated automatically.
+:RUN_ID:       run-01M676Y8DFF5Q14C9VNXBEX5AP
+:ASK_ID:       ask-69df3419b44a4640b7c88b392b7e1c6b
+:MESSAGE_ID:   msg-635ee6950c074d40b5a1632b5f3f4228
+:DELIVERY:     delivered
+:EVENT_ID:     4a2e7e15-f9de-4e0a-a12a-6156cc2c938b
+:END:
