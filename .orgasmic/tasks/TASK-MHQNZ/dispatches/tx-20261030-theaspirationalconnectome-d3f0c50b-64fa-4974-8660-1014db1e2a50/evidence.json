@@ -1,0 +1,25 @@
+{
+  "event_count": 405,
+  "tool_call_count": 23,
+  "unparsed_events": 0,
+  "bounded_events": 11,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-MHQNZ-implementer-20261030T213314-run-01M67BPB295V5D0XX7A2BKCTVQ.jsonl",
+    "size_bytes": 496819
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T21-16-58-01a18eac-4ae1-74e0-8b03-10419cafcc20.jsonl",
+    "session_id": "01a18eac-4ae1-74e0-8b03-10419cafcc20",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll add separate Bun/source and Node/compiled matrices, verify both Bun binaries, and update the manifest and launch budget. Node results will be labeled supplemental, not as results from the actual old Bun reader. No store will be created or opened.I’ll add bounded stdout framing for evidence capture, including live API and strace output. The host launcher will save and check the stream; it won’t rely on copying files out after the container stops. I’ll demonstrate both a complete mock stream and a forced-kill partial stream, without opening stores.The no-op stream completed with six verified records. The corrected forced-kill demo preserved four verified prefix records, no terminal record, and host exit status 137; the checker reported `INCOMPLETE`.\n\nAll sandbox limits remained enforced. The Bun hashes match the oracle manifest and Bun 1.4.4 provenance. The revised plan declares 18 runtime×route×scenario cases and up to 42 child operations, with an 1800-second whole-command deadline. Phase E has not run.Revision 2 is committed as `1bb62482`. All three gates passed at that commit: no-op limits/capture proof, forced-kill detection, and the final prep check with 17 tests.\n\nThe report contains the new hashes, full argv, runtime/entry table, and raw receipts. No store was created or opened. Node is labeled a native-format component probe; D remains pinned-null."
+    }
+  ],
+  "narrative_truncated": false
+}
