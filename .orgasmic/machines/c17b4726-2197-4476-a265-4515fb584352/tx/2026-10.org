@@ -1551,3 +1551,19 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     dfc29bfb-6403-4e58-a577-15ffc150fc0a
 :END:
+
+* TX 2026-10-30 Fri 20:51:26 run.asked TASK-E9C1M
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-68c53db4-9979-4134-8795-c1683617c435
+:TIME:         [2026-10-30 Fri 20:51:26]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-E9C1M
+:REASON:       REVIEW2 M1 conflicts with the full frozen AF payload: src/framework.ts:20589-20597 and :20726-20744 explicitly call bridge.accept and refuse !decision.store BEFORE pushHandler/channelRegistry; dist framework.js also has these checks, and source SHA c7c7e53... matches the pinned manifest. May I state that shouldTriggerInference is wake-only but patched frozen AF separately enforces bridge storage, while still adding the owner decision/test for new readChannels dropping otherwise-valid ambient context? I cannot truthfully claim the full frozen pair has no host storage guard.
+:RUN_ID:       run-01M6797GCPGMBCQHR82W9DM5HG
+:ASK_ID:       ask-e770599dc0424613b114994aef8c77b8
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     575f2527-d5e0-4ffa-a54a-48f8ca7ef42a
+:END:
