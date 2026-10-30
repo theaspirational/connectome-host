@@ -1,0 +1,25 @@
+{
+  "event_count": 269,
+  "tool_call_count": 19,
+  "unparsed_events": 0,
+  "bounded_events": 2,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-KY73N-implementer-20261030T224417-run-01M67FRDPNZHR2ZWVWECNPX3ES.jsonl",
+    "size_bytes": 352856
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T22-20-55-01a18ee6-d8f4-77f0-b3ce-6053fe4a42b1.jsonl",
+    "session_id": "01a18ee6-d8f4-77f0-b3ce-6053fe4a42b1",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll read the full review, check the current files, and address the findings within the narrowed scope. Then I’ll commit locally and rerun all required gates.The review identifies gaps in wake-side preservation, the projector’s evidence path, runner wiring, and the naming scan. I’ll fix those and the bounded LOW findings. I’ll use a CI step alongside the existing Node checkers; Bun isn’t installed here. The new step can check paths, IDs, and credentials without a name list, while the dispatch gate will supply the full list privately.The fixes pass locally: 54 cases, including dynamic wake, descriptor-asserted versus native-verified parenthood, grant separation, joined membership, reply opt-out, and mid-admission invalidation. The scan now covers all four changed public files, including the checker. With no injected name list, the CI step explicitly reports naming coverage as partial. I’ll commit and run the receipt-producing gates now."
+    }
+  ],
+  "narrative_truncated": false
+}
