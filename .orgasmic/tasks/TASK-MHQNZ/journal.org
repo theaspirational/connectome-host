@@ -31,3 +31,19 @@
 :TO_STATE: in_progress
 :EVENT_ID: a2171b97-22a8-45de-8cd0-357b31e6e17d
 :END:
+
+* tx-20261030-theaspirationalconnectome-26dcc057-ae38-441b-9800-1a25a9a2a1f5 comment
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-26dcc057-ae38-441b-9800-1a25a9a2a1f5
+:TIME:    [2026-10-30 Fri 21:18:51]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-MHQNZ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 0cd073bb-98bb-4ed2-8d02-27039ba7f75c
+:END:
+
+Soma 1793395121.295149: Phase P plus the trusted no-op limits proof are within scope; Phase E is gated on exact hashes/argv/image/deadline. Build fully offline (--pull=never, no network/package install/lifecycle hooks), empty environment, no privileges or host-session changes; any missing dependency → describe an acquisition method, don't enable networking. The operator manifest, real host paths and private traceability stay OUTSIDE the public branch/history; the harness takes declared inputs/relative mount paths. Native format and D stamp are separate; (b) waits for the A+B+D tarball. Passed to run-01M67ARH8PK8QF691QCJA440VW via run_message.

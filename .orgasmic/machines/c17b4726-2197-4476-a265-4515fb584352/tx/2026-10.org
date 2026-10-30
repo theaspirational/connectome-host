@@ -1954,3 +1954,21 @@
 :EFFORT_OVERRIDE: high
 :EVENT_ID:     53fb45e9-f615-41d6-b2f6-dac7d3341214
 :END:
+
+
+* TX 2026-10-30 Fri 21:18:51 run.message TASK-MHQNZ
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-7d5ddc33-0b70-4e20-b657-bbd529c13980
+:TIME:         [2026-10-30 Fri 21:18:51]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-MHQNZ
+:REASON:       Additional conditions for Phase P (Soma; binding): (1) The image build is fully offline: `--pull=never`, `--network=none` during the build too, NO apt/npm/package install and no lifecycle hooks; empty environment (`env -i` plus only what's necessary, listed in the report); no privileges and no changes to the host session/linger/podman config. If a public dependency turns out to be missing, DON'T enable networking; STOP and describe the method of acquiring it in the report. (2) Committed files (the harness) must contain NO operator-specific manifest, no real host paths (/srv, /opt, /home) and no private traceability. The harness takes declared inputs via arguments/relative container mount paths (e.g. /inputs/old, /inputs/new) and is reproducible. The operator manifest with real paths, the argv with host paths and the inventories go ONLY into evidence/report, not into commits. (3) Native CM/Chronicle format and D stamp are separate phases; (b) waits for the A+B+D tarball. EACCES/import/ABI/read-only store is never a pass. The limits proof is a no-op only; Phase E is not run. Confirm these conditions in the report.
+:RUN_ID:       run-01M67ARH8PK8QF691QCJA440VW
+:MESSAGE_ID:   msg-4db568197d5649799080f9bb92d5b70f
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     939af1aa-1644-46d6-a10b-680922ec5f6c
+:END:
