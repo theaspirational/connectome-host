@@ -1,0 +1,25 @@
+{
+  "event_count": 325,
+  "tool_call_count": 16,
+  "unparsed_events": 1,
+  "bounded_events": 8,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-E9C1M-implementer-20261030T205010-run-01M6797GCPGMBCQHR82W9DM5HG.jsonl",
+    "size_bytes": 340911
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T20-10-11-01a18e6f-25db-78d3-a5df-7a1c5cbf8a44.jsonl",
+    "session_id": "01a18e6f-25db-78d3-a5df-7a1c5cbf8a44",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll read REVIEW2 in full, verify the storage and overlay findings, and make a new commit on top of `af8e4da7`. I’ll keep history intact and require exact thread replies in the design; channel-only B is not approval to lose them.The full frozen AF disproves REVIEW2’s storage-guard claim. The manager confirmed the source evidence: `shouldTriggerInference` is wake-only, but patched AF separately rejects `!decision.store` before the push and channel handlers.\n\nI’ll document the exact old/new mapping and require parity tests: valid joined ambient context stores without waking on both pairs; unreadable or invalid context stores on neither. I won’t turn the review’s mistaken inference into an owner decision.Both gates passed at local HEAD `90fb9ef6b3a23341d143d99b7f716be1d847bf19`, including an independent `find | LC_ALL=C sort` reproduction of the inventory hashes.\n\nThe design now requires exact native thread carriage and names the remaining dynamic thread/admission-scope gap. It also has one owner list, numbered 1–8. History is intact; the report will list the private material still in `9f153044`, so this branch must not be published as-is."
+    }
+  ],
+  "narrative_truncated": false
+}
