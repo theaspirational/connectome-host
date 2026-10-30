@@ -908,3 +908,36 @@
 :DELIVERY:     delivered
 :EVENT_ID:     59c260a5-30eb-434a-bf75-48b369bb301f
 :END:
+
+* TX 2026-10-30 Fri 20:16:48 run.message TASK-E9C1M
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-e4155d49-f000-4780-929b-3dc69ad01218
+:TIME:         [2026-10-30 Fri 20:16:48]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-E9C1M
+:REASON:       Extra requirements for the design doc (please confirm in your report):
+:RUN_ID:       run-01M676Y8DFF5Q14C9VNXBEX5AP
+:MESSAGE_ID:   msg-feea5d6c17db4fb8ada53816ee1e826b
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     8a118313-e781-45fa-8c41-d49bd5440c2c
+:END:
+
+* TX 2026-10-30 Fri 20:17:02 run.asked TASK-E9C1M
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-19281b45-01d3-40d4-a068-4ce442e54af5
+:TIME:         [2026-10-30 Fri 20:17:02]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-E9C1M
+:REASON:       I will pin one AF integration commit+tarball and add the connector ACK/outbox gate. For reconnect, B bf6e8e0 keeps original connection authority and does not re-resolve: fresh authorize/current-access checks may only allow the same frozen destination; a stale binding stays private with B's internal readable notice (no guessed external notice). Is that the intended meaning of your new reconnect requirement?
+:RUN_ID:       run-01M676Y8DFF5Q14C9VNXBEX5AP
+:ASK_ID:       ask-69df3419b44a4640b7c88b392b7e1c6b
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     78e85031-837f-4aad-92f6-a1f21ad43422
+:END:

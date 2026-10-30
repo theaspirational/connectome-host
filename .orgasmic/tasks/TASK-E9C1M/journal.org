@@ -31,3 +31,24 @@
 :TO_STATE: in_progress
 :EVENT_ID: 7f46df7e-a53f-42d1-bed2-d2ff19e01eca
 :END:
+
+* tx-20261030-theaspirationalconnectome-bf616bd5-6403-4d96-b82f-a9da333ee9fa comment
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-bf616bd5-6403-4d96-b82f-a9da333ee9fa
+:TIME:    [2026-10-30 Fri 20:16:48]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-E9C1M
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 64484775-a101-454d-842e-37eead946df3
+:END:
+
+Pinned inputs (Soma 1793391370.420609):
+- Host base: upstream connectome-host 2c39662289be4cd5a150222e8456ff5577ce7622 (v0.20.0-17, merge of #554 fix/no-preemptive-binding, 2026-10-30T19:48:43Z). package.json pins @animalabs/agent-framework ^0.30.0.
+- AF dependency for the API/stub: slice A at 1d990e4195e265f58be865719df2bb7e51f5c456 (on upstream a64cfc01, under review); B narrowed at bf6e8e0eeaa38b086bb8d05bd4efe3a3d2f54cd9 (on old A c848977f, under review, needs a rebase onto 1d990e41); D at a5b02a07 (fix round 2 running).
+- At implementation start, the host builds against ONE named AF integration commit (A+B+D rebased on a64cfc01, built as a local tarball), never against moving heads.
+- Gates the design must carry: Slack stale-epoch loss → producer commit/ACK/outbox handling, no retro-replay of committed receipts; fresh re-admission after a known pre-storage refusal ≠ an uncertain-ACK retry; retries are not exactly-once. Cross-reconnect turn completion follows the B rule: publish only after a fresh route/access check to the same destination, otherwise keep it private plus an approved notice; no auto-repeat of uncertain tool effects.
+- Soma will supply a synthetic policy-shape projection. orgasmic deployment provenance stays the explicit, mutable checkout dc099069.
