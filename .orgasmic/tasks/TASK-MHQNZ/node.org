@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-MHQNZ
 #+orgasmic_version: 2
 
-* DONE TASK-MHQNZ F-host.2b synthetic old-reader/new-store probe
+* IN_PROGRESS TASK-MHQNZ F-host.2b synthetic old-reader/new-store probe
 :PROPERTIES:
 :UID: 177d2fe7-6057-5919-8517-edeecd2d9ab1
 :ID: TASK-MHQNZ
