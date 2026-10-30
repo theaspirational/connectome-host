@@ -5009,3 +5009,21 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     f64b4f4b-c1ae-414e-8cf9-a3c021f88b33
 :END:
+
+
+* TX 2026-10-30 Fri 23:31:02 run.message TASK-MHQNZ
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-d10f2ada-aa25-4ffd-8a0d-836848e7727a
+:TIME:         [2026-10-30 Fri 23:31:02]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-MHQNZ
+:REASON:       Addition to the informational viability section (Soma, programme qualifier): (a) a minimal SEQUENTIAL split into groups, preserving full import+store trace and each group's own controls: give the measured per-group bytes (from budget-recomputed.json / per-child import frames), the total elapsed and the total output cap, fresh-store isolation between groups, and exactly what would remain unknown if any group is INCOMPLETE. Note honestly: N separate 1800s/256MiB budgets = an AGGREGATE increase, not "unchanged limits". (b) The efficiency option: defer any further reference-only AF0.30/CM0.24.0 experiment until INT-1, then qualify the exact candidate dependencies (CM 0.24.1 is a separate input). Don't propose hiding import effects, filtered evidence as a pass, or a general probe scheduler. This is information only; nothing gets implemented or launched.
+:RUN_ID:       run-01M67J9VX5Q6WM8B30CENKF9MA
+:MESSAGE_ID:   msg-c19050e9659945d68a4143eeff1c6cf8
+:FROM:         member:tarn2
+:DELIVERY:     queued
+:EVENT_ID:     27e39e9b-3cd3-481b-8d0f-247edeecb68c
+:END:
