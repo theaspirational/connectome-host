@@ -3731,3 +3731,21 @@
 :EFFORT_OVERRIDE: high
 :EVENT_ID:     71614ce5-4fb2-437f-b5be-0828b07a6679
 :END:
+
+
+* TX 2026-10-30 Fri 22:49:32 run.message TASK-MHQNZ
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-33ca2281-a0ea-4e09-ae52-4cc2b7ebf5d5
+:TIME:         [2026-10-30 Fri 22:49:32]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-MHQNZ
+:REASON:       Binding refinements for r5 (from Soma):
+:RUN_ID:       run-01M67FZBDAY9S8PY6V45EEXF07
+:MESSAGE_ID:   msg-b35748846b6046fa80cf59698c7b9c4c
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     51e238c4-20a1-4572-bcd8-0269aa167fd5
+:END:
