@@ -45,3 +45,18 @@
 :RUN_ID: run-01M67F0N30RZS6XN3T25P5TQZM
 :EVENT_ID: 3f80b65f-efac-4c89-9195-028a12ceb5dc
 :END:
+
+* tx-20261030-theaspirationalconnectome-5bc9db30-1692-46d0-ad58-89956dca103d conversation.run_started
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-5bc9db30-1692-46d0-ad58-89956dca103d
+:TIME:    [2026-10-30 Fri 22:52:46]
+:TYPE:    conversation.run_started
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TARGET: ~/.orgasmic/ledgers/theaspirational.connectome-host/.orgasmic/conversations/CONV-2339D/node.org
+:REASON: dispatch attempt started
+:NODE_ID: CONV-2339D
+:RUN_ID: run-01M67G7Y9RJ91ZSE631MMGJXF2
+:EVENT_ID: a2f917dc-2189-4520-8d26-c6eae923fd66
+:END:
