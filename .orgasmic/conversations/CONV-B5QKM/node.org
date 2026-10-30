@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-B5QKM
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Review TASK-MHQNZ
+:PROPERTIES:
+:UID: dde88ac2-fd17-5251-b381-fb0a0bb57309
+:ID: CONV-B5QKM
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: claude
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-mhqnz
+:RUNS:  run-01M67CQA51SE05VVW4G23CZWJ4
+:CREATED_AT: 2026-10-30T21:51:14Z
+:END:
