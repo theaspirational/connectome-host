@@ -1,0 +1,25 @@
+# Implement fix round — Dispatch Brief
+```brief
+T1 fix round 2 (TASK-KY73N), on bcf28f0e0aa9f56d06f69a2f4e3fb994550da292. Read the re-review IN FULL: /srv/review-drop/TASK-KY73N-REREVIEW1.md. Docs/fixture/checker only; PERMISSIONS UNCHANGED, no production code. Fix:
+MEDIUM-1: restore the narrow-wake case (selector separation): an addressed post-startup join with case-level wake.joinedReadable:false, wake.channels:["mailbox/active"] → store:true, wake:false; mark it dynamic/negative (not A04) so it doesn't fall under the oldWake parity assertion; it demonstrates separation, NOT an approved narrowing (say so in the note).
+MEDIUM-2: a discriminating case for the claimed-parent↔native-fact agreement: parentId:"mailbox/denied", parentJoined:true (the real parent is admitted), claimedParent:"mailbox/active" → store:false and everything false; confirm with an oracle mutation (deleting the agreement conjunct / "trust-the-claim") that the case catches it. Fix the note on dynamic-claimed-parent-overrides-actual if it overclaims.
+MEDIUM-3: rewrite doc:196-201 and the §5 description of the explicitGrant field per the actual A code, separately for TWO paths: (1) the adapter's native MCP send tool via tools/call: gates = the host's configured tool-allow policy (A src/framework.ts:35473 isToolAllowed) + the adapter's fresh native destination/effect access; AF's `tools` capability grant gates only §6.4 feature-set enablement (feature-set-manager.ts:249-252, capability-grant.ts:322-330, types.ts:572), NOT tools/call; (2) the host's generic channel_publish/channels/publish: the channels.publish grant (channel-registry.ts:5977, re-checked :6096/:6385) + the inbound-only refusal + B's authorize===true at send. Keep "not channels.incoming/channels.publish" for path 1. Rename/redescribe explicitGrant (e.g. explicitToolAllowed) so the fixture doesn't name a grant AF doesn't check. A tools grant/descriptor claims ≠ widening/consent. File:line at the A/B pins.
+LOW: a case with read.subConversations:false → store:false; one sentence about registrationAccepted being structurally redundant (adjust the "45 rejected mutations" wording if needed); empty SCOPE_FORBIDDEN_NAMES → PARTIAL (filter empty entries), with a test; fix the a04-joined-after-startup note; one sentence in §5 about the ci.yml coupling in the neutrality scan (keep it).
+Update the pinned fixture sha in the doc. Gates: --self-test, --docs-contract (SCOPE_FORBIDDEN_NAMES from the gate), scope-runner (the CI block), scope-boundary (parent bcf28f0e). Vasyl noreply + trailer Co-Authored-By: GPT-6.1-Sol <noreply@openai.com>. Calls on asks belong to the task operator Tarn. No push.
+```
+
+## Round context
+Resume round contract: 2. Continues dispatch tx-20261030-theaspirationalconnectome-9e928fe5-b95b-440b-933e-2a3173475ce1, run run-01M67FRDPNZHR2ZWVWECNPX3ES, in your own native session and the same worktree.
+Changed this round: the brief above narrows the assignment; use this run's evidence directory and report, not the earlier round's destination.
+Original instructions are history, not missing context. Original scope, security and read-only-ledger boundaries still apply, narrowed by this brief. Do not replay startup reads unless changed facts or this brief require them. Do not merge or close the dispatch.
+
+## Evidence and verification
+Earlier reads/code/reports remain context, not new proof. Identify valid inherited evidence and its unchanged inputs/scope in this round's report. No earlier gate pass is implied by resuming. Verify findings against current source. Run assigned checks and scoped probes through `orgasmic dispatch gate <name> -- <cmd> [args...]`; missing receipts do not assign a full suite. Keep builds outside evidence.
+
+## Completion for this round
+Report Changed, Verification Gates (commands/results/logs and inherited evidence), Unmet Criteria, and Residual Risk in `$ORGASMIC_EVIDENCE_DIR/report.md`. If unset, substitute a scratch path outside the worktree below.
+For done, satisfy the narrowed brief and make a local commit in this worktree; stage explicit paths and do not bypass hooks. Then run:
+`orgasmic dispatch finalize --status done --summary-file "$ORGASMIC_EVIDENCE_DIR/report.md"`
+If blocked, report the exact unmet criteria and run:
+`orgasmic dispatch finalize --status blocked --reason "<why>" --summary-file "$ORGASMIC_EVIDENCE_DIR/report.md"`
+Blocking decision: `orgasmic dispatch ask "<question>"`; keep it alive for the stdout answer. A timeout is not permission. With `--no-wait`, Codex app-server accepts answers/messages mid-turn; other multi-turn harnesses receive them at turn boundaries or finalize. If finalize refuses for pending messages, handle their full text and retry. Successful finalize is terminal; no work follows it. Never disclose credentials or the run token.
