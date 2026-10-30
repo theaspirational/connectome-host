@@ -196,3 +196,19 @@ Soma 1793394439.117669 (accepted): preserving exact thread identity is an ALREAD
 :TO_STATE: in_progress
 :EVENT_ID: 7e815098-1af9-417f-b017-325f5d8852a8
 :END:
+
+* tx-20261030-theaspirationalconnectome-788d4edd-99bc-49b3-a355-4c12628c3666 comment
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-788d4edd-99bc-49b3-a355-4c12628c3666
+:TIME:    [2026-10-30 Fri 22:05:25]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-E9C1M
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: e5d9d570-2999-4161-9fa3-01dd63cd1454
+:END:
+
+Disclosure: Tarn's fetch in the shared clone ~/src/connectome-host at 2026-10-30 20:09:54Z (`git fetch -q upstream main`, as orgasmic). Exactly one ref changed: refs/remotes/upstream/main 5416caab648b6cd92c2bbf85992f8768008ad79e → 2c39662289be4cd5a150222e8456ff5577ce7622 (fast-forward; reflog shows a single entry at that timestamp across all of .git/logs). Checked at ~22:10Z: HEAD = 3e4cf9b39df97f00f9e62e09571201966142c0f3 (branch main, unchanged), `git status --porcelain` empty, .git/index mtime 2026-10-27 02:07Z (untouched), FETCH_HEAD updated. Pinned runs/designs use explicit SHAs (2c396622 for E9C1M/MHQNZ in dedicated worktrees), not the remote-tracking ref. From now on, fetches only in dedicated worktrees/clones.
