@@ -95,3 +95,19 @@
 :END:
 
 T1 FROZEN as T2's input (task operator Tarn; covered by Soma in Slack 1793402341.948379; not an owner decision of Vasyl's). Head bff8c46e3a4c403f62b738cead317863d43fca9c (branch task-ky73n-impl, local only, not published; range 2c396622..HEAD must never be pushed; publication only as a fresh final-tree commit). Fixtures: scope-cases.json 70a1827c21722b6056ba209928434877f4d4ea729338793c4d95a9e5c5126381; policy-shapes.json b633a9b7abe8729313f1a4f7bc442dd16e46e04c061d4feae70d9bcd695fd2ed; old-reader-payloads.json 8f70b5cdab01eacdfb207698179c154ce171412ed417ef630fa8f4c18a06aeb5. Checker test/fixtures/generic-recipient/check-scope-contract.mjs at this head. Rounds: review 1 (def9c956…) → fix 1 bcf28f0e → re-review 1 APPROVE + 3 MEDIUM (/srv/review-drop/TASK-KY73N-REREVIEW1.md 42bf9976…) → fix 2 eba36739 (TASK-KY73N-FIX2.md a5fd98bc…) → delta review APPROVE + 3 LOW (TASK-KY73N-FIX2-DELTA-REVIEW.md ea839a6e…) → LOW 3 bff8c46e (TASK-KY73N-LOWS3.md 105e7f89…), checked by Tarn himself (diff, self-test, PARTIAL without the list). Send paths: native tools/call is gated by tool-allow policy at listing (A framework.ts:35473) and at dispatch (:35811), with no call-time CapabilityGrant; channel_publish is gated by channels.publish (channel-registry.ts:5977/6096/6385) + inbound-only + B authorize===true. Neither is owner consent. AF-scope remains the conditional 8–16 h item. "Ready as input" ≠ INT-1/H3 ready.
+
+* tx-20261030-theaspirationalconnectome-e7faea55-dd66-4f97-85b6-d08d683b9ba5 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-e7faea55-dd66-4f97-85b6-d08d683b9ba5
+:TIME:    [2026-10-30 Fri 23:22:36]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-KY73N
+:TARGET: .orgasmic/tasks/TASK-KY73N/node.org
+:REASON: transition TASK-KY73N to in_progress
+:FROM_STATE: in_review
+:TO_STATE: in_progress
+:EVENT_ID: 9631793d-911d-42ce-95f4-9a1703d64c1c
+:END:
