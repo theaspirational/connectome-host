@@ -4217,3 +4217,58 @@
 :WORKTREE:     ~/.orgasmic/worktrees/theaspirational.connectome-host/task-mhqnz
 :EVENT_ID:     df1cc4b9-b148-4954-a1c0-7f74abf5afcd
 :END:
+
+
+* TX 2026-10-30 Fri 23:03:36 run.message TASK-KY73N
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-adcb6f91-5803-4f0c-b0c6-1d445dc3ced9
+:TIME:         [2026-10-30 Fri 23:03:36]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-KY73N
+:REASON:       Binding refinements (from Soma): (1) Describe the two send paths exactly as traced; DON'T invent a call-time CapabilityGrant check for native tools. Tool exposure/allow policy and native destination/effect policy are distinct from owner consent, and from each other. (2) The narrow-wake case goes ALONGSIDE the default old-wake parity (don't remove the A04 parity); the claimed-parent/native-agreement case must kill the removal of that conjunct (show the oracle mutation). Don't delete any existing contract case to make the oracle green; if you change one, give the reason in the report. (3) Hygiene: the public functional CI step must NOT depend on private names or a new repository secret; without the list, an honest PARTIAL with exit 0. A separate required publication-hygiene gate (our dispatch gate before publication) may demand a non-empty explicit list and refuse without it. Never write "full hygiene" PASS where the list wasn't supplied. No scope expansion.
+:RUN_ID:       run-01M67GTE9D3GPPXT5MATK20Q6P
+:MESSAGE_ID:   msg-9619a1b4df964fbbbb73918f187e91b4
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     87fd1fc6-a51b-4695-a91c-a60cde111c75
+:END:
+
+* TX 2026-10-30 Fri 23:03:56 dispatch.outcomes_acked theaspirational.connectome-host
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-6dd89e9e-513b-4cd1-ab9e-f41cb7c64ede
+:TIME:         [2026-10-30 Fri 23:03:56]
+:TYPE:         dispatch.outcomes_acked
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:REASON:       acknowledged 1 outcome(s)
+:OUTCOME_IDS:  df1cc4b9-b148-4954-a1c0-7f74abf5afcd
+:ACKED_BY:     member:tarn2
+:EVENT_ID:     b0032b4d-f9e0-434c-afb5-5b26d3bf200f
+:END:
+
+* TX 2026-10-30 Fri 23:03:56 reviewer.done TASK-MHQNZ
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-a8c1b1e3-a950-4e1a-b8ba-5fcbd089ed8d
+:TIME:         [2026-10-30 Fri 23:03:56]
+:TYPE:         reviewer.done
+:ACTOR:        agent.reviewer
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-MHQNZ
+:REASON:       r5 delta review: APPROVE. HIGH-1 closed (untraced parent verifyInputTree before each spawn, bound to the external manifest; the child compares leaf hashes against the manifest), LOW-1..3 r4 closed, envelope/cases/caps unchanged; parent hashing ≤13.4 s across 42. MEDIUM-1: the 4× allowance is below the per-child headroom (≈7.5× measured leaf before the filter); SDK import closure ≈5k–16k lines/child is unmeasured; the risk is an all-or-nothing INCOMPLETE. LOW: emitted digest from the manifest, not the computed one; non-bind mounts not counted; critical inputs once per run; no source-order test for verify-before-spawn.
+:MODEL:        opus[1m]
+:EFFORT:       medium
+:REVIEWED_DIFF: bac2ebb2e9f634a877bb7422ff5542160cbc08dc..1cfe32a1c381a2d67731a6c2b8e3989874947df9
+:CLOSED_TX:    tx-20261030-theaspirationalconnectome-a8fdc961-6b3c-4471-b157-f42009a0054e
+:CLEANUP_STATUS: ok
+:REPORT_PATH:  .orgasmic/tasks/TASK-MHQNZ/dispatches/tx-20261030-theaspirationalconnectome-a8fdc961-6b3c-4471-b157-f42009a0054e/report.md
+:VERDICT:      approve
+:LIFECYCLE_FROM: in_review
+:LIFECYCLE_TO: done
+:EVENT_ID:     d9284f7e-8884-49f9-a51a-3e9398844851
+:RELEASES_CLAIM_RUN: run-01M67GCC0ANSK27TBDG2272A6M
+:END:
