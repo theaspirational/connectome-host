@@ -1,0 +1,25 @@
+{
+  "event_count": 275,
+  "tool_call_count": 29,
+  "unparsed_events": 1,
+  "bounded_events": 8,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-KY73N-implementer-20261030T222055-run-01M67EDN26E3H9629JMA8Z5Y38.jsonl",
+    "size_bytes": 378289
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T22-20-55-01a18ee6-d8f4-77f0-b3ce-6053fe4a42b1.jsonl",
+    "session_id": "01a18ee6-d8f4-77f0-b3ce-6053fe4a42b1",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll read the pinned design and API sources, then add the scope contract, synthetic fixtures, and checker within the allowed paths. I’ll run the gates and commit locally without pushing.A provides exact connection/epoch binding and registration checks; B freezes registered reply destinations. Neither exposes an authoritative dynamic-scope view to the host binder. I’ll document a minimal, opt-in AF-scope interface proposal, while keeping native membership, DM identity, and parent verification in the authenticated adapter. The fixtures will distinguish storage, wake, and reply decisions, including stale-send failures.The local commit is in place: the design contract, 46 synthetic cases, and a documentation-only checker. The checker passes its schema/outcome checks and 39 rejection mutations. I’ll now run the receipt-producing gates at that commit and record the API gaps and fixture hash in the report."
+    }
+  ],
+  "narrative_truncated": false
+}
