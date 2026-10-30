@@ -4658,3 +4658,58 @@
 :WORKTREE:     ~/.orgasmic/worktrees/theaspirational.connectome-host/task-ky73n
 :EVENT_ID:     2ce93cb8-34f8-45d7-b5c2-e79ec623f89f
 :END:
+
+
+* TX 2026-10-30 Fri 23:17:21 run.message TASK-MHQNZ
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-2163cd17-4921-40d2-a878-0dfaea209e87
+:TIME:         [2026-10-30 Fri 23:17:21]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-MHQNZ
+:REASON:       Binding boundary (Soma): facades/observation ONLY at the harness's own call sites. Don't patch SDK files, loader resolution, import maps/conditions, or transitive module exports, and don't substitute another reader to get hooks. Internal native activity may stay observed only through syscalls / unknown at the API layer. A missing hook must never be turned into a "no read / no mutation" conclusion; write down the observation boundary explicitly in the report and README.
+:RUN_ID:       run-01M67HJQMANFVMGDKR7G59MZGH
+:MESSAGE_ID:   msg-72a066c01e5649d28ddcba4979d18d8d
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     d2a50823-fd84-4877-b7ce-170785838122
+:END:
+
+* TX 2026-10-30 Fri 23:17:37 dispatch.outcomes_acked theaspirational.connectome-host
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-22cfbc3f-0313-46d8-873f-64f43526e031
+:TIME:         [2026-10-30 Fri 23:17:37]
+:TYPE:         dispatch.outcomes_acked
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:REASON:       acknowledged 1 outcome(s)
+:OUTCOME_IDS:  2ce93cb8-34f8-45d7-b5c2-e79ec623f89f
+:ACKED_BY:     member:tarn2
+:EVENT_ID:     3d5895fb-874f-45f5-b564-bb54b370df28
+:END:
+
+* TX 2026-10-30 Fri 23:17:37 reviewer.done TASK-KY73N
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-80b935b7-0d8a-4a3a-92d2-49e1f6e36923
+:TIME:         [2026-10-30 Fri 23:17:37]
+:TYPE:         reviewer.done
+:ACTOR:        agent.reviewer
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-KY73N
+:REASON:       T1 fix 2 delta review: APPROVE. MEDIUM-1..3 closed and independently re-derived (each oracle mutant fails exactly its own named case; programmatic fixture comparison: 1 rename with identical content, 3 added, 0 removed, 0 expectation drift across 53; 8 A/B citations match). 3 LOW: path 1 doesn't cite the call-time isToolAllowed at framework.ts:35811; the mutant loop checks the first mismatch rather than the whole set; the confusing parentId "mailbox/denied" in the agreement case.
+:MODEL:        opus[1m]
+:EFFORT:       medium
+:REVIEWED_DIFF: bcf28f0e0aa9f56d06f69a2f4e3fb994550da292..eba367392801c25e52b7793214fca80d2f817345
+:CLOSED_TX:    tx-20261030-theaspirationalconnectome-d0281a98-9f75-4390-9755-f822a209c299
+:CLEANUP_STATUS: ok
+:REPORT_PATH:  .orgasmic/tasks/TASK-KY73N/dispatches/tx-20261030-theaspirationalconnectome-d0281a98-9f75-4390-9755-f822a209c299/report.md
+:VERDICT:      approve
+:LIFECYCLE_FROM: in_review
+:LIFECYCLE_TO: done
+:EVENT_ID:     d67d03dc-1e17-44b0-8ad9-eb6624747b3a
+:RELEASES_CLAIM_RUN: run-01M67H9H3R8Y45NR83ME4JTZ0N
+:END:
