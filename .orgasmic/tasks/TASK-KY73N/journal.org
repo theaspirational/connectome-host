@@ -1,0 +1,33 @@
+#+title: orgasmic journal TASK-KY73N
+#+orgasmic_version: 2
+
+* tx-20261030-theaspirationalconnectome-785fedbc-f9b0-4da6-b37d-37f08cfe79b6 task.created
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-785fedbc-f9b0-4da6-b37d-37f08cfe79b6
+:TIME:    [2026-10-30 Fri 22:20:36]
+:TYPE:    task.created
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-KY73N
+:TARGET: .orgasmic/tasks/TASK-KY73N/node.org
+:REASON: created task TASK-KY73N
+:EVENT_ID: 0451000f-e299-4a8a-a645-e198b0436007
+:REQUEST_REPLAY_V1: {"request_id":"tarn-t1-scope-contract-task/tx","mutation":{"operation":"task.created","project_id":"theaspirational.connectome-host","payload_sha256":"aa60ddafd260488c213fb75453e03dfa0d780e94b1d334bbf68a6c8addae0739"},"mutation_id":"TASK-KY73N","written_paths":[{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-KY73N/node.org"},{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-KY73N/journal.org"}]}
+:END:
+
+* tx-20261030-theaspirationalconnectome-c3aead88-8e57-4541-a9e0-710b05bee492 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-c3aead88-8e57-4541-a9e0-710b05bee492
+:TIME:    [2026-10-30 Fri 22:20:54]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-KY73N
+:TARGET: .orgasmic/tasks/TASK-KY73N/node.org
+:REASON: transition TASK-KY73N to in_progress
+:FROM_STATE: backlog
+:TO_STATE: in_progress
+:EVENT_ID: 98b2cb36-6cb5-43e2-8c0a-f386571ad08b
+:END:

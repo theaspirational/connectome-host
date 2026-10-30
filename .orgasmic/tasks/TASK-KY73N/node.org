@@ -1,0 +1,18 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-KY73N
+#+orgasmic_version: 2
+
+* IN_PROGRESS TASK-KY73N T1: generic admission scope contract for dynamic registrations, joins and first-contact DMs
+:PROPERTIES:
+:UID: ce35fb75-0080-5bff-8c0e-1b84aa07921a
+:ID: TASK-KY73N
+:PRIORITY: P1
+:END:
+
+** Description
+Covered engineering slice T1 from the F-host design (docs/design/generic-recipient-host.md at a316200c, §4 "Read permission, storage and wake are separate", "Required native thread-preserving adapter boundary", §6 "Additional F-host/F-Slack engineering"). It replaces the PROVISIONAL `readChannels: string[]` exact-list read ceiling with a contract that faithfully covers the two non-enumerable old read sources (readJoinedChannels:true, i.e. newly joined readable channels; and dmUsers, permitted user identities rather than DM channel ids) plus registered sub-conversations, without widening (no accept-every-registration, no trusting a claimed parent). Parent programme: TASK-EM8Q2 (connectome-coordinator); design TASK-E9C1M.
+** Acceptance
+- A contract doc (connector-neutral) defining the admission scope predicate for: post-startup joins, first-contact permitted DMs, registered sub-conversations; registration-before-use ordering; fail-closed defaults; separate read/store vs wake vs reply permission.
+- A concrete API-gap list against frozen AF (A 869bb3ad, B 29edcf8b): what the existing inboundAdmission.bind/RequiredAdmission/ChannelRegistry surface already supports, and what (if anything) needs AF-scope plumbing, with exact file:line.
+- Public synthetic acceptance fixtures (A04, T01–T03 and new dynamic cases) with expected store/wake/reply per case, plus negative controls (bad mapping, unregistered use, claimed-parent widening).
+- No production code, no live data, no threaded-typing work (stays C/E/F), no new infrastructure.
