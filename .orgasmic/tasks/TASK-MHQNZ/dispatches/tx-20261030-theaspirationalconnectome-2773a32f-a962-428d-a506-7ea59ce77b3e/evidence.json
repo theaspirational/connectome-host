@@ -1,0 +1,25 @@
+{
+  "event_count": 275,
+  "tool_call_count": 19,
+  "unparsed_events": 0,
+  "bounded_events": 8,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-MHQNZ-implementer-20261030T222754-run-01M67ETEA7QWVQJVGY66ZMVC3J.jsonl",
+    "size_bytes": 326164
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/30/rollout-2026-10-30T21-16-58-01a18eac-4ae1-74e0-8b03-10419cafcc20.jsonl",
+    "session_id": "01a18eac-4ae1-74e0-8b03-10419cafcc20",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ve read the full delta review and verified its hash. I’ll keep revision 4 bounded to the requested items: an external hash argument for check-prep, the exact three-channel transport smoke, inspect/argv cross-checks, conservative filter documentation, and the `newfstatat` regex test. The other LOWs will remain unchanged and listed as known limits.The bounded fixes are in place. I’ll commit them, then rerun the four required prep gates at that commit. Phase E and all store/SDK operations remain unrun.\n\nAll four required gates passed at clean commit `bac2ebb2`. The smoke verified separate trace, stdout, and API channels. The kill preserved six records and was marked INCOMPLETE; the changed-deadline control was refused despite an intact mock stream. I’m recording the receipts and known limits in the report.\n\n"
+    }
+  ],
+  "narrative_truncated": false
+}
