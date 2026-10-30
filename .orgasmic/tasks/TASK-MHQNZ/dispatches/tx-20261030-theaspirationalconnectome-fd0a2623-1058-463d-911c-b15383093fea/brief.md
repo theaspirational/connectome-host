@@ -1,0 +1,26 @@
+# Implement fix round — Dispatch Brief
+```brief
+r6 PREP (TASK-MHQNZ), on 1cfe32a1c381a2d67731a6c2b8e3989874947df9. NO second store experiment, NO native section run. Read the Phase E report in full: /srv/review-drop/TASK-MHQNZ-PHASEE-1.md (first control: TypeError: Cannot redefine property: create, worker.mjs:46←:94) and the r5 delta review /srv/review-drop/TASK-MHQNZ-R5-DELTA-REVIEW.md (MEDIUM-1). Conditions (Soma as programme qualifier; the task operator Tarn dispatches; NOT a decision of the human owner Vasyl):
+1. Don't redefine native properties (no defineProperty/assignment on native classes/prototypes). Don't use a Proxy over a non-configurable/non-writable property either (the same JS invariant). Use a separate facade/explicit observer at the call sites: the harness calls through the facade, which preserves the receiver (this), the arguments, return/promise (including rejection) and thrown errors unchanged. Never silently skip a method that can't be instrumented; don't claim full internal coverage: write down honestly the API observation boundary (only the calls that the harness itself makes).
+2. Check EVERY native method/constructor the harness intends to observe (list them), not just `create`, against the real old and new chronicle/CM/AF exports: for each, its descriptor (configurable/writable/own vs prototype) and whether the facade wraps it.
+3. A no-store preflight with REAL SDK imports is allowed in the same envelope (unchanged limits/privileges/RO/network none/argv shape except the selected section). Label that run explicitly (e.g. section `import-preflight`); no store constructors/read/write/open, providers or endpoints. Under full strace: record any unexpected initializer I/O (files opened/created outside the inputs, writes, sockets) rather than claiming "imports imply no I/O". In the same pass, measure the import trace volume (lines/bytes per runtime×tree×route) and recompute the budget model against 192/256 MiB with the measured number instead of the 4× guess. No new architecture.
+4. Tests: synthetic ones: a non-configurable/non-writable method, a getter, receiver preservation, sync throw, async rejection, return value/promise identity; and real readiness: old/new × Node(dist)/Bun(src) reach instrumentation-ready with no store open (instrumentation-ready event + no store paths in the trace).
+5. Exact SDK/native payloads unchanged (manifest input hashes the same); full syscall capture unchanged; inputs not mutated.
+Then: new identities (harness aggregate, manifest/anchor if it changes, image unchanged or a reason), the new native argv JSON + sha (NOT RUN), gates noop/kill/deadline-negative/check-prep + the new import-preflight/readiness gate, the budget recomputation. Commit on top of 1cfe32a1, Vasyl noreply + trailer Co-Authored-By: GPT-6.1-Sol <noreply@openai.com>. No push, no retries of the native run.
+```
+
+## Round context
+Resume round contract: 2. Continues dispatch tx-20261030-theaspirationalconnectome-234a3956-d51e-4ab1-8d15-f7532a842ca1, run run-01M67H32GBA8TE7ZXCZNX9ZC2N, in your own native session and the same worktree.
+Changed this round: the brief above narrows the assignment; use this run's evidence directory and report, not the earlier round's destination.
+Original instructions are history, not missing context. Original scope, security and read-only-ledger boundaries still apply, narrowed by this brief. Do not replay startup reads unless changed facts or this brief require them. Do not merge or close the dispatch.
+
+## Evidence and verification
+Earlier reads/code/reports remain context, not new proof. Identify valid inherited evidence and its unchanged inputs/scope in this round's report. No earlier gate pass is implied by resuming. Verify findings against current source. Run assigned checks and scoped probes through `orgasmic dispatch gate <name> -- <cmd> [args...]`; missing receipts do not assign a full suite. Keep builds outside evidence.
+
+## Completion for this round
+Report Changed, Verification Gates (commands/results/logs and inherited evidence), Unmet Criteria, and Residual Risk in `$ORGASMIC_EVIDENCE_DIR/report.md`. If unset, substitute a scratch path outside the worktree below.
+For done, satisfy the narrowed brief and make a local commit in this worktree; stage explicit paths and do not bypass hooks. Then run:
+`orgasmic dispatch finalize --status done --summary-file "$ORGASMIC_EVIDENCE_DIR/report.md"`
+If blocked, report the exact unmet criteria and run:
+`orgasmic dispatch finalize --status blocked --reason "<why>" --summary-file "$ORGASMIC_EVIDENCE_DIR/report.md"`
+Blocking decision: `orgasmic dispatch ask "<question>"`; keep it alive for the stdout answer. A timeout is not permission. With `--no-wait`, Codex app-server accepts answers/messages mid-turn; other multi-turn harnesses receive them at turn boundaries or finalize. If finalize refuses for pending messages, handle their full text and retry. Successful finalize is terminal; no work follows it. Never disclose credentials or the run token.
