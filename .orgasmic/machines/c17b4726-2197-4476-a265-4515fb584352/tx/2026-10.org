@@ -1584,3 +1584,20 @@
 :DELIVERY:     delivered
 :EVENT_ID:     09fb172a-c855-4c26-aac8-52905929fa84
 :END:
+
+* TX 2026-10-30 Fri 20:54:18 run.message TASK-E9C1M
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-114fd1e5-47e1-4754-8cdf-5c5e8ef4c8a1
+:TIME:         [2026-10-30 Fri 20:54:18]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-E9C1M
+:REASON:       Addition to my answer on ask-e770599d (from Soma, who independently checked: frozen source SHA c7c7e53e…a31c8; framework.ts:20589–20598 and 20726–20744 refuse !decision.store before the push/channel handlers). In the old/new comparison, keep THREE things separate: read permission, storage, and wake. The synthetic baseline has readJoinedChannels:true. Don't map the old write/wake whitelist onto a narrower new readChannels: a read whitelist must cover all joined channels the old pair read. Fixture rows required: (a) valid ambient context in a joined channel → stored, no wake, on BOTH pairs; (b) an unreadable/invalid envelope → no store, on both. An owner decision appears only for an evidenced old/new effect difference with file:line; the host-only inference from REVIEW2 M1 must not become an owner decision.
+:RUN_ID:       run-01M6797GCPGMBCQHR82W9DM5HG
+:MESSAGE_ID:   msg-3e53da2043254427a5017fa8f1abf491
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     54cb797e-74ec-40cf-9889-b5c42168a95e
+:END:
