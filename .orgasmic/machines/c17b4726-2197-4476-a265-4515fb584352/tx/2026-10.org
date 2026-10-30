@@ -1254,3 +1254,21 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     c513e604-c47d-44cb-be06-50b56fb7ed17
 :END:
+
+
+* TX 2026-10-30 Fri 20:33:51 run.message TASK-E9C1M
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-8b706dcd-16df-4a64-9b12-4ce37adde0b7
+:TIME:         [2026-10-30 Fri 20:33:51]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-E9C1M
+:REASON:       CORRECTION to my brief (it overrides the "vendor POLICY-SHAPES" point). Do NOT copy the private POLICY-SHAPES file or its contents into the repo. Instead, create a purpose-built synthetic public fixture that covers the same policy relationships (grant/mask/admission-selection relations), with no deployment pins, private paths, approval or task evidence, and no incidental live cardinalities (e.g. don't copy instance counts or ID lists). Give the public fixture its own SHA-256 and use that in the docs. Record the private projection→fixture traceability ONLY in your report (not in the repo). The public docs must be reproducible without any /srv paths. Also: the compatibility matrix must separate three columns/sets: (1) stock upstream host, (2) the frozen pr361 deployment pair, (3) the new generic host+connector pair. Say explicitly that "no translator" removing nothing from upstream does NOT resolve the transition/recovery question for the deployed pr361 pair; give the exact supported combinations and the fail-closed boundaries for that transition. Confirm both points in your report.
+:RUN_ID:       run-01M678567E7DC6YEWX7XZHETYW
+:MESSAGE_ID:   msg-99fadcb9e9d8412a953bbef64eeb49c3
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     c710589f-cd0d-480b-8884-9e5890478176
+:END:
