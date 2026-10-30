@@ -2451,3 +2451,34 @@
 :EVENT_ID:     b1490ac9-d902-4bef-9da7-58187502bd90
 :RELEASES_CLAIM_RUN: run-01M67BKXG7E0TFERA7NB5A537K
 :END:
+
+* TX 2026-10-30 Fri 21:38:09 run.message TASK-MHQNZ
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-60dc3929-23f1-4199-bf04-380c4b59363f
+:TIME:         [2026-10-30 Fri 21:38:09]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-MHQNZ
+:REASON:       More binding conditions for revision 2 (Soma): (1) COMPLETENESS = a normal terminal record + the expected case count (declared in advance, per runtime×route×scenario) + a host-side exit-status/deadline receipt from launch.sh. Without all three, the result is INCOMPLETE. On a hard kill there may be no terminal record: keep the verified prefix and label it incomplete; NEVER synthesize a closing record on the host. (2) Traces: chunks or summaries must keep enough syscall/path/timing detail (syscall, path, flags/mode, result, a relative timestamp, pid) to correlate exposure/mutation with the refusal point. A hash of discarded trace bytes is NOT evidence. If the volume exceeds the cap, filter to file syscalls on the store paths, but don't replace them with a hash. (3) In the report: the hash chain proves integrity/truncation, not that the intended experiment happened; state that explicitly. Show the no-op/kill receipts: a mock stream, then a kill in the middle → the checker gives INCOMPLETE with the prefix preserved.
+:RUN_ID:       run-01M67BPB295V5D0XX7A2BKCTVQ
+:MESSAGE_ID:   msg-af3ce5e2e9be4e9a85020cdca3328a4d
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     25375821-6c2f-44d9-aa1b-2dfcf90fed9e
+:END:
+
+* TX 2026-10-30 Fri 21:38:10 dispatch.outcomes_acked theaspirational.connectome-host
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-35f6250e-ac76-4b40-aa65-7e61abcb140f
+:TIME:         [2026-10-30 Fri 21:38:10]
+:TYPE:         dispatch.outcomes_acked
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:REASON:       acknowledged 1 outcome(s)
+:OUTCOME_IDS:  b1490ac9-d902-4bef-9da7-58187502bd90
+:ACKED_BY:     member:tarn2
+:EVENT_ID:     75c5990e-97bf-4c79-87f0-473d0cbcb598
+:END:
