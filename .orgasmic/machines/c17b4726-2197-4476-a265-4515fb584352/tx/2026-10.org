@@ -3888,3 +3888,20 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     eeb018d5-5e0f-428c-95ac-d0e2e2106bce
 :END:
+
+* TX 2026-10-30 Fri 22:53:45 run.message TASK-KY73N
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-27497d1e-802d-47c1-836b-644873c18948
+:TIME:         [2026-10-30 Fri 22:53:45]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-KY73N
+:REASON:       A clarification of the grant point (from Soma), for the verdict: distinguish two paths and do NOT accept one blanket rule "tools grant, not publish" for both: (1) native MCP server send tools (the adapter's own tool, called via a tools/call) and (2) the host's generic `channel_publish` / `channels.publish` path. For each path, find in A 869bb3ad / B 29edcf8b (git show) the actual call path and the effective grant checks (file:line), plus native destination/access policy. A tools grant is not permission widening or owner consent; descriptor claims supply neither. If the new sentence/fixture in bcf28f0e diverges from the code, that's a finding (fix the sentence/fixture, not the permissions) with a severity assessment. No broad audit.
+:RUN_ID:       run-01M67G7Y9RJ91ZSE631MMGJXF2
+:MESSAGE_ID:   msg-504cf933490e42c4abf7805da0b4e4f3
+:FROM:         member:tarn2
+:DELIVERY:     queued
+:EVENT_ID:     ee01d07a-b5b7-459c-bd25-6a6040c32b12
+:END:
