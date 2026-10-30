@@ -1,0 +1,17 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-MHQNZ
+#+orgasmic_version: 2
+
+* IN_PROGRESS TASK-MHQNZ F-host.2b synthetic old-reader/new-store probe
+:PROPERTIES:
+:UID: 177d2fe7-6057-5919-8517-edeecd2d9ab1
+:ID: TASK-MHQNZ
+:PRIORITY: P1
+:END:
+
+** Description
+F-host.2b from docs/design/generic-recipient-host.md §5.1 (TASK-E9C1M). Synthetic old-reader/new-store probe. Phase P (prep): harness, input manifest, image, exact argv and deadline, plus a no-op limits proof, then STOP and report. Phase E (execute) only after Soma's OK on Phase P's exact manifest.
+Envelope (Soma 1793394980.985739): one rootless container, 4GiB/2CPU/256 PIDs, core 0, writable work+tmp ≤1920MiB, nonroot, read-only root and code inputs, cap-drop ALL, no-new-privileges, seccomp, private PID+cgroup, network none, no host ports/home/credential/socket mounts, no rootful/privileged/systemd-in-container, no auto-pull. Keep inspect/kernel/cgroup proof. If the limits can't be enforced, STOP.
+Method: assert installed old payload hashes and versions (not the stale npm lock); new writer/reader = exact packages and commits; controls old→old and new→new, then old-reader→new-store; a separate writable synthetic store copy per attempt, with before/after inventory; refusal must come before application row exposure and storage mutation (header/version reads are allowed); EACCES/import/ABI failures are NOT a pass; native-format compatibility is separated from D-stamp/application-floor claims; no real stores, providers or endpoints.
+** Acceptance
+Phase P report: input-manifest sha256, harness sha256, image ID and digest, full launch argv, whole-command deadline, limits proof.

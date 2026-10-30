@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-SVC77
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Implement TASK-MHQNZ
+:PROPERTIES:
+:UID: 6355e808-89ff-55c3-a0eb-61d28625c155
+:ID: CONV-SVC77
+:PURPOSE: implement
+:OWNER: ["member","tarn2"]
+:PROVIDER: codex
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-mhqnz
+:RUNS:  run-01M67ARH8PK8QF691QCJA440VW
+:CREATED_AT: 2026-10-30T21:16:57Z
+:END:
