@@ -120,3 +120,18 @@
 :RUN_ID: run-01M67GCC0ANSK27TBDG2272A6M
 :EVENT_ID: b48064bc-7501-4bba-bf71-1a1798e1f573
 :END:
+
+* tx-20261030-theaspirationalconnectome-a1fcd45c-ccb1-476a-aef9-ae7b7bfd1a36 conversation.run_released
+:PROPERTIES:
+:TX_ID:   tx-20261030-theaspirationalconnectome-a1fcd45c-ccb1-476a-aef9-ae7b7bfd1a36
+:TIME:    [2026-10-30 Fri 23:03:16]
+:TYPE:    conversation.run_released
+:ACTOR:   orgasmic
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TARGET: ~/.orgasmic/ledgers/theaspirational.connectome-host/.orgasmic/conversations/CONV-B5QKM/node.org
+:REASON: worker finalize for TASK-MHQNZ
+:NODE_ID: CONV-B5QKM
+:RUN_ID: run-01M67GCC0ANSK27TBDG2272A6M
+:EVENT_ID: 14273e96-0f57-4572-b555-757edbe588a0
+:END:
