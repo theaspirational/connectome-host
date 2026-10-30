@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-KY73N
 #+orgasmic_version: 2
 
-* IN_REVIEW TASK-KY73N T1: generic admission scope contract for dynamic registrations, joins and first-contact DMs
+* DONE TASK-KY73N T1: generic admission scope contract for dynamic registrations, joins and first-contact DMs
 :PROPERTIES:
 :UID: ce35fb75-0080-5bff-8c0e-1b84aa07921a
 :ID: TASK-KY73N
