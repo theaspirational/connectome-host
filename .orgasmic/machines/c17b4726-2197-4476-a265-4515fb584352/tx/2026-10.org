@@ -3572,3 +3572,21 @@
 :EFFORT_OVERRIDE: high
 :EVENT_ID:     edbf050a-6203-4708-8c18-684e7bc9c93b
 :END:
+
+
+* TX 2026-10-30 Fri 22:45:20 run.message TASK-KY73N
+:PROPERTIES:
+:TX_ID:        tx-20261030-theaspirationalconnectome-369d564a-7d50-4355-b4c2-9938525f008d
+:TIME:         [2026-10-30 Fri 22:45:20]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-KY73N
+:REASON:       Binding refinements for M2 (from Soma): an "accepted registration" by itself is NOT authoritative parenthood. lookup() must be bound to the actual connection/epoch/registration generation AND to an independently verified native/attested parent relationship; claimed descriptor fields (parent/label/address/metadata) remain inert. Keep the post-await/stale-epoch negatives and the direction of native identity (native facts → verifiedScope, not the other way round) explicit in docs and fixtures. M1: preserve dynamic WAKE as well as read/storage; any narrowing only as a named contract decision (don't propose one). M4: explicitly SUPERSEDE the incapable exact-list config, don't pretend it covers joined/DM/dynamic. M3: a real gate. M5: private tokens outside the publishable tree; scan the checker itself. LOWs bounded, no new infrastructure. In the report, the refined AF-scope API/acceptance tests are clarifications of the existing conditional AF-scope item (8–16 h), not a new item; static API-gap review ≠ implementation/runtime qualification.
+:RUN_ID:       run-01M67FRDPNZHR2ZWVWECNPX3ES
+:MESSAGE_ID:   msg-3bdd77d0fa7f475e9fdf08168dfc18f9
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     a4e2cc2d-1582-4526-a837-e127bc25ccb1
+:END:
