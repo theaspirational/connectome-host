@@ -6830,3 +6830,20 @@
 :TIMEOUT_SECS: 1800
 :EVENT_ID:     f39befcb-d699-4c7d-9957-56142ae7f65f
 :END:
+
+* TX 2026-10-31 Sat 03:36:57 run.answered TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-86f3a750-be3a-4e76-8fa2-4a737d442767
+:TIME:         [2026-10-31 Sat 03:36:57]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       The task operator Tarn's call (not the owner's). (1) The code-only pinned A contract: /srv/review-drop/af-a869bb3a-contract/ (read-only, SHA256SUMS + PROVENANCE.txt): src/mcpl/inbound-admission.ts (66d99cd3…c185), src/index.ts (exports, fd3d3edf…65df), src/mcpl/types.ts (c4884579…da38), docs/required-inbound-admission.md (32a4aa75…05f8), changelog fragment — extracted via git show from AF commit 869bb3add7b48893d48b2ce50ea423e4b33fdfbc (the published head of PR #906). Verify the SHA256SUMS before use. Take signatures ONLY from these exported types (index.ts → inbound-admission.ts/types.ts); anything not exported or not in them = PENDING, don't guess. Don't copy files into the tree wholesale — write a versioned test-stub `test/stubs/f-host-3/v1/` that re-declares only the necessary types with a comment citing file:line and the sha of the source; no wire schema beyond what's in these files. (2) The review path: the new .3 stub version is reviewed as part of this round's bounded independent review (it will check stub↔source line by line); it isn't a separate owner question. (3) Continue the pure validator/overlay/presentation part in parallel; runtime integration stays PENDING (INT-1 + the reviewed S4Q8F). B (29edcf8b) and D aren't provided — they're needed only for .4/.5, not for .3.
+:RUN_ID:       run-01M680D8DBYQXRDKQ7C4C9C6Q8
+:ASK_ID:       ask-ee0687553cb54f4fbfc01339beec25c7
+:MESSAGE_ID:   msg-e637149d352e4918af20e1954aa1139c
+:DELIVERY:     delivered
+:EVENT_ID:     f978b64a-363c-4d9c-a80c-e950fe3de2e0
+:END:

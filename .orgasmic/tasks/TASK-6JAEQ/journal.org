@@ -31,3 +31,19 @@
 :TO_STATE: in_progress
 :EVENT_ID: 8e3d4808-d495-4d18-8462-2ed4ebecf92a
 :END:
+
+* tx-20261031-theaspirationalconnectome-1d6f929e-a5e0-4238-b24c-4615e72f28cc comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-1d6f929e-a5e0-4238-b24c-4615e72f28cc
+:TIME:    [2026-10-31 Sat 03:36:57]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-6JAEQ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: a2c76109-1210-48bc-b05a-380d3545009d
+:END:
+
+ask-ee068755: the worker asked for the code-only A contract. The task operator Tarn's call: /srv/review-drop/af-a869bb3a-contract/ (git show from AF 869bb3ad = the published #906 head: inbound-admission.ts 66d99cd3…, index.ts fd3d3edf…, types.ts c4884579…, docs 32a4aa75…, changelog; SHA256SUMS + PROVENANCE). Signatures only from exported types; a versioned test-stub test/stubs/f-host-3/v1 with file:line/sha citations; anything missing = PENDING. The stub is reviewed within this round's bounded review.
