@@ -31,3 +31,19 @@
 :TO_STATE: in_progress
 :EVENT_ID: 6a71bfed-51e2-4201-b61e-cf4373c7a6d2
 :END:
+
+* tx-20261031-theaspirationalconnectome-c64df2ca-508a-4587-9b20-25ad51c47ffe comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-c64df2ca-508a-4587-9b20-25ad51c47ffe
+:TIME:    [2026-10-31 Sat 07:07:54]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-YXASE
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: ee056128-d737-4490-b685-b7747f5fef6d
+:END:
+
+Operator teardown disposition (Tarn, 2026-10-31 ~07:05Z). This is a separate operator action, not compliance with a general "kill holders" rule. After the base aecd4a8c full suite, the worker stopped correctly before staging the head: 3 orphaned mock-headless-child.ts processes were holding the build root. Their identities were 892709 (start tick 31262496), 892747 (31262530) and 893064 (31262910), all ppid 1830, all in cgroup user@1002/app.slice/run-u71373.scope, which held only those 3. I checked pid, start tick and cgroup together, sent SIGTERM, and after 5 s 0 remained. Fresh witness: /srv/review-drop/TASK-YXASE-ROOT-WITNESS-2.json (96453ba9…57b3be). No wider cleanup. Base observations kept: historical LOWS1 4622/0 vs current 4591/31, an unexplained discrepancy (not "environmental"). Reproducibility and qualification are open.
