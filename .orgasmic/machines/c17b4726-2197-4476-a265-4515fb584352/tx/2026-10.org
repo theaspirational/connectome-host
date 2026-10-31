@@ -8001,3 +8001,21 @@
 :EFFORT_OVERRIDE: medium
 :EVENT_ID:     c7408d12-3d5e-40d8-ae4d-c53159ca9dc3
 :END:
+
+
+* TX 2026-10-31 Sat 05:09:53 run.message CONV-VKXCP
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-5a8de562-97a3-4c82-a71f-a9e1991b5e77
+:TIME:         [2026-10-31 Sat 05:09:53]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         CONV-VKXCP
+:REASON:       Clarification (qualifier Soma via task operator Tarn): review the brief v4.2 /srv/review-drop/tarn-rtaln-20261030/FHOST4-BRIEF-v4.2.md (sha256 63bd6129b4e971b84152e75faf6f4c8473be061c62a2fd238cbd5f1061d0bf33) instead of v4.1 — only §2.2 changed. The install condition must follow the authoritative setting/default of the design and must not invent a new default: no policy → no B; admission-only/explicit false → no B. I cite host:98 (`automaticReplies: false | {timeoutMs}`, explicit 1..60000), host:120/128, H brief :315, and the v1 compiler static-policy.ts:37–43 (absent → refusal, so there is no default). Verify this against the sources: if the design does specify a default-on within an opted-in policy or the default is undefined — a finding (name the gap, don't pick a semantics). Keep the install condition and authorize's literal-true RESULT rule as separate conditions and tests.
+:RUN_ID:       run-01M685PYX318K9Q2ES95D1RR36
+:MESSAGE_ID:   msg-7df0e1de4fc8479cacfb18db7f567a45
+:FROM:         member:tarn2
+:DELIVERY:     queued
+:EVENT_ID:     5639c366-c4ed-4769-a682-13ccd1930cb5
+:END:
