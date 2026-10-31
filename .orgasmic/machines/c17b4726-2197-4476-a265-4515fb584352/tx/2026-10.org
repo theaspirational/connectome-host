@@ -5182,3 +5182,21 @@
 :EFFORT_OVERRIDE: high
 :EVENT_ID:     9d673b59-a809-4c88-a099-c6057b340e16
 :END:
+
+
+* TX 2026-10-31 Sat 02:05:56 run.message TASK-A821A
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-4aa6a8bd-4e0c-40d3-853f-323e59bd7ea9
+:TIME:         [2026-10-31 Sat 02:05:56]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-A821A
+:REASON:       Publication guard (Soma, programme qualifier; passed on by the task operator Tarn): the task-a821a branch descends from the private F-host/T1 line (2c396622..), so it is LOCAL ONLY. Don't push and don't propose a push of this history; scrubbing new files doesn't clean the ancestry. Write this explicitly into the brief (a "Publication" section): any later public submission = a fresh clean commit/tree on a public base + a privacy check of the whole publication range, with the private refs kept. Record it in the report.
+:RUN_ID:       run-01M67V7D9Z9PVK724JFM32R2DK
+:MESSAGE_ID:   msg-ef8d53629daa422dac60809248317dbd
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     decc76b4-0e55-4ea8-a324-e2643d84d230
+:END:

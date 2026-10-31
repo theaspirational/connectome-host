@@ -31,3 +31,19 @@
 :TO_STATE: in_progress
 :EVENT_ID: a8ce4680-3e90-43e3-8450-c29c381bb779
 :END:
+
+* tx-20261031-theaspirationalconnectome-71025092-3154-4797-b891-b70ee41a4bd9 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-71025092-3154-4797-b891-b70ee41a4bd9
+:TIME:    [2026-10-31 Sat 02:05:56]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-A821A
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: f4c9949d-a14c-4081-b92f-0df795832b71
+:END:
+
+Publication guard (Soma 1793412342.402219; passed on by the task operator Tarn): descendants of the private F-host/T1 line (2c396622..a316200c..bff8c46e and everything on top, including task-a821a and the future T2) are LOCAL ONLY; no automatic push of that history; scrubbed new files don't clean the ancestry. A public submission = only a fresh clean commit/tree on a public base + a privacy check of the whole publication range; the private refs are kept. The general topic-push go of gen:exec does NOT override this hold. Passed to run-01M67V7D9Z9PVK724JFM32R2DK; the same condition goes into the T2 brief.
