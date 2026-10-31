@@ -63,3 +63,19 @@ My answer to ask-007c1d48 (the task operator Tarn's call): there's no frozen H p
 :END:
 
 Correction to the programme record (the task operator Tarn, at Soma's request 1793416045): my earlier "T2 ready / prep can start now" meant only PREPARABLE DOCUMENTATION, not an implementable host baseline. T2 is "beyond H's static policy/binder" (host.md:703), and H isn't implemented. T2 implementation depends on H (the TASK-R5BF7 brief), as well as on the reviewed S4Q8F head and the A+B+D release. This task stays docs/stub-only with 4 named blockers.
+
+* tx-20261031-theaspirationalconnectome-c6d603d8-638b-4d4c-ae0f-bc583d61e3b5 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-c6d603d8-638b-4d4c-ae0f-bc583d61e3b5
+:TIME:    [2026-10-31 Sat 03:14:58]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-9MKQH
+:TARGET: .orgasmic/tasks/TASK-9MKQH/node.org
+:REASON: transition TASK-9MKQH to in_progress
+:FROM_STATE: done
+:TO_STATE: in_progress
+:EVENT_ID: 834326b3-7da3-469c-899e-0d422a8a4056
+:END:

@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-9MKQH
 #+orgasmic_version: 2
 
-* IN_REVIEW TASK-9MKQH F-host T2 host mapping: dynamic scope compile/bind against a versioned opt-in view stub (prep, local only)
+* IN_PROGRESS TASK-9MKQH F-host T2 host mapping: dynamic scope compile/bind against a versioned opt-in view stub (prep, local only)
 :PROPERTIES:
 :UID: 773e0cbc-565a-50ce-8823-ef89107fe8e4
 :ID: TASK-9MKQH
