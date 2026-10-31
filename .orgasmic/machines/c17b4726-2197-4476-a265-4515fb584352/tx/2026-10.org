@@ -8248,3 +8248,35 @@
 :ASK_ID:       ask-47c483dbd1b94eda9b87228944bbd428
 :EVENT_ID:     9c9be522-0a31-475a-be07-b384ed845c47
 :END:
+
+
+* TX 2026-10-31 Sat 05:32:12 run.asked TASK-4ZM52
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-973cf7de-78ef-4fbb-94cf-67190390c993
+:TIME:         [2026-10-31 Sat 05:32:12]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-4ZM52
+:REASON:       Head 536b2e23 has fresh passing focused tests (host/stub-of-B), all 23 retained .3 mutants and all 16 new mutants; however v1/v2 typechecks fail TS2339 because TS7 collapses the compiler return type to {} after conditional replyAuthority spread. This is an implementation regression, not a frozen-v1 change; v1 sources remain byte-identical. Proposed fix: add explicit structural return annotation to compileRecipientAdmission (optional inboundAdmission and replyAuthority) as part of the authorized install path, leaving the no-policy return runtime bytes and v1 files untouched. Under the no-retries rule I have not rerun a failed gate. May I make this correction in a new local commit, restage the same root, and requalify the corrected head gates once, retaining all first-head failures?
+:RUN_ID:       run-01M686AMRJEZ0YCY8ZTSHYA17Q
+:ASK_ID:       ask-319d789fb1184183a4f175850fc9d7a9
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     e4cf58a0-3f64-4f76-89a7-3927ade6d904
+:END:
+
+* TX 2026-10-31 Sat 05:32:37 run.answered TASK-4ZM52
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-449dada0-a5c1-40ed-9982-38ab26aea1fb
+:TIME:         [2026-10-31 Sat 05:32:37]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-4ZM52
+:REASON:       Task operator Tarn (not owner): YES, with conditions. This is a fix to your own implementation regression inside the authorised install path (§2.5), not a new .3 edit. (1) A new separate local commit on top of 536b2e23; 536b2e23 and all its first-head results (including the failed v1/v2 TS2339 typechecks with their logs/receipts) are kept and reported as a failed first head, not edited or overwritten. (2) Only an explicit structural return-type annotation of compileRecipientAdmission (optional inboundAdmission/replyAuthority); no runtime changes; v1 files are byte-identical (verify by sha); the no-policy return must stay runtime-identical — show it with a profile-off/feature-off byte check. (3) Add a negative control: the typecheck must catch a wrong type of replyAuthority/inboundAdmission (otherwise the annotation could hide errors) — record the failed negative as expected. (4) Restage the same root with the visible before/after scans as before, closure unchanged. (5) Requalify ONCE the FULL head set at the new commit (typechecks v0/v1/v2/b-contract, focused, all mutants, feature-off, self-test, docs-contract, full suite) — not only the failed gates; base cells c353e1c8 are not rerun if their bindings are identical (label "reused"). No retries.
+:RUN_ID:       run-01M686AMRJEZ0YCY8ZTSHYA17Q
+:ASK_ID:       ask-319d789fb1184183a4f175850fc9d7a9
+:EVENT_ID:     a83320bf-5b2b-470f-bee3-27347e493d44
+:END:
