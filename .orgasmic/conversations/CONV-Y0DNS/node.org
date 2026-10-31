@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-Y0DNS
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN A2 plan v1 independent read-only review
+:PROPERTIES:
+:UID: 8ceed5e8-a4ea-55d3-a13c-0a9e1888113d
+:ID: CONV-Y0DNS
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: 
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: 
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: 
+:RUNS: 
+:CREATED_AT: 2026-10-31T11:23:11Z
+:END:
