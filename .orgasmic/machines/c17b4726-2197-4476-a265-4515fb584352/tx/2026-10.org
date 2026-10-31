@@ -6847,3 +6847,19 @@
 :DELIVERY:     delivered
 :EVENT_ID:     f978b64a-363c-4d9c-a80c-e950fe3de2e0
 :END:
+
+* TX 2026-10-31 Sat 03:37:02 run.asked TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-9ef46a96-71fe-417e-9dee-7a13ddbd1638
+:TIME:         [2026-10-31 Sat 03:37:02]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       May .3 accept the historical readChannels/wakeChannels/replyChannels shape only as an explicitly staged static compiler input, while configured production recipientPolicy fails closed at INT-1 until T2's reviewed selector schema and AF release exist? T1 supersedes the deployment schema while H §6 requires shared recipe/file validation. I will not invent T2 fields or make static-only Mapping X deployable.
+:RUN_ID:       run-01M680D8DBYQXRDKQ7C4C9C6Q8
+:ASK_ID:       ask-9795ca2a1650452785786c22c3f77088
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     b81bc6f7-dd8d-4b5a-9264-0a58de451df7
+:END:
