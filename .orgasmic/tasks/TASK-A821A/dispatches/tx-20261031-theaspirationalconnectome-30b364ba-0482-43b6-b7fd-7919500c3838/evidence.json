@@ -1,0 +1,25 @@
+{
+  "event_count": 457,
+  "tool_call_count": 20,
+  "unparsed_events": 0,
+  "bounded_events": 4,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-A821A-implementer-20261031T020442-run-01M67V7D9Z9PVK724JFM32R2DK.jsonl",
+    "size_bytes": 507789
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T02-04-42-01a18fb3-ba72-7111-9015-d8f5741fa6c7.jsonl",
+    "session_id": "01a18fb3-ba72-7111-9015-d8f5741fa6c7",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll read the repository instructions, verify the pinned inputs and hashes, then check whether the design defines 2a unambiguously before writing anything.Both fixture hashes match, and `git merge-base` confirms the host-design commit is an ancestor of the T1 pin. The design defines 2a at `generic-recipient-host.md:683`: “Synthetic peer/harness and real startup/transport controls; final AF harness consumes the integration tarball.” I’ll keep native qualification and dynamic mapping in their separate slices.I’ve read the frozen design, T1 contract and scope fixture. T1 leaves the AF registration-view packaging pending, so the v0 stubs will preserve that shape with opaque placeholders—not claim an integration API. No TypeScript compiler is on PATH; I’m checking for an existing local compiler without installing dependencies.The v0 declaration stubs pass a compile-only check using an existing local TypeScript compiler; nothing was installed or changed in the dependencies. I’ve also added a bounded gate wrapper. I’ll include the publication guard in the brief: this history is LOCAL ONLY; any later public submission needs a fresh clean commit/tree on a public base and a whole-range privacy check.The brief now maps all 57 scope-fixture case IDs to expectations, planned test labels and mutants to reject. It includes the dependency gates, stub-first order, bounded checks and LOCAL ONLY guard. The extended neutrality checker passes across all nine input surfaces, reporting PARTIAL because no forbidden-name list was supplied.The three concern-scoped commits are complete. All five gates pass at the clean final commit: stub typecheck, fixture self-tests, neutrality (PARTIAL), diff check and input probes. The probes also confirmed that timeout, kill, SIGPIPE and log-cap outcomes stay inconclusive. No harness implementation, dependency changes, live/native runs or push occurred."
+    }
+  ],
+  "narrative_truncated": false
+}
