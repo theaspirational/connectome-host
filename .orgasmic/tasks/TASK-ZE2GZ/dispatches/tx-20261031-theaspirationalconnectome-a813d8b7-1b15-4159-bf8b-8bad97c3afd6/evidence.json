@@ -1,0 +1,25 @@
+{
+  "event_count": 418,
+  "tool_call_count": 17,
+  "unparsed_events": 0,
+  "bounded_events": 5,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-ZE2GZ-implementer-20261031T111354-run-01M68TN0RAHK0KJHXZZ32NJ7P6.jsonl",
+    "size_bytes": 472444
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T11-13-54-01a191aa-87c6-7d33-b37e-18d9c63e2ec3.jsonl",
+    "session_id": "01a191aa-87c6-7d33-b37e-18d9c63e2ec3",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "## Changed\nWrote `a2-v1/A2-PLAN.md`, `FACTS.md`, `SHA256SUMS`, supporting observations, and `report.md` under `$ORGASMIC_EVIDENCE_DIR`.\n\n**Recommendation:** vendored, integrity-pinned AF tarball consumed through a release-relative `file:` spec.\n\nSHA256:\n```text\nA2-PLAN.md  4dd186b2b25dad110fc7da06532ed4d002bea83853950deb8098543036465b51\nFACTS.md    f0a8afa90fd075ae6ec04610f939383e6f38abc233410f689033c2d87a999684\nSHA256SUMS  73adbeae60a85c4068bbada57ae04cfa6d5663202bce1ea80e89ed688da22bfa\n```\n\n## Verification Gates\nRead-only pin, citation, lock/manifests and checksum checks completed; checksums 3/3 OK. HEAD/worktree unchanged. No package execution or Git writes.\n\n## Unmet Criteria\nIndependent review remains outstanding. **UNRESOLVED:** final composed source, toolchain/recipe, archive/path/integrity, emitted declaration closure/digest, release-set digest and future install/lock receipts.\n\nRequired order: **actual A1 → separately authorized A2 manifest/lock scope → actual A3 harness → H assignment**, with SC1–SC6 (a)-semantics settled first. Independent AF build/types work remains unblocked.\n\n## Residual Risk\nPortability, installed type identity and source/dist coherence remain unverified. No readiness claim."
+    }
+  ],
+  "narrative_truncated": false
+}
