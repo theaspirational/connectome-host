@@ -1,0 +1,25 @@
+{
+  "event_count": 226,
+  "tool_call_count": 8,
+  "unparsed_events": 0,
+  "bounded_events": 4,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-A821A-implementer-20261031T022037-run-01M67W4JC6WTSCP6Q62QW7KBY1.jsonl",
+    "size_bytes": 248691
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T02-04-42-01a18fb3-ba72-7111-9015-d8f5741fa6c7.jsonl",
+    "session_id": "01a18fb3-ba72-7111-9015-d8f5741fa6c7",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll verify the review hash and findings, then make the scoped fixes in separate commits. The stub typecheck will remain pending; I won’t acquire or borrow a compiler this round.The review hash matches. The first two fixes are committed: the wrapper now uses a neutral log-directory setting, structural checks reject the tooling/programme identifiers, and supplemental file reads run only in `--docs-contract`. I’m updating the typecheck status and readonly assertion next; no compiler has been run this round.All five assigned gates pass at the clean final commit. The F3 controls removed each supplemental file in a temporary mirror: `--self-test` and default mode exited 0, while `--docs-contract` failed with the file name, without a stack trace or PARTIAL/PASS result. Tracked identifier grep is empty. TS7 validation—including the narrowed readonly assertion—remains pending."
+    }
+  ],
+  "narrative_truncated": false
+}
