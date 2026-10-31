@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-6JAEQ
 #+orgasmic_version: 2
 
-* IN_REVIEW TASK-6JAEQ F-host.3: strict recipe/file mapping, protected overlay, neutral attestation, A callbacks, feature-off (stub-testable part)
+* DONE TASK-6JAEQ F-host.3: strict recipe/file mapping, protected overlay, neutral attestation, A callbacks, feature-off (stub-testable part)
 :PROPERTIES:
 :UID: e14f098f-eae3-56ec-8d9a-7c8edb5aee20
 :ID: TASK-6JAEQ
