@@ -31,3 +31,19 @@
 :END:
 
 Input from 6JAEQ (Soma 1793422270): the RUN- predicate (checker:343) gives a false positive on the real file name test/stubs/f-host-3/run-mutants.mjs when docs-contract is expanded. The fix belongs here: narrow the predicate with positive/negative file-name controls and real-ID controls, WITHOUT widening exclusions.
+
+* tx-20261031-theaspirationalconnectome-a203ecfa-6035-495c-8d8a-7f7a98d3e5fc task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-a203ecfa-6035-495c-8d8a-7f7a98d3e5fc
+:TIME:    [2026-10-31 Sat 06:05:55]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-EC6WW
+:TARGET: .orgasmic/tasks/TASK-EC6WW/node.org
+:REASON: transition TASK-EC6WW to in_progress
+:FROM_STATE: backlog
+:TO_STATE: in_progress
+:EVENT_ID: 07153d5c-3d55-4958-8742-72875c3433e4
+:END:
