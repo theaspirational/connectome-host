@@ -1,0 +1,20 @@
+{
+  "event_count": 249,
+  "tool_call_count": 0,
+  "unparsed_events": 0,
+  "bounded_events": 1,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-EC6WW-reviewer-20261031T061218-run-01M689CS59XDM6G7J7TKZTRFFR.jsonl",
+    "size_bytes": 340175
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.claude/projects/-home-orgasmic--orgasmic-worktrees-theaspirational-connectome-host-task-ec6ww/45a9af84-6444-4355-b2ae-bbf1989a1308.jsonl",
+    "session_id": "45a9af84-6444-4355-b2ae-bbf1989a1308",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [],
+  "narrative_truncated": false
+}
