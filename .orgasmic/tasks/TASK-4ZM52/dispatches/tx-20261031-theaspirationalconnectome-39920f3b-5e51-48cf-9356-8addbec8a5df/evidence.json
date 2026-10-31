@@ -1,0 +1,25 @@
+{
+  "event_count": 633,
+  "tool_call_count": 57,
+  "unparsed_events": 0,
+  "bounded_events": 16,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-4ZM52-implementer-20261031T051842-run-01M686AMRJEZ0YCY8ZTSHYA17Q.jsonl",
+    "size_bytes": 923893
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T05-18-43-01a19065-57d0-7ae2-b008-9ef030416503.jsonl",
+    "session_id": "01a19065-57d0-7ae2-b008-9ef030416503",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "The v4.3 brief hash and both contract manifests match, and the worktree is clean at `c353e1c8`. I’ll check the mandatory unbound-post inventory before editing; any dependency is a §5 stop condition. Expected evidence size: under 256 MiB. No installs or live operations.\nTarn supplied an “ENGINEERING STOP DISPOSITION,” accepted by Soma, allowing compiler-core work to continue while keeping production fail-closed. The found timer/home paths remain an activation blocker requiring an owner decision; they are excluded from .4 acceptance. I’ll retain the inventory and add a labelled stub-of-B demonstration, without changing those routing paths.\nThe existing build root is now bound to `c353e1c8`; the installed closure is unchanged, and fresh base type, focused-test and full-suite gates passed. Base docs-contract failed on the expected filename false positive. Host callbacks and tests are in progress in the worktree; the two new files from .3’s final docs update were the only files needed for base staging.\nAt first head `536b2e23`, the focused tests and all 39 mutants passed, and feature-off output matched the base byte-for-byte. The v1/v2 type gates exposed a return-type inference regression. Tarn authorized a separate type-only correction and one full corrected-head qualification; the failed first-head receipts will remain intact. The existing first-head suite is still running.\nCorrected head `e276024a` passed the typechecks, discriminating negative controls, focused tests, 39 mutants and the full suite: 4,620 tests. Feature-off output is byte-identical to `c353e1c8`, the installed closure is unchanged, and no owned processes remain. Docs-contract remains FAILED as expected; a supplemental selector helper also remains FAILED on its output-format assumption, retained without rerun per Tarn’s direction. I’m assembling the report.\n"
+    }
+  ],
+  "narrative_truncated": false
+}
