@@ -9375,3 +9375,20 @@
 :EFFORT_OVERRIDE: low
 :EVENT_ID:     a05e441f-ad90-4b17-b562-b51c56b7b6f8
 :END:
+
+
+* TX 2026-10-31 Sat 06:19:17 run.asked TASK-EC6WW
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-b2ea3cfb-4a70-4921-926b-1b38f8279b4d
+:TIME:         [2026-10-31 Sat 06:19:17]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-EC6WW
+:REASON:       The new known-FN controls now kill m1 and m4 earlier (named lowercase-all-letter-suffix assertions); their checker exits are 1 as intended, but the harness gates failed because they still expected ordinary-filename names. Under the no-retries rule, may I correct those two expected kill names and rerun only m1/m4, retaining the failed receipts?
+:RUN_ID:       run-01M689RQ8R8ZRCF0GFC588MZEC
+:ASK_ID:       ask-04222f9e11234ccc8b2191ede4038aa1
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     61e57060-4625-4164-8873-5874c8c2d49e
+:END:
