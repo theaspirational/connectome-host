@@ -1,0 +1,17 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-9MKQH
+#+orgasmic_version: 2
+
+* IN_PROGRESS TASK-9MKQH F-host T2 host mapping: dynamic scope compile/bind against a versioned opt-in view stub (prep, local only)
+:PROPERTIES:
+:UID: 773e0cbc-565a-50ce-8823-ef89107fe8e4
+:ID: TASK-9MKQH
+:PRIORITY: P1
+:END:
+
+** Description
+Programme TASK-EM8Q2 (connectome-coordinator). T2 per docs/design/generic-recipient-host.md:703 at a316200c ("T2 host mapping: add dynamic scope compile/bind coverage and feature-off controls beyond H's static policy/binder; do not charge that baseline compile again", 12–20 h), and the T1 contract docs/design/generic-recipient-scope-contract.md at bff8c46e (frozen; §1:74 explicit selector, §4:296-339 the minimal local interface).
+This task = PREP: host mapping against a VERSIONED opt-in-view stub/contract (v0, from T1 §4). Stub tests ≠ real host/AF integration evidence; the integration gate on the reviewed S4Q8F head stays explicit and open.
+Pins: T1 bff8c46e, design a316200c, 2a input 8e92bfbe (frozen, local). A 869bb3ad, B 29edcf8b. D, S4Q8F: PENDING.
+** Publication
+LOCAL ONLY: descends from the private F-host/T1 line (2c396622..a316200c..bff8c46e). Scrubbing new files doesn't clean the ancestry. Any later public submission = a fresh clean commit/tree on a public base + a privacy check of the entire publication range, private refs kept. The general topic-push go doesn't override this hold.
