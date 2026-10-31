@@ -1,0 +1,25 @@
+{
+  "event_count": 204,
+  "tool_call_count": 10,
+  "unparsed_events": 0,
+  "bounded_events": 2,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-EC6WW-implementer-20261031T063505-run-01M68APG9M4RAEENTCSCDZ8H0H.jsonl",
+    "size_bytes": 460738
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T06-05-56-01a19090-93cb-77d2-b954-01b9f00c8826.jsonl",
+    "session_id": "01a19090-93cb-77d2-b954-01b9f00c8826",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "The `model` gate expectation conflicts with the existing inputs: `model` appears literally in the checker, H brief, scope contract and stub contract. Changing benign controls alone cannot make the full scan pass without weakening naming checks or editing those inputs. I’ll ask Tarn to resolve that expectation."
+    }
+  ],
+  "narrative_truncated": false
+}
