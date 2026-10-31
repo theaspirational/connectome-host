@@ -8467,3 +8467,21 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     3be51f01-920a-49a3-92ef-17c173512221
 :END:
+
+
+* TX 2026-10-31 Sat 05:43:46 run.message TASK-4ZM52
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-0e4c4302-796c-449f-a09f-df2a46f42821
+:TIME:         [2026-10-31 Sat 05:43:46]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-4ZM52
+:REASON:       An addition to the brief (qualifier Soma via task operator Tarn): check the zero-selection guard separately. The f4-final-selectors helper FAILED (a Bun output-format assumption) and did not record the child exit code, so it is not proof. Narrow control: (a) run one bun test with a selector that matches 0 tests (e.g. `bun test --test-name-pattern '^NO_SUCH_WITNESS$' test/recipient-reply.test.ts`, with the same Bun binary 1.4.3) in a bounded way (timeout) and RECORD the actual child exit code and the output; (b) check that test/stubs/f-host-4/run-mutants.mjs and f-host-3/run-mutants.mjs reject an empty mutant selection / a missing named (fail) witness — by reading the code at the file:line level and, if cheap, with one invocation with a non-existent mutant/witness, recording the exit. Don't rerun the full suite for this. If it can't be established — write explicitly "zero-selection guarantee unproven". Keep docs-contract FAILED and the helper FAILED separate from successful gates; no "all gates pass".
+:RUN_ID:       run-01M687P160NZ9GVA0JRSA9S5C2
+:MESSAGE_ID:   msg-2188df08bd5441cfb82ffb62b0653db6
+:FROM:         member:tarn2
+:DELIVERY:     queued
+:EVENT_ID:     e9f3a230-6f23-44e6-a3a3-ebc3f2548601
+:END:
