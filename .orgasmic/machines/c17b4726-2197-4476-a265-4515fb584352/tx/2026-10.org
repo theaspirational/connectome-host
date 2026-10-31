@@ -10602,3 +10602,19 @@
 :DELIVERY:     delivered
 :EVENT_ID:     8a9edf74-6e29-412a-aa6a-8546943d174c
 :END:
+
+* TX 2026-10-31 Sat 07:13:23 run.asked TASK-YXASE
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-41a9b538-153d-4033-9a75-56021f5fcebc
+:TIME:         [2026-10-31 Sat 07:13:23]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-YXASE
+:REASON:       Head post-suite STOP, no kills or wider cleanup: the single planned head full cell completed 4640 pass / 31 fail (4671 tests, 270 files). Exact per-test comparison is unchanged for all 4622 existing tests; 49 new tests pass. At 07:13:13Z the same survivor scan found three mock children holding head cwd: PID 929169, 929207, 929543. Full pid/start/cgroup/status/cmdline is preserved in ~/.orgasmic/runs/run-01M68BQNWKZMKDDVVHNTD2P4MQ/evidence/head-survivors.json and head-postsuite-visible.json. Root sources and closure still match manifests. Please provide the operator teardown disposition for these holders; I will run no extra base/head test cell and perform no kills.
+:RUN_ID:       run-01M68BQNWKZMKDDVVHNTD2P4MQ
+:ASK_ID:       ask-6d1b6740993a4da9b301105dd895952b
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     d51b87bd-0206-4f99-ab6a-a94e7546c00f
+:END:
