@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-94F2P
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Review TASK-6JAEQ
+:PROPERTIES:
+:UID: 884d29dd-0d70-5edf-91a7-268a54438b41
+:ID: CONV-94F2P
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: claude
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-6jaeq
+:RUNS: 
+:CREATED_AT: 2026-10-31T04:01:23Z
+:END:
