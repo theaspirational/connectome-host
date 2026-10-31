@@ -95,3 +95,19 @@ Classification of the stub-types gate (Soma 1793412650.804309; passed on by the 
 :END:
 
 Soma 1793413267.355179 (passed on by the task operator Tarn to run-01M67W4JC6WTSCP6Q62QW7KBY1): F1 stays PENDING until the host's declared closure exists; no standalone compiler acquisition. The bounded brief can be accepted as input without a qualified type gate. F3: --docs-contract must FAIL with the file name when a required stub is missing (not PASS/PARTIAL); only --self-test/default don't depend on the stubs; mirror controls for both. F4: discriminating (TS2542 after narrowing), validation on the pinned compiler PENDING. Scrub the private coupling; LOCAL ONLY; later a fresh public tree + a range check. No CI/permission changes or secrets.
+
+* tx-20261031-theaspirationalconnectome-a8358888-6a24-4880-a9e3-9be81f727347 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-a8358888-6a24-4880-a9e3-9be81f727347
+:TIME:    [2026-10-31 Sat 02:31:25]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-A821A
+:TARGET: .orgasmic/tasks/TASK-A821A/node.org
+:REASON: transition TASK-A821A to in_progress
+:FROM_STATE: done
+:TO_STATE: in_progress
+:EVENT_ID: f513b558-69a2-413f-897f-e2f074b96a7a
+:END:
