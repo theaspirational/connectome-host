@@ -143,3 +143,19 @@ Review 2 APPROVE on 9c6f6ea1..c9f0991d (27d354e4…), scaffolding only. LOW roun
 :END:
 
 Correction to the posting of review 2 (/srv/review-drop/TASK-6JAEQ-FIX1-REVIEW.md 27d354e4…): the 7 cases with the token `recipientPolicy` in a non-policy position (args string, server id, env key, top level, unknown top object, escaped string, array of objects) + numbers-and-escapes are IDENTICAL base d7154d79 vs head c9f0991d (ok:true), not "changed". The 11 changed = 3 corpus cases × 2 functions with a real server-level `mcplServers.<id>.recipientPolicy` (incl. a duplicate id/root) + 5 direct readOverlayEntry/composeOverlay calls with a tombstone+policy. Source: the reviewer's evidence probe/rv-overlay-diff.ts, rv-overlay-{base,head}.json. A bounded claim: no newly refused policy-free case in THIS synthetic corpus; not proof for every config. The guard scope = an own key recipientPolicy of a server definition directly under the servers field.
+
+* tx-20261031-theaspirationalconnectome-081385d1-0e3c-466d-aa70-47af3c619196 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-081385d1-0e3c-466d-aa70-47af3c619196
+:TIME:    [2026-10-31 Sat 04:51:28]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-6JAEQ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: f3b53fc4-41ab-4aef-be26-f2426e1a704e
+:END:
+
+Soma (1793422270): the .3 compiler-core freeze is allowed WITH a FAILED docs-contract — a declared false positive on the file name test/stubs/f-host-3/run-mutants.mjs (the RUN- predicate checker:343); don't rename the file or change the enumeration. Record: the exact false positive, the expanded input coverage, the manual content findings separately; no "all gates pass" or automatic privacy-clean. The freeze does NOT waive later publication/history/privacy gates or the private ancestry hold. The predicate fix — TASK-EC6WW (positive/negative file-name controls and real IDs, without widening exclusions).
