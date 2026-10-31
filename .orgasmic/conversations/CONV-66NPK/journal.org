@@ -15,3 +15,18 @@
 :EVENT_ID: d8419576-c6cf-4e1e-8109-d6305f4618a2
 :REQUEST_REPLAY_V1: {"request_id":"tarn-t2core-brief-check-1","mutation":{"operation":"conversation.created","project_id":"theaspirational.connectome-host","payload_sha256":"242eef6a922818cb63c7075767d449d3af689a565c5ce45b36b4fb2e5bce1a99"},"mutation_id":"CONV-66NPK","written_paths":[{"project":"theaspirational.connectome-host","relative":".orgasmic/conversations/CONV-66NPK/node.org"},{"project":"theaspirational.connectome-host","relative":".orgasmic/conversations/CONV-66NPK/links.org"},{"project":"theaspirational.connectome-host","relative":".orgasmic/conversations/CONV-66NPK/journal.org"}]}
 :END:
+
+* tx-20261031-theaspirationalconnectome-3ba1d431-6a94-4aeb-a40d-5ae49ea5f3ca conversation.run_started
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-3ba1d431-6a94-4aeb-a40d-5ae49ea5f3ca
+:TIME:    [2026-10-31 Sat 06:08:18]
+:TYPE:    conversation.run_started
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TARGET: ~/.orgasmic/ledgers/theaspirational.connectome-host/.orgasmic/conversations/CONV-66NPK/node.org
+:REASON: dispatch attempt started
+:NODE_ID: CONV-66NPK
+:RUN_ID: run-01M6895DSRYCSMP5D3EK0BZWE6
+:EVENT_ID: d0ebff45-a57f-43f3-a4bd-e811b2c2e252
+:END:
