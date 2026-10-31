@@ -77,3 +77,19 @@ Operator record (Tarn; qualifier Soma 1793447209). These are the A2 v1.1 worker 
    - result: both exited 0; clean=yes
 
 `-I -B` prevents neither file I/O nor subprocesses. The actual reads, writes, imports and process calls are UNKNOWN until the targeted reviewer, CONV-4K15S run-01M68WDEWCARZ41WZ4EY1WJEBD, inspects the source, without rerunning it. My earlier statement in Slack 1793447100 that I counted them as stdlib text checks was unverified, and I withdraw it. Updater UNSUPPORTED is a plan/exit gate only, not an implemented refusal.
+
+* tx-20261031-theaspirationalconnectome-9d99395a-5557-421c-8e76-bb3d7682fd1b comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-9d99395a-5557-421c-8e76-bb3d7682fd1b
+:TIME:    [2026-10-31 Sat 11:57:10]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-ZE2GZ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: b141fab6-74fa-4947-b35e-72605f701182
+:END:
+
+A2 v1.1 accepted as STRATEGY/PLAN ONLY (REVIEW1 condition 4; qualifier Soma 1793447763). This is NOT A1, not actual A3, not a manifest/lock/install/pack/publication/adoption go, and not an H assignment. SC(a) is confirmed as required contract subjects, not as satisfied. Binding errata: /srv/review-drop/tarn-rtaln-20261030/A2-PLAN-v1.1-ERRATA1.md sha256 0e6116dfd799c8728039b6834c593711bee8ba1cd3a6454758a5c0e32891adcb (E1 allowlist/path-based exclusion, plus later proofs of no binary distribution and of updater early refusal; E2 FACTS-only count; E3 final seal log …01M68WBVX121… and SUMS 4c0dac68, with the superseded 21728cdc preserved; E4 ci.yml path). Check: A2-PLAN-v1.1-CHECK1.md 2db42fa4…30e4. Reviewer checker deviation handoff: A2-PLAN-v1.1-CHECK1-CHECKER-HANDOFF/ (SUMS 180f4aea371605f92515d9e32ddf5760f84cbb12f2ac946963f3283df73fa16b). Helpers are labelled narrowly: bounded text/hash and manifest verification, without writes.
