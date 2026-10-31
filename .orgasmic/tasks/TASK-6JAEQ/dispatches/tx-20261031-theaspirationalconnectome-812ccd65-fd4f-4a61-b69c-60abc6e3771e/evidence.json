@@ -1,0 +1,25 @@
+{
+  "event_count": 727,
+  "tool_call_count": 37,
+  "unparsed_events": 1,
+  "bounded_events": 4,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-6JAEQ-implementer-20261031T041145-run-01M682G1X93YCCNXW0A8725SAN.jsonl",
+    "size_bytes": 838651
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T03-35-17-01a19006-a5ce-7c13-889d-67a248dd6c87.jsonl",
+    "session_id": "01a19006-a5ce-7c13-889d-67a248dd6c87",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll verify the review and its probes, then check the inference rule against the frozen documents before editing. I’ll reuse the existing isolated installs, make no new installs, and keep runtime-binding limitations explicit.\nThe operator confirmed that inference has a separate documented rule: explicit lane permission, plus the common key/lifetime/abort checks—not the push wake ceiling. I’ll document that exemption and add controls for both widening it and incorrectly borrowing the push ceiling.\n\nThe overlay fixes are in place, and I’m adding pinned v1 opacity diagnostics and recipe-loader coverage to the feature-off probe.\nThe fix commit is `c9f0991d`. As confirmed by the operator, I’m preserving the original `d7154d79` base, making no installs, and treating old-head passes only as labelled reference observations.\n\nBefore staging the changed source and test files into the existing head root, I’m checking that it is idle. I’ll verify the closed source inventory and the unchanged dependency manifest before running fresh gates.\nThe original base suite passed again: 4,579 tests. Head staging is still stopped, and no files have been copied into that root.\n\nThe supplementary scan found no head references, but three same-user services are unreadable through `/proc`: systemd, sd-pam, and gpg-agent. I’m escalating that visibility gap rather than assuming the root is idle.\nThe head was staged after zero-reference worker scans, supplemented by the operator’s separately attributed witness for the unreadable services. Its closed inventory matches all 437 source/test/stub files at the fix commit; no extra files or host build outputs were found. The installed dependency manifest is unchanged.\n\nFresh head checks passed: typechecks, v0/v1 diagnostic controls, 93 focused tests, all 24 mutants, and the expanded byte-identical feature-off probe. I’m starting the final head suite.\nThe final head suite passed: 4,600 tests, zero failures. Post-gate checks still show the same 437-file closed source inventory and byte-identical installed manifests; no extra source files or stale host build outputs appeared.\n\nI’m finishing the report and helper-process reconciliation. Runtime binding, protected-overlay production-path proof, and the documented bug-report composition limitation remain unchanged.\nFix round 1 is complete at local commit `c9f0991d`. All fresh assigned checks passed, including the matched suites, 93 focused tests, 24 mutants, pinned v1 diagnostics, and expanded feature-off comparison. No owned helpers remain.\n\nThe report records the reused observations, quiescence limitations and operator witnesses, and remaining runtime gates. No push was performed.\n"
+    }
+  ],
+  "narrative_truncated": false
+}
