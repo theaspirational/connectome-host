@@ -17,7 +17,7 @@
 :HARNESS_ARGS: 
 :MODE: 
 :MACHINE: c17b4726-2197-4476-a265-4515fb584352
-:WORKTREE:  ~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-m8yb5-review
-:RUNS:  run-01M684X06K5QWATMHANGGGRKCN
+:WORKTREE:  ~/.orgasmic/worktrees/theaspirational.connectome-host/task-4zm52
+:RUNS:  run-01M684X06K5QWATMHANGGGRKCN run-01M687P160NZ9GVA0JRSA9S5C2
 :CREATED_AT: 2026-10-31T04:53:34Z
 :END:
