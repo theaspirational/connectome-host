@@ -7351,3 +7351,19 @@
 :TIMEOUT_SECS: 1800
 :EVENT_ID:     15065af0-9925-4b1a-a042-c5d7af9a0f4d
 :END:
+
+
+* TX 2026-10-31 Sat 04:23:42 run.answered TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-fb9b3fdd-950b-4210-8186-656ffbad9221
+:TIME:         [2026-10-31 Sat 04:23:42]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       Task operator Tarn's answer: a quiescence witness from the operator (as root, a separate observation): at 2026-10-31T04:23:31Z for pid 1830 (systemd, starttime ticks 39736), 1907 (sd-pam, 39737), 3182 (gpg-agent, 40128): cwd/root/exe/all fd (39/7/11) and maps — 0 references to the realpath of the head root. Plus my earlier full root scan ≈04:19Z: refs=0 across all pids. This is point-in-time evidence, not a lock. Treatment: record these three as "same-user, unreadable for the worker, covered by the operator's root witness at the specified time" — a separate line, not your measurement; the 252 root pids — the residual is covered by the same root scan (also attributed to the operator). The first parser failure stays recorded. You may stage under a separate gate: immediately before and after — your /proc scan + manifest/before-after hashes, and the no-concurrent-writer boundary for the whole staging→gates period. If the scan before staging shows a new reference or a new unreadable uid-1002 pid (not these three with the same start ticks) — STOP and ask. Don't touch the services.
+:RUN_ID:       run-01M682G1X93YCCNXW0A8725SAN
+:ASK_ID:       ask-5a0bd504382c48249e91443b97154a60
+:EVENT_ID:     79e81b6e-6492-4b18-bcec-e58ad01ebb43
+:END:
