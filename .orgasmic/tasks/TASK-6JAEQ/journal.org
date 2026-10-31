@@ -1,0 +1,17 @@
+#+title: orgasmic journal TASK-6JAEQ
+#+orgasmic_version: 2
+
+* tx-20261031-theaspirationalconnectome-92a7e4f9-3319-4eb1-a692-b182efc86c45 task.created
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-92a7e4f9-3319-4eb1-a692-b182efc86c45
+:TIME:    [2026-10-31 Sat 03:35:01]
+:TYPE:    task.created
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-6JAEQ
+:TARGET: .orgasmic/tasks/TASK-6JAEQ/node.org
+:REASON: created task TASK-6JAEQ
+:EVENT_ID: d6821db5-6577-4595-b306-7a4c0a764884
+:REQUEST_REPLAY_V1: {"request_id":"tarn-fhost3-task/tx","mutation":{"operation":"task.created","project_id":"theaspirational.connectome-host","payload_sha256":"091f83aedd5ce140a7baeee45925e5d17c97276fd051dcb1c7cb0687f0efe20e"},"mutation_id":"TASK-6JAEQ","written_paths":[{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-6JAEQ/node.org"},{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-6JAEQ/journal.org"}]}
+:END:

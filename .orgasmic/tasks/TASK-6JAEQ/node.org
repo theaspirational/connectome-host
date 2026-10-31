@@ -1,0 +1,17 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-6JAEQ
+#+orgasmic_version: 2
+
+* BACKLOG TASK-6JAEQ F-host.3: strict recipe/file mapping, protected overlay, neutral attestation, A callbacks, feature-off (stub-testable part)
+:PROPERTIES:
+:UID: e14f098f-eae3-56ec-8d9a-7c8edb5aee20
+:ID: TASK-6JAEQ
+:PRIORITY: P1
+:END:
+
+** Description
+F-host.3 per the frozen H brief docs/design/f-host-h-brief.md at d7154d79b161e0827637e715b0952001b010b393 (TASK-R5BF7; reviews /srv/review-drop/TASK-R5BF7-REVIEW1.md, TASK-R5BF7-LOWS.md). Goal verbatim from generic-recipient-host.md:685@a316200c.
+First step: acquire the declared host closure from the repo's own lockfile (TS 7.0.2, npm ci --ignore-scripts), isolated, code-only; no borrowed compiler, no blanket lifecycle scripts, no caret resolution. Then the stub-testable recipe mapping/policy/protected overlay/profile-off. Real A/B/D API/release integration stays PENDING on INT-1 and the reviewed S4Q8F.
+
+** Publication
+LOCAL ONLY. All descendants of the private F-host/T1 line (2c396622..a316200c..bff8c46e..d7154d79) — no automatic push. Scrubbing new files doesn't clean ancestry. A public submission needs a fresh clean commit/tree on a public base, a privacy check of the whole range, and the private refs kept. The gen:exec topic-push go doesn't override this.
