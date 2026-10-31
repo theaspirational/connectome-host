@@ -5882,3 +5882,91 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     2d883ef9-8c7c-49e5-9891-85993a379116
 :END:
+
+* TX 2026-10-31 Sat 03:05:08 manager.dispatch_started TASK-9MKQH
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-0258f529-2f53-4f7d-b0bb-57c8425816e4
+:TIME:         [2026-10-31 Sat 03:05:08]
+:TYPE:         manager.dispatch_started
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-9MKQH
+:TARGET:       .orgasmic/tmp/sessions/dispatch-TASK-9MKQH-implementer-20261031T030508-run-01M67YP2548BACQSKEP8MKY1QE.jsonl
+:REASON:
+:KIND:         implementer
+:HARNESS:      codex
+:PROTOCOL:     app-server
+:TRANSPORT:    spawn
+:BRIDGE:       none
+:MULTIPLEXER:  none
+:WORKTREE:     ~/.orgasmic/worktrees/theaspirational.connectome-host/task-9mkqh
+:BRANCH:       task-9mkqh-impl
+:BRIEF_PATH:   .orgasmic/tmp/dispatch/TASK-9MKQH-implementer/TASK-9MKQH-implementer-bc4b724250a44f7ba3df421b10f03876-brief.md
+:LAST_PATH:    .orgasmic/tmp/dispatch/TASK-9MKQH-implementer/TASK-9MKQH-implementer-bc4b724250a44f7ba3df421b10f03876-last.txt
+:STDOUT_PATH:  .orgasmic/tmp/dispatch/TASK-9MKQH-implementer/TASK-9MKQH-implementer-bc4b724250a44f7ba3df421b10f03876-stdout.log
+:DISPATCH_ATTEMPT: bc4b724250a44f7ba3df421b10f03876
+:STARTED_AT:   [2026-10-31 Sat 03:05:08]
+:LIVENESS:     8e92bfbe30d141140531b170e9ef0421c6a16cad
+:NEXT:         fix-implementer-watch-then-integrate
+:PREFLIGHT:    ok
+:REQUESTER:    member:tarn2
+:CLAIM_RUN:    run-01M67YP2548BACQSKEP8MKY1QE
+:CACHE_SEED:   skipped
+:CACHE_SEED_DETAIL: reason=not-cargo
+:MODEL:        gpt-6.1-sol
+:EFFORT:       high
+:REASON_INITIAL: dispatch service participant worker
+:REQUEST_IDENTITY: {"branch":"task-9mkqh-impl","credential_mode":null,"effort":"high","endpoint":"","from":"8e92bfbe30d141140531b170e9ef0421c6a16cad","governance":null,"harness":"codex","harness_args":null,"kind":"implementer","mcp_isolation":null,"model":"gpt-6.1-sol","protocol":"app-server","provider":null,"resume_from":null,"simulated":"false","speed":null,"subject":"TASK-9MKQH","transport":"spawn","worktree":"~/.orgasmic/worktrees/theaspirational.connectome-host/task-9mkqh"}
+:CODEX_BIN:    /opt/node/bin/codex
+:CODEX_VERSION: codex-cli 0.163.0
+:EVENT_ID:     8bfc9a92-5534-497f-96fd-6b363f13e2a6
+:END:
+
+* TX 2026-10-31 Sat 03:05:09 run.created TASK-9MKQH
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-66e9ea94-a9c9-42bd-a796-1c0c2ba96526
+:TIME:         [2026-10-31 Sat 03:05:09]
+:TYPE:         run.created
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-9MKQH
+:TARGET:       .orgasmic/tmp/sessions/dispatch-TASK-9MKQH-implementer-20261031T030508-run-01M67YP2548BACQSKEP8MKY1QE.jsonl
+:REASON:       dispatch service participant worker
+:RUN_ID:       run-01M67YP2548BACQSKEP8MKY1QE
+:ORIGIN:       cli_dispatch
+:WORKER:       implementer-codex-app-server
+:KIND:         implementer
+:HARNESS:      codex
+:PROTOCOL:     app-server
+:TRANSPORT:    spawn
+:BRIDGE:       none
+:MULTIPLEXER:  none
+:WORKTREE:     ~/.orgasmic/worktrees/theaspirational.connectome-host/task-9mkqh
+:BRIEF_PATH:   .orgasmic/tmp/dispatch/TASK-9MKQH-implementer/TASK-9MKQH-implementer-bc4b724250a44f7ba3df421b10f03876-brief.md
+:LAST_PATH:    .orgasmic/tmp/dispatch/TASK-9MKQH-implementer/TASK-9MKQH-implementer-bc4b724250a44f7ba3df421b10f03876-last.txt
+:STDOUT_PATH:  .orgasmic/tmp/dispatch/TASK-9MKQH-implementer/TASK-9MKQH-implementer-bc4b724250a44f7ba3df421b10f03876-stdout.log
+:DISPATCH_ATTEMPT: bc4b724250a44f7ba3df421b10f03876
+:PID:          4083086
+:DISPATCH_TX:  tx-20261031-theaspirationalconnectome-0258f529-2f53-4f7d-b0bb-57c8425816e4
+:MODEL_OVERRIDE: gpt-6.1-sol
+:EFFORT_OVERRIDE: high
+:EVENT_ID:     7650a797-baa2-45ba-a53a-55bdc177b104
+:END:
+
+* TX 2026-10-31 Sat 03:05:41 run.asked TASK-9MKQH
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-b0471bc2-994a-4c70-8312-2a434cb5d8d5
+:TIME:         [2026-10-31 Sat 03:05:41]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-9MKQH
+:REASON:       At frozen 8e92bfbe, src contains no H recipientPolicy/inboundAdmission/replyAuthority static policy/binder, and T1:324-338 plus v0/stubs.ts:11 leave VerifiedScope opaque. Which frozen H implementation pin and concrete local VerifiedScope representation may T2 consume without rebuilding H or inventing fields?
+:RUN_ID:       run-01M67YP2548BACQSKEP8MKY1QE
+:ASK_ID:       ask-007c1d48adec48c7a7c90a3026ef9293
+:TIMEOUT_SECS: 600
+:EVENT_ID:     01b9b7aa-70dd-4f7c-b642-456117970b06
+:END:
