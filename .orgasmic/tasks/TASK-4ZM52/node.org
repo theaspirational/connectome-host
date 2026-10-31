@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-4ZM52
 #+orgasmic_version: 2
 
-* BACKLOG TASK-4ZM52 F-host.4: B resolver + synchronous authorize (compiler-core, LOCAL ONLY)
+* IN_PROGRESS TASK-4ZM52 F-host.4: B resolver + synchronous authorize (compiler-core, LOCAL ONLY)
 :PROPERTIES:
 :UID: e3c4f190-87be-5dd9-870a-776beffa82ae
 :ID: TASK-4ZM52
