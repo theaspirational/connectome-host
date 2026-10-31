@@ -1,0 +1,20 @@
+{
+  "event_count": 430,
+  "tool_call_count": 0,
+  "unparsed_events": 0,
+  "bounded_events": 5,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-CONV-DC0T7-reviewer-20261031T111923-run-01M68TZ2VVQ150ZS2HPECMSWHE.jsonl",
+    "size_bytes": 734985
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.claude/projects/-home-orgasmic--orgasmic-worktrees-theaspirational-connectome-host-task-conv-dc0t7-review/9fa78fe7-1da7-4e8c-bf6f-715eb9f9432e.jsonl",
+    "session_id": "9fa78fe7-1da7-4e8c-bf6f-715eb9f9432e",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [],
+  "narrative_truncated": false
+}
