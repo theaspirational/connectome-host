@@ -8297,3 +8297,19 @@
 :DELIVERY:     delivered
 :EVENT_ID:     7a1ca622-e52e-4757-ba31-14142caf86ae
 :END:
+
+* TX 2026-10-31 Sat 05:35:38 run.asked TASK-4ZM52
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-27cc8ea5-2924-4d16-8610-43fc23c5633a
+:TIME:         [2026-10-31 Sat 05:35:38]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-4ZM52
+:REASON:       Corrected head e276024a passes v0/v1/v2 typechecks/controls, all four discriminating return negatives, B byte pin, focused tests, 39 mutants and feature-off byte comparison. A supplemental evidence-only zero-selector helper failed because it expected Bun text "0 pass", but Bun 1.4.3 actually emitted "error: regex ... matched 0 tests"; the zero-mutant child failed as expected and the named-failure predicate correctly rejected the zero-test output. No retry or source change made. May I report this supplemental helper as FAILED (harness output-format assumption), retain its raw negative evidence plus the actual 23+16 named-mutant kills as the selector controls, and finish without rerunning it? Full corrected-head suite is already running.
+:RUN_ID:       run-01M686AMRJEZ0YCY8ZTSHYA17Q
+:ASK_ID:       ask-a24ee80809604150ba175d4ef715f80c
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     1cd71214-699c-476e-8086-40303196c630
+:END:
