@@ -1,0 +1,21 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-A821A
+#+orgasmic_version: 2
+
+* BACKLOG TASK-A821A F-host.2a: a bounded brief + API stubs for the harness (from frozen T1)
+:PROPERTIES:
+:UID: 6412b31b-f0bc-5d7d-8630-1314b9b3005b
+:ID: TASK-A821A
+:PRIORITY: P1
+:END:
+
+** Description
+Programme TASK-EM8Q2 (connectome-coordinator). Drafting the INPUT for slice F-host.2a: an exact bounded implementation brief + API stubs + acceptance cases, from the frozen design inputs. This is NOT the 2a implementation; the implementation waits for real pinned dependencies (INT-1 for A+B+D, a reviewed S4Q8F head).
+
+Inputs (pinned): the F-host design docs/design/generic-recipient-host.md at a316200c4781a844d6109a6f8c812c3be99e20b0; the T1 contract docs/design/generic-recipient-scope-contract.md + fixture at bff8c46e3a4c403f62b738cead317863d43fca9c (scope-cases sha256 70a1827c21722b6056ba209928434877f4d4ea729338793c4d95a9e5c5126381; policy-shapes b633a9b7abe8729313f1a4f7bc442dd16e46e04c061d4feae70d9bcd695fd2ed).
+
+** Acceptance
+- The 2a definition is taken from the design docs (cite file:line), not invented.
+- Versioned stub interfaces only for APIs the design/T1 already name; every dependency is marked with its real pin or as PENDING (INT-1, S4Q8F).
+- Acceptance cases are tied to fixture case ids; stub tests are explicitly labelled as non-integration evidence.
+- No new API beyond the design, no wider scope, no private data/internal names in tracked files.
