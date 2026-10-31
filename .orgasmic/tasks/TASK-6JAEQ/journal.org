@@ -63,3 +63,19 @@ ask-ee068755: the worker asked for the code-only A contract. The task operator T
 :END:
 
 ask-9795ca2a: the task operator Tarn's call (engineering): the historical read/wake/replyChannels = only a staged static compiler input in tests, labelled superseded (T1:72); configured production recipientPolicy → fail-closed with a named reason until T2 schema + the AF release; profile-off byte-identical; one validator for recipe and file; no T2 fields/wire; static-only Mapping X isn't deployable (a negative test); a remove-fail-closed mutant must be killed; if it affects recipes without recipientPolicy → ask.
+
+* tx-20261031-theaspirationalconnectome-3c2b3834-961f-4a65-bb19-0e4675503f97 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-3c2b3834-961f-4a65-bb19-0e4675503f97
+:TIME:    [2026-10-31 Sat 04:11:01]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-6JAEQ
+:TARGET: .orgasmic/tasks/TASK-6JAEQ/node.org
+:REASON: transition TASK-6JAEQ to in_progress
+:FROM_STATE: done
+:TO_STATE: in_progress
+:EVENT_ID: a1f9d1e1-4b33-480e-bd40-b79ab0fc7d0d
+:END:
