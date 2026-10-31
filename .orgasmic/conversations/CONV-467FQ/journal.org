@@ -30,3 +30,18 @@
 :RUN_ID: run-01M68D9A4ABFFXF2T0T86P28WW
 :EVENT_ID: 5023cd15-20ce-465a-906b-e983200bad47
 :END:
+
+* tx-20261031-theaspirationalconnectome-46ebccca-4660-41e5-8199-2f8212aa713d conversation.run_released
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-46ebccca-4660-41e5-8199-2f8212aa713d
+:TIME:    [2026-10-31 Sat 07:29:11]
+:TYPE:    conversation.run_released
+:ACTOR:   orgasmic
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TARGET: ~/.orgasmic/ledgers/theaspirational.connectome-host/.orgasmic/conversations/CONV-467FQ/node.org
+:REASON: worker finalize for TASK-YXASE
+:NODE_ID: CONV-467FQ
+:RUN_ID: run-01M68D9A4ABFFXF2T0T86P28WW
+:EVENT_ID: 2d87d602-9312-4db1-ab27-410dbb3ae553
+:END:
