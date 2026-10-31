@@ -1,0 +1,33 @@
+#+title: orgasmic journal TASK-R5BF7
+#+orgasmic_version: 2
+
+* tx-20261031-theaspirationalconnectome-d3f6b419-3e48-4e59-9ceb-e0a12a0a0038 task.created
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-d3f6b419-3e48-4e59-9ceb-e0a12a0a0038
+:TIME:    [2026-10-31 Sat 03:07:43]
+:TYPE:    task.created
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-R5BF7
+:TARGET: .orgasmic/tasks/TASK-R5BF7/node.org
+:REASON: created task TASK-R5BF7
+:EVENT_ID: 8a17f258-0907-439f-aa04-17f3a4063da1
+:REQUEST_REPLAY_V1: {"request_id":"tarn-fhost-h-brief-task/tx","mutation":{"operation":"task.created","project_id":"theaspirational.connectome-host","payload_sha256":"bcb2e85d6fbd974699586ee96d95e17635cb25eb3954ddcb3f48cafacd765954"},"mutation_id":"TASK-R5BF7","written_paths":[{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-R5BF7/node.org"},{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-R5BF7/journal.org"}]}
+:END:
+
+* tx-20261031-theaspirationalconnectome-b1c7ee39-fbb4-4598-852d-5c514b57f7d7 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-b1c7ee39-fbb4-4598-852d-5c514b57f7d7
+:TIME:    [2026-10-31 Sat 03:08:04]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-R5BF7
+:TARGET: .orgasmic/tasks/TASK-R5BF7/node.org
+:REASON: transition TASK-R5BF7 to in_progress
+:FROM_STATE: backlog
+:TO_STATE: in_progress
+:EVENT_ID: 1a95016e-13a0-4c8b-8d48-24054aff4dc1
+:END:

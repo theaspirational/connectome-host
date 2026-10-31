@@ -47,3 +47,19 @@
 :END:
 
 My answer to ask-007c1d48 (the task operator Tarn's call): there's no frozen H pin (the static policy/binder H01-H12 exists only as design a316200c, not implemented), and no concrete VerifiedScope (an open engineering input, T1 :324-338). The round is narrowed to a docs/stub PREP: f-host-t2-brief.md with the definition (host.md:703), named input blockers (a) H pin, (b) VerifiedScope, (c) the reviewed S4Q8F head, (d) the A+B+D integration release, each with what exactly T2 needs; case-id mapping → test → mutant; the registration-view v0 stub only if T1 §4 gives the shape without inventing anything. No production host code, no rebuilding H. LOCAL ONLY.
+
+* tx-20261031-theaspirationalconnectome-0231c39a-51d4-42f9-a02c-b0748d01121a comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-0231c39a-51d4-42f9-a02c-b0748d01121a
+:TIME:    [2026-10-31 Sat 03:08:04]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-9MKQH
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 2dcd9322-69a6-4428-91d0-44764417e129
+:END:
+
+Correction to the programme record (the task operator Tarn, at Soma's request 1793416045): my earlier "T2 ready / prep can start now" meant only PREPARABLE DOCUMENTATION, not an implementable host baseline. T2 is "beyond H's static policy/binder" (host.md:703), and H isn't implemented. T2 implementation depends on H (the TASK-R5BF7 brief), as well as on the reviewed S4Q8F head and the A+B+D release. This task stays docs/stub-only with 4 named blockers.

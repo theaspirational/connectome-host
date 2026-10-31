@@ -1,0 +1,16 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-R5BF7
+#+orgasmic_version: 2
+
+* IN_PROGRESS TASK-R5BF7 F-host H brief: freeze boundaries, inputs and the first implementation slice (.3) of the original host work (docs, local only)
+:PROPERTIES:
+:UID: b9091244-8b39-5775-90ce-2fb9ba655515
+:ID: TASK-R5BF7
+:PRIORITY: P1
+:END:
+
+** Description
+Programme TASK-EM8Q2. H = the original F-host work by design (generic-recipient-host.md §6 :666-694 at a316200c): .2a, .2b, .3, .4, .5, (.6 conditional), G; 52–80 h, already in the DAG — NOT a new bucket. T2 (TASK-9MKQH) is "beyond H's static policy/binder", so it can't be implemented before H.
+This task = the H BRIEF (docs, local): freeze H's boundaries, all inputs (including the host's declared closure/toolchain TS ^7.0.2 as a real input), the order of the existing slices, and a ready brief for the first independently testable implementation slice (expected .3: strict recipe/file mapping, protected overlay, neutral attestation, A callbacks, feature-off controls). VerifiedScope: the OPERATIONS T2 needs (an opaque type + trusted constructors/accessors), not a representation; no invented fields. Separate actual contract decisions from missing artifacts.
+** Publication
+LOCAL ONLY: descends from the private F-host/T1 line (2c396622..a316200c..bff8c46e). Scrubbing new files doesn't clean the ancestry. Any later public submission = a fresh clean commit/tree on a public base + a privacy check of the entire publication range, private refs kept. The general topic-push go doesn't override this hold.
