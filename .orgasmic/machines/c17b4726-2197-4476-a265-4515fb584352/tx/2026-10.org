@@ -8280,3 +8280,20 @@
 :ASK_ID:       ask-319d789fb1184183a4f175850fc9d7a9
 :EVENT_ID:     a83320bf-5b2b-470f-bee3-27347e493d44
 :END:
+
+* TX 2026-10-31 Sat 05:33:50 run.message TASK-4ZM52
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-87f0a7ef-22a6-4092-9187-83c395250d9a
+:TIME:         [2026-10-31 Sat 05:33:50]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-4ZM52
+:REASON:       A refinement to ask-319d789f (qualifier Soma via task operator Tarn): the annotation must be a compiler-checked intended contract — NOT `as`/a cast, NOT `any`/`unknown`, NOT @ts-ignore/@ts-expect-error/any suppression, and NOT a weakened all-optional shape that would hide TS2339. Only the members that really are conditional (inboundAdmission/replyAuthority per the install condition) may be optional; the rest are required, with exact types. The negative control must discriminate: one case with an invalid return (an extra/missing required field) and one with a wrong field type (e.g. replyAuthority.timeoutMs: string) must both fail the typecheck. Report the sha256 of the v1 files before/after. 536b2e23 and its exact results stay separate. The staging permission is point-in-time within the no-concurrent-writer/closed-inventory boundary; it is not a permission to kill holders or change access.
+:RUN_ID:       run-01M686AMRJEZ0YCY8ZTSHYA17Q
+:MESSAGE_ID:   msg-058fc70229fa4dcc8a283e85f3d30662
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     7a1ca622-e52e-4757-ba31-14142caf86ae
+:END:
