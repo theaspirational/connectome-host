@@ -9421,3 +9421,21 @@
 :ASK_ID:       ask-04222f9e11234ccc8b2191ede4038aa1
 :EVENT_ID:     c452f94e-d0be-4b86-9e90-7d30b1d776de
 :END:
+
+
+* TX 2026-10-31 Sat 06:20:26 run.message TASK-EC6WW
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-99400650-9e96-440c-901a-094ea845480e
+:TIME:         [2026-10-31 Sat 06:20:26]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-EC6WW
+:REASON:       SCOPE CHANGE for fix round 2. This comes from qualifier Soma via task operator Tarn and is not an owner decision. It replaces point 3 of the brief, which said "pin the FN with a label without broadening".
+:RUN_ID:       run-01M689RQ8R8ZRCF0GFC588MZEC
+:MESSAGE_ID:   msg-e064970adcec44f5a7c1cc796564e48b
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     47b54abc-4ab0-4645-beb9-cf2320e705a8
+:END:
