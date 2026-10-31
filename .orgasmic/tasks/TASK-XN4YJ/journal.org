@@ -95,3 +95,33 @@ Operator record (qualifier Soma, 1793441667): the worker read the harness finali
 :TO_STATE: in_progress
 :EVENT_ID: 542c65c1-dbfe-4bd6-8eaf-9972b87e3572
 :END:
+
+* tx-20261031-theaspirationalconnectome-ced7b86a-b6a4-4862-b51e-1bfaa076f61d comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-ced7b86a-b6a4-4862-b51e-1bfaa076f61d
+:TIME:    [2026-10-31 Sat 11:29:30]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-XN4YJ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 7fda05d0-0091-4e7f-ba2d-7591e288de97
+:END:
+
+ERRATA to XN4YJ v3.1 drafting input (accepted by qualifier Soma, Slack 1793446147, with both LOWs retained; no new round or re-review). Source: /srv/review-drop/tarn-rtaln-20261030/XN4YJ-DRAFTS-v3.1-CHECK1.md sha256 db858a34c68a5a8251fe9c1b8a3cd3051abe129a9f272278ff781a9af516a899. Drop: /srv/review-drop/tarn-rtaln-20261030/XN4YJ-DRAFTS-v3.1/ SHA256SUMS 32c1248587feee044f6fc46ffca50c940f3c649334c1e3dfc7034af229336a32.
+
+E1 (provenance). AF tag v0.30.0 is an ANNOTATED tag. Tag object: 45aa602cb2284feb3ad9228275d201a414e711ba. Full peeled commit (v0.30.0^{commit}): 630e2a3a0768be031a4329959ab422297bb3857f. v3.1 REPORT.md "Verification Gates" bullet 3 attributes 630e2a3a to bare `rev-parse --verify v0.30.0`; read it as `v0.30.0^{commit}`. DELTA.md:82 is correct as written. Operator Tarn's Slack 1793445172 made the same slip. Actual pins and manifests must use the intended full identity (the peeled commit for source, plus the tag object where tag provenance matters).
+
+E2 (N11:74). Keep the documented divergence: N11 re-derives channel identity, does not forward the predicate's channelId, and refuses a 33+ depth (A:src/mcpl/registration-view.ts:77-82 has no depth bound), so this is not equivalence. ADD the production-path preservation cites and conditions:
+- T:src/recipient-admission.ts:177-185: channels/incoming → ownData(item,'channelId'); push/event → ownData(ownData(item,'origin'),'mcplChannelId'); present-but-invalid evidence denies at :185.
+- T:src/recipient-admission.ts:119-120: same derivation on the reply path.
+- T:src/recipient-admission.ts:171: key === input.connection already enforced.
+- A:src/mcpl/registration-view.ts:141: AF uses the identical lane-conditional derivation.
+Condition: preservation holds only for these existing call sites. The new inconsistent-channelId refusal can't fire at any of them, which is what makes it safe to add. It doesn't cover future callers.
+
+E3 (minor). In the N11 §4 table, the ":94" row cites a comment line. The obligation is the ABSENCE of an early `return true` after :87-93; the substance is unchanged.
+
+Retained: R09 stays in its unsupported bucket alongside the 30 classified rows (E24/I3/P2/S1; 9/16/2/3).
+This closes the correction step only. A2 (TASK-ZE2GZ), A1, A3 and SC1(a)-SC6(a) remain prerequisites. No implementation, acquisition or execution clearance.
