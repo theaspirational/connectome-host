@@ -6863,3 +6863,20 @@
 :TIMEOUT_SECS: 1800
 :EVENT_ID:     b81bc6f7-dd8d-4b5a-9264-0a58de451df7
 :END:
+
+* TX 2026-10-31 Sat 03:37:47 run.answered TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-bbec0338-8244-4b1d-8f19-2b77ee2a37ab
+:TIME:         [2026-10-31 Sat 03:37:47]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       The task operator Tarn's call (engineering, not the owner's; the qualifier Soma is informed): YES, under these conditions. (1) The historical readChannels/wakeChannels/replyChannels shape = only a staged static compiler input in tests/stub fixtures, explicitly labelled `superseded by T1 (T1:72)`; not documented as a deployable recipe shape. (2) Any configured production recipientPolicy in the real recipe/file loader → fail closed (a loud refusal with a named reason: dynamic selector schema/AF release missing), not silently ignored and not fallen back to the current behaviour; profile-off (no recipientPolicy) stays byte-identical. (3) The shared recipe/file validation from §6 = the same validator for both sources, with tests that recipe and file refuse identically. (4) No T2 fields, no new wire members; static-only Mapping X isn't deployable — state it in the docs and give a negative test. (5) A mutant: remove the fail-closed → must be killed. If it turns out fail-closed changes the behaviour of existing recipes without recipientPolicy — stop and ask.
+:RUN_ID:       run-01M680D8DBYQXRDKQ7C4C9C6Q8
+:ASK_ID:       ask-9795ca2a1650452785786c22c3f77088
+:MESSAGE_ID:   msg-193c334549664faf8c5ec6a1eb775e7b
+:DELIVERY:     delivered
+:EVENT_ID:     76236825-4723-45bf-b99a-d63056144afa
+:END:

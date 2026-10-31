@@ -47,3 +47,19 @@
 :END:
 
 ask-ee068755: the worker asked for the code-only A contract. The task operator Tarn's call: /srv/review-drop/af-a869bb3a-contract/ (git show from AF 869bb3ad = the published #906 head: inbound-admission.ts 66d99cd3…, index.ts fd3d3edf…, types.ts c4884579…, docs 32a4aa75…, changelog; SHA256SUMS + PROVENANCE). Signatures only from exported types; a versioned test-stub test/stubs/f-host-3/v1 with file:line/sha citations; anything missing = PENDING. The stub is reviewed within this round's bounded review.
+
+* tx-20261031-theaspirationalconnectome-e61c893b-f285-4d0d-80e3-398a840b2b11 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-e61c893b-f285-4d0d-80e3-398a840b2b11
+:TIME:    [2026-10-31 Sat 03:37:47]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-6JAEQ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 2c1dd74e-8029-4b58-9318-bac75427fcfc
+:END:
+
+ask-9795ca2a: the task operator Tarn's call (engineering): the historical read/wake/replyChannels = only a staged static compiler input in tests, labelled superseded (T1:72); configured production recipientPolicy → fail-closed with a named reason until T2 schema + the AF release; profile-off byte-identical; one validator for recipe and file; no T2 fields/wire; static-only Mapping X isn't deployable (a negative test); a remove-fail-closed mutant must be killed; if it affects recipes without recipientPolicy → ask.
