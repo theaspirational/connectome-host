@@ -63,3 +63,19 @@ Operator teardown disposition (Tarn, 2026-10-31 ~07:05Z). This is a separate ope
 :END:
 
 Operator teardown disposition 2 (Tarn, 07:14Z), separate and not a general rule. After the head suite: holders 929169/929207/929543. Checked ppid 1830, scope run-u71397.scope (only these three), and cmdline mock-headless-child. SIGTERM, 0 remain. Witness /srv/review-drop/TASK-YXASE-ROOT-WITNESS-3.json (6b24f645…918b), 0 hits. Head 4640/31, identical per test to base on the 4622 existing tests; 49 new pass. The historical 4622/0 stays a separate receipt; the discrepancy is unexplained.
+
+* tx-20261031-theaspirationalconnectome-b3c39615-af20-47b8-b907-d066a139cc7f task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-b3c39615-af20-47b8-b907-d066a139cc7f
+:TIME:    [2026-10-31 Sat 07:29:52]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-YXASE
+:TARGET: .orgasmic/tasks/TASK-YXASE/node.org
+:REASON: REVIEW1 approve with F1 MEDIUM (row-class counts) + F3 LOW: one docs/report-only follow-up round
+:FROM_STATE: done
+:TO_STATE: in_progress
+:EVENT_ID: 3004e43d-8538-48ee-a952-f622348d2a04
+:END:

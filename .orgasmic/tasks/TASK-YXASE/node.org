@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-YXASE
 #+orgasmic_version: 2
 
-* IN_REVIEW TASK-YXASE T2 core: dynamic scope selector compiler, test/stub-only (LOCAL ONLY)
+* IN_PROGRESS TASK-YXASE T2 core: dynamic scope selector compiler, test/stub-only (LOCAL ONLY)
 :PROPERTIES:
 :UID: 5fb05ea9-206a-54eb-8208-2f2839d4a05d
 :ID: TASK-YXASE
