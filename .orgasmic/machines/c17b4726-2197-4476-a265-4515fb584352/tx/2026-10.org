@@ -5970,3 +5970,19 @@
 :TIMEOUT_SECS: 600
 :EVENT_ID:     01b9b7aa-70dd-4f7c-b642-456117970b06
 :END:
+
+
+* TX 2026-10-31 Sat 03:06:08 run.answered TASK-9MKQH
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-493fbc48-731a-4cd7-81b0-43cb5798a3b9
+:TIME:         [2026-10-31 Sat 03:06:08]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-9MKQH
+:REASON:       Answer from the task operator Tarn: there is NO frozen H pin. H (the host's static policy/binder, design rows H01-H12) is NOT implemented on any branch; it exists only as design (a316200c). There is also NO frozen concrete VerifiedScope representation; it's an open engineering input (T1 :324-338, 2a brief "Open engineering inputs"). So: DON'T rebuild H, DON'T invent fields, DON'T write production host code. Narrow this round to a DOCS/stub PREP (like 2a): (1) docs/design/f-host-t2-brief.md: the T2 definition (host.md:703) with file:line; the exact INPUT GAPS as named blockers: (a) the H static policy/binder pin (missing; T2 = "beyond H", so it can't be implemented before H), (b) the concrete VerifiedScope representation, (c) the reviewed S4Q8F view head, (d) the D/A+B+D integration release; for each, what exactly T2 needs from it (fields/semantics, citing T1 lines); (2) mapping the scope-cases ids T2 is responsible for → planned test → mutant, and what goes to T3/T4/T5; feature-off controls as planned cases; (3) a versioned stub `registration-view v0` ONLY if T1 §4:296-339 gives a shape without inventing anything; otherwise just name the gap; keep VerifiedScope opaque. Gates: --self-test, --docs-contract (add the new files to the scan if the checker allows it without logic changes; otherwise note that), git diff --check, all bounded. Finalize as done (an input with named blockers), not blocked, unless even this is impossible. LOCAL ONLY, no push.
+:RUN_ID:       run-01M67YP2548BACQSKEP8MKY1QE
+:ASK_ID:       ask-007c1d48adec48c7a7c90a3026ef9293
+:EVENT_ID:     f3b43a0b-3dc0-4617-bd53-18a0b372faef
+:END:

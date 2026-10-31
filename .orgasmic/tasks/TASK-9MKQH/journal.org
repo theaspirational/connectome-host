@@ -31,3 +31,19 @@
 :TO_STATE: in_progress
 :EVENT_ID: cab86572-84ae-4950-8c67-38016f2b913d
 :END:
+
+* tx-20261031-theaspirationalconnectome-6a1b906e-bc02-481b-8c1b-bb07f984039a comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-6a1b906e-bc02-481b-8c1b-bb07f984039a
+:TIME:    [2026-10-31 Sat 03:06:08]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-9MKQH
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: a9d3cfa7-2312-4441-9b57-db7aaf28f101
+:END:
+
+My answer to ask-007c1d48 (the task operator Tarn's call): there's no frozen H pin (the static policy/binder H01-H12 exists only as design a316200c, not implemented), and no concrete VerifiedScope (an open engineering input, T1 :324-338). The round is narrowed to a docs/stub PREP: f-host-t2-brief.md with the definition (host.md:703), named input blockers (a) H pin, (b) VerifiedScope, (c) the reviewed S4Q8F head, (d) the A+B+D integration release, each with what exactly T2 needs; case-id mapping → test → mutant; the registration-view v0 stub only if T1 §4 gives the shape without inventing anything. No production host code, no rebuilding H. LOCAL ONLY.
