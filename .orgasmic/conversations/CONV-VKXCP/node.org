@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-VKXCP
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN F-host.4 brief v4.1 bounded re-check (read-only)
+:PROPERTIES:
+:UID: 3f15d708-b1f3-528c-9e4b-c18836aa8bb6
+:ID: CONV-VKXCP
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: 
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: 
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE:  ~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-vkxcp-review
+:RUNS:  run-01M685PYX318K9Q2ES95D1RR36
+:CREATED_AT: 2026-10-31T05:07:44Z
+:END:
