@@ -1,0 +1,12 @@
+A READ-ONLY bounded contract check of the T2 core brief (dynamic scope selector compile/bind, compiler-core, LOCAL ONLY) BEFORE implementation. Brief: /srv/review-drop/tarn-rtaln-20261030/T2CORE-BRIEF-v2.md (sha256 e06e00fd497733e0d27e4c9d999b1225150c2573c7565cc8297ae8630b864590 — verify it). Task operator Tarn, qualifier Soma; nothing is an owner decision. No builds/installs/edits/network; only git show/grep/sha256sum.
+Sources: connectome-host clone /home/orgasmic/src/connectome-host (T1 bff8c46e: docs/design/generic-recipient-scope-contract.md; T2-input 9d022502: docs/design/f-host-t2-brief.md + test/stubs/f-host-t2/v0; design a316200c: docs/design/generic-recipient-host.md; .3 c353e1c8; .4 aecd4a8cafe470ad2bbe47b5087c1ec454eef62f: src/recipient-admission.ts, src/recipient-scope.ts); AF clone /home/orgasmic/src/agent-framework at a0970645d403a7a76449221fc36f240a7aa2464b (src/mcpl/registration-view.ts, docs/registration-scope-view.md).
+Check:
+1) Every citation/pin in the brief resolves and says what the brief claims (line numbers, shas, ancestry; 9d022502 is NOT an ancestor of aecd4a8c — check).
+2) Is the separation in §2 correct: what H actually supplies (the opaque VerifiedScope brand without a constructor/accessor; TrustedRecipientRead; the ops signatures) vs proposed doubles vs still missing (production issuance/generation binding)? Does the brief overstate gap closure in §1?
+3) Does the selector work in §3 match T1 :40–90 and T2-input "Planned host mapping" (independence of read/wake/reply, intersection with read, missing ⇒ deny, unknown ⇒ fail, no defaults, DM by identity, sub-conversation via a current parent)? Contradictions with T1/A/B/.4?
+4) The proposed module-private fact accessor (src/recipient-scope-facts.ts): is it consistent with the recipient-scope.ts comment "No authority factory or made-up fact members are exported while its verifier/projector API is PENDING" and with T1 :336–339? Does it amount to an "invented constructor"? Propose a safer alternative if there is one.
+5) Are the I7 VerifiedRegistrationScope fields sufficient for the selectors; does anything require mappingGeneration semantics beyond current(ref) (the §6 stop)?
+6) Feature-off controls t2-off/* — are they feasible against aecd4a8c without H production loading?
+7) Is the 49/8 allocation and the "stub-of-AF-view" labelling honest; which rows are actually not implementable without T3/T4?
+8) The 10–16 h estimate.
+Verdict: READY / READY WITH CHANGES / NOT READY, with HIGH/MEDIUM/LOW and file:line, plus concrete fix directions.
