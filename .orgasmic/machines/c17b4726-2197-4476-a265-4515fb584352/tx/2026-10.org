@@ -7258,3 +7258,32 @@
 :TIMEOUT_SECS: 1800
 :EVENT_ID:     50624d6c-cb38-44f8-9d0f-f28bccabfbb0
 :END:
+
+* TX 2026-10-31 Sat 04:16:54 run.answered TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-f6c6a2db-3cdb-4886-ba11-af40f15a913a
+:TIME:         [2026-10-31 Sat 04:16:54]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       Task operator Tarn's answer: (1) DON'T rebind the base — keep the isolated base at the original d7154d79: it's the reference for the feature-off/profile-off byte-identity (the claim is "unchanged relative to the pre-H.3 host"), and for the matched suite. (2) For the fix-round delta, the previous head 9c6f6ea1 = a REUSED observation from your 9c6f6ea1 receipts (label it "reused", with an identical bindings table: closure manifest 6b426785…, lock 7f0e4849…, TS 7.0.2, node/bun shas, the command). (3) Fresh head at the new HEAD: copy into the existing head root ONLY the tracked src AND test (and fixture/stub) files changed in this round — yes, test inputs included — with sha256 before/after; then prove the whole tracked src/test/stub set of the root = `git ls-tree` HEAD (a hash comparison of every file, not just the copied ones). Don't touch manifests/locks/node_modules; confirm the installed manifest before/after is identical. (4) The v1 types/compiler-control are new gates, head-only, labelled as such (on d7154d79 they don't exist). No new root/install.
+:RUN_ID:       run-01M682G1X93YCCNXW0A8725SAN
+:ASK_ID:       ask-a7622379be9e483da12c90f8c007e13c
+:EVENT_ID:     ec7f8ecc-2fb5-4ef1-aff8-8c08d17a7d79
+:END:
+
+* TX 2026-10-31 Sat 04:16:54 dispatch.outcomes_acked theaspirational.connectome-host
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-68463981-9048-4c49-a67c-0561fd3df159
+:TIME:         [2026-10-31 Sat 04:16:54]
+:TYPE:         dispatch.outcomes_acked
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:REASON:       acknowledged 1 outcome(s)
+:OUTCOME_IDS:  50624d6c-cb38-44f8-9d0f-f28bccabfbb0
+:ACKED_BY:     member:tarn2
+:EVENT_ID:     39797aa1-ec6b-4184-a1b2-4ecc58b3b247
+:END:
