@@ -31,3 +31,19 @@
 :TO_STATE: in_progress
 :EVENT_ID: ffa41aba-bcc9-4524-b1b6-d74288d8f0c3
 :END:
+
+* tx-20261031-theaspirationalconnectome-844ddcf4-3b02-4137-93be-40b9365e2f98 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-844ddcf4-3b02-4137-93be-40b9365e2f98
+:TIME:    [2026-10-31 Sat 05:22:38]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-4ZM52
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 982a058c-951b-42c9-ba83-04e25e9fe247
+:END:
+
+Engineering STOP disposition (task operator Tarn, accepted by qualifier Soma; not an owner decision, not a rewrite of §5), run-01M686AMRJEZ0YCY8ZTSHYA17Q, ask-428cedb0: the §2.4 inventory found unbound automatic posts — src/recipe.ts:1528–1536 (conversations timer closure; test/conversations-recipe.test.ts:24), :1476–1482 (speech fork-home/latest-inbound), src/index.ts:503,525,530. .4 continues as compiler-core only; production fail-closed (recipient_policy_integration_pending stays, a negative on loader paths); no changes to recipe/index; inventory control + stub-of-B demonstration; acceptance excludes these paths. Activation blocker: the found cases (not an exhaustive predicate) — needs an owner decision under items 6/7 (morning summary).
