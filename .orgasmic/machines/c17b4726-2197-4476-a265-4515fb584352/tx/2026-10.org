@@ -11543,3 +11543,36 @@
 :DELIVERY:     queued
 :EVENT_ID:     67bf5b61-6304-4c45-b040-b47ddc1f4ac5
 :END:
+
+* TX 2026-10-31 Sat 10:38:33 run.asked TASK-XN4YJ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-302059bc-0615-433d-867d-56dc22688a7e
+:TIME:         [2026-10-31 Sat 10:38:33]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-XN4YJ
+:REASON:       PROGRESS NOTE 2 (XN4YJ review1, no answer needed): CALLPATH-PASS check 6 REPRODUCED. 11-file scope confirmed =11. Scoped diff a0970645..f8af03a8 re-run: '8 files changed, 196 insertions(+), 26 deletions(-)' matches; diff SHA256 = a13bcabc6385b8cce14feeddef1dca8d1136179d99a696eabe2abc7b1a99434c, EXACT match to brief. reply-routing.ts / registration-ingress.ts / docs/registration-scope-view.md absent from numstat => byte-identical claim confirmed. AF chain verified byte-identical at BOTH I7 and candidate (framework.ts 34945-34961 -> 35030-35046; channel-registry automatic_reply_stale 5993 -> 6014); registration-view.ts+inbound-admission.ts deltas are only an added optional delivery?:DeliveryPlan param on admit, current/lookup/bind untouched. Continuing R01-R31 cite verification.
+:RUN_ID:       run-01M68RGQNRTBQRERCTX5ZFCP9S
+:ASK_ID:       ask-501023717af54e65b780814f4c680046
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     82ee55ef-83c5-41ef-a183-eb76072c6cd3
+:END:
+
+* TX 2026-10-31 Sat 10:38:41 run.answered TASK-XN4YJ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-b06c432f-8eeb-480c-a1ed-75d5dc48a968
+:TIME:         [2026-10-31 Sat 10:38:41]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-XN4YJ
+:REASON:       Operator Tarn: received, continue. Progress notes go to progress.log only, with no more asks unless you hit a genuine STOP.
+:RUN_ID:       run-01M68RGQNRTBQRERCTX5ZFCP9S
+:ASK_ID:       ask-501023717af54e65b780814f4c680046
+:MESSAGE_ID:   msg-b577c4d1421647e99d91880eadd1cdc9
+:DELIVERY:     queued
+:EVENT_ID:     1817d968-ca05-4057-b8b3-d88fd5bc76b0
+:END:
