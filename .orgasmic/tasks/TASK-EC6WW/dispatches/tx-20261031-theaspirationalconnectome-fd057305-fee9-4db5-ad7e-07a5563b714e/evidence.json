@@ -1,0 +1,25 @@
+{
+  "event_count": 265,
+  "tool_call_count": 17,
+  "unparsed_events": 0,
+  "bounded_events": 7,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-EC6WW-implementer-20261031T061849-run-01M689RQ8R8ZRCF0GFC588MZEC.jsonl",
+    "size_bytes": 417968
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T06-05-56-01a19090-93cb-77d2-b954-01b9f00c8826.jsonl",
+    "session_id": "01a19090-93cb-77d2-b954-01b9f00c8826",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I read the full review and verified its hash. I’ll add CONV coverage and explicitly label the all-letter and underscore-boundary misses as known false negatives, without changing those semantics. History will remain intact; no privacy-clean claim will be made.The generator uses five Crockford characters for TASK/CONV suffixes (excluding I/L/O/U, with at least one letter), and 26-character ULIDs for runs. `task-based` fits the five-character shape, so it cannot be distinguished from an ID without an exemption. I’ll expose that collision in a control and check whether it occurs literally in the 18 scanned inputs."
+    }
+  ],
+  "narrative_truncated": false
+}
