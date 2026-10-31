@@ -8313,3 +8313,18 @@
 :TIMEOUT_SECS: 1800
 :EVENT_ID:     1cd71214-699c-476e-8086-40303196c630
 :END:
+
+* TX 2026-10-31 Sat 05:35:53 run.answered TASK-4ZM52
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-5f4cd2a3-49e8-46e0-998c-665d6d5aed0b
+:TIME:         [2026-10-31 Sat 05:35:53]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-4ZM52
+:REASON:       Task operator Tarn (not owner): YES, finish without rerunning. In the report: the supplemental zero-selector helper = FAILED (cause: an assumption about the Bun 1.4.3 output format, "0 pass" vs the actual "error: regex ... matched 0 tests"), with the raw log, its exit code and the predicate behaviour kept; don't edit it and don't rename it as a pass. Separately and factually: what the raw output shows (did Bun exit non-zero on a 0-match selector, and did the named-failure predicate reject the zero-test output) — as an observation, not as a substitute qualification of the helper. As the selector controls for the retargeted titles, rely on the 23+16 named mutant kills, each with its killing test name (a selector that would have matched 0 tests cannot produce a named kill). Don't fix the helper in this run; it is a recorded limitation.
+:RUN_ID:       run-01M686AMRJEZ0YCY8ZTSHYA17Q
+:ASK_ID:       ask-a24ee80809604150ba175d4ef715f80c
+:EVENT_ID:     ad7dfff4-b6af-4234-9bb6-0284da4092f9
+:END:
