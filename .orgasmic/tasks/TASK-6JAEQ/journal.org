@@ -79,3 +79,19 @@ ask-9795ca2a: the task operator Tarn's call (engineering): the historical read/w
 :TO_STATE: in_progress
 :EVENT_ID: a1f9d1e1-4b33-480e-bd40-b79ab0fc7d0d
 :END:
+
+* tx-20261031-theaspirationalconnectome-cd617e50-f9f6-433f-a3eb-49b8db00d8f5 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-cd617e50-f9f6-433f-a3eb-49b8db00d8f5
+:TIME:    [2026-10-31 Sat 04:11:51]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-6JAEQ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: d6ad59f3-a789-485c-9c9b-fba1a61f5311
+:END:
+
+Review 1 APPROVE (a) only (25bea49a…). Fix round 1: run-01M682G1X93YCCNXW0A8725SAN — MEDIUM inference/request: the more restrictive wakeWithoutChannel&&addressed unless the H brief/T1 defines a different rule (then that one + documented on the interface), a widening mutant killed; LOW 1–4 (tombstone, overlay scanner, v1 compiler-control, loaders in feature-off). Without a new install (disk). Unmet: protected guards only via unit, bug-report.ts:346.
