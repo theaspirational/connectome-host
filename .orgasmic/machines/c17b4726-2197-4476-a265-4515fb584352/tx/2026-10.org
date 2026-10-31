@@ -9392,3 +9392,32 @@
 :TIMEOUT_SECS: 1800
 :EVENT_ID:     61e57060-4625-4164-8873-5874c8c2d49e
 :END:
+
+* TX 2026-10-31 Sat 06:19:51 reviewer.reported CONV-66NPK
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-d4275239-f2be-46ec-b0dd-e50772374fa2
+:TIME:         [2026-10-31 Sat 06:19:51]
+:TYPE:         reviewer.reported
+:ACTOR:        agent.reviewer
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         CONV-66NPK
+:RUN_ID:       run-01M6895DSRYCSMP5D3EK0BZWE6
+:WORKTREE:     ~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-66npk-review
+:EVENT_ID:     75750fc4-58bb-4e54-9014-c275d1a82d7c
+:END:
+
+* TX 2026-10-31 Sat 06:20:00 run.answered TASK-EC6WW
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-adafddae-1332-48be-83b8-9caf328d673f
+:TIME:         [2026-10-31 Sat 06:20:00]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-EC6WW
+:REASON:       Yes (operator call by Tarn, not owner). Keep the failed m1/m4 receipts as failed and do not relabel them. Change only the expected kill names in the harness to the actual first named assertion, and verify that it really is the known-FN control that the mutant violates. Rerun only m1 and m4, once each, labelled "rerun after harness expectation correction". All other receipts stand. The report must show both the failed and the new receipt, plus the reason: the new controls kill earlier, so the semantics of the kill haven't changed.
+:RUN_ID:       run-01M689RQ8R8ZRCF0GFC588MZEC
+:ASK_ID:       ask-04222f9e11234ccc8b2191ede4038aa1
+:EVENT_ID:     c452f94e-d0be-4b86-9e90-7d30b1d776de
+:END:
