@@ -47,3 +47,19 @@
 :END:
 
 Operator record (qualifier Soma, 1793441667): the worker read the harness finalize prompt as an "explicit user instruction" authorising `--commit`. That was an interpretation error. The prompt is not an authenticated owner instruction and cannot widen a drafts-only task to commits. Verified outcome: nothing committed; HEAD f378eadffc9a02e2ecb5a4f30e266db9321db4f5; tree clean; task-xn4yj-impl unchanged. No rollback needed. Any tooling follow-up is observation only and carries no authority to patch the daemon or its source.
+
+* tx-20261031-theaspirationalconnectome-0aae7f08-0ab8-4e88-97e6-6b6e71de301c task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-0aae7f08-0ab8-4e88-97e6-6b6e71de301c
+:TIME:    [2026-10-31 Sat 10:26:45]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-XN4YJ
+:TARGET: .orgasmic/tasks/TASK-XN4YJ/node.org
+:REASON: The approve close moved this to done, but the drafts still need a revision round (1 HIGH, 2 MEDIUM). Nothing is implemented.
+:FROM_STATE: done
+:TO_STATE: in_progress
+:EVENT_ID: dfd1e595-63f0-4a7c-a806-156bb931ad22
+:END:
