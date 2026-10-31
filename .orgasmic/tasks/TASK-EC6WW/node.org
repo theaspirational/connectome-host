@@ -1,0 +1,13 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-EC6WW
+#+orgasmic_version: 2
+
+* BACKLOG TASK-EC6WW Scope checker: narrow the internal-id detector so the H brief can enter --docs-contract
+:PROPERTIES:
+:UID: 1a411b79-2ae6-5bd2-99ac-655ba256fd88
+:ID: TASK-EC6WW
+:PRIORITY: P3
+:END:
+
+** Description
+Follow-up from the TASK-R5BF7 review 1 LOW-2: the regex at test/fixtures/generic-recipient/check-scope-contract.mjs:233 (`/\b(?:TASK|RUN|AGENT|PROJECT)-[A-Z0-9]+\b/iu`) fires on ordinary lowercase repo filenames (agent-config, agent-overlay), so docs/design/f-host-h-brief.md can't be included in --docs-contract. Narrow the detector (an uppercase prefix or a digit in the suffix, without special-casing filenames), add the brief to the docs-mode list, keep all existing rejection controls, add a control for a real internal id and for an ordinary filename. LOCAL ONLY (private ancestry).
