@@ -5339,3 +5339,21 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     dacf368b-4e17-4a73-82c5-4bac41f730e9
 :END:
+
+
+* TX 2026-10-31 Sat 02:12:07 run.message TASK-A821A
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-39dc87f5-b646-4777-8b62-8bae50da5423
+:TIME:         [2026-10-31 Sat 02:12:07]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-A821A
+:REASON:       Classification (Soma, programme qualifier; passed on by the task operator Tarn): the stub-types gate with the borrowed TS 5.9.3 = EXPLORATORY compile evidence only, NOT a gate of the host's pinned toolchain. The host declares "typescript": "^7.0.2" (package.json:46) with bun.lock/package-lock.json; the task-a821a worktree has no node_modules. Don't classify it as PASS; mark it PENDING (rerun only the affected typecheck with the host's declared toolchain/closure in an isolated code-only setup). Don't propose a cross-worktree symlink/dependency or changing the stubs to fit 5.9.3. If the stubs use anything that's incompatible with or untested under TS 7, list it as a risk. The rest of the review (definition, case map, stubs as declarations, PENDING pins, local-only) as in the brief.
+:RUN_ID:       run-01M67VHGXW51108CRPXGFA4HE3
+:MESSAGE_ID:   msg-3d76be5af094458fbaf097b501012171
+:FROM:         member:tarn2
+:DELIVERY:     queued
+:EVENT_ID:     654c485f-e275-439d-ac1f-4395b5d4d7a5
+:END:
