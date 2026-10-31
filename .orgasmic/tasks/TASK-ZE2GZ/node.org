@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-ZE2GZ
 #+orgasmic_version: 2
 
-* IN_REVIEW TASK-ZE2GZ A2: exact composed AF dependency/artifact plan for the host (plan-only)
+* IN_PROGRESS TASK-ZE2GZ A2: exact composed AF dependency/artifact plan for the host (plan-only)
 :PROPERTIES:
 :UID: 899d4a5f-e4d9-55cf-9043-5a049601fd59
 :ID: TASK-ZE2GZ
