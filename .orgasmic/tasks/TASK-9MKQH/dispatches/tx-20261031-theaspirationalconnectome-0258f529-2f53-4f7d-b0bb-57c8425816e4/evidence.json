@@ -1,0 +1,25 @@
+{
+  "event_count": 474,
+  "tool_call_count": 25,
+  "unparsed_events": 2,
+  "bounded_events": 9,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-9MKQH-implementer-20261031T030508-run-01M67YP2548BACQSKEP8MKY1QE.jsonl",
+    "size_bytes": 544132
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T03-05-08-01a18feb-0d24-7d13-bfa4-f427a2a5066c.jsonl",
+    "session_id": "01a18feb-0d24-7d13-bfa4-f427a2a5066c",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll read the frozen inputs and repository instructions first, then check that T1 defines the interface T2 needs before changing code. Work will remain local-only, with progress updates at least every four minutes.The frozen base has a prerequisite gap: I found no H recipient policy/binder in `src/`, and the v0 stub deliberately leaves `VerifiedScope` opaque. I’m checking the remaining inputs for exact citations. I won’t rebuild H or invent sidecar fields to make T2 possible.The task operator confirmed that neither an H implementation pin nor a concrete `VerifiedScope` representation exists. This round is now narrowed to docs/stub PREP: named input blockers, planned case/test/mutant mapping, and an opaque `registration-view v0` alias. I’ll add no production host code. The unchanged checker passes 57 cases; naming coverage is PARTIAL because the private policy is absent.The PREP files are drafted: four named input gaps, all 57 case IDs mapped to planned tests and mutants, seven feature-off controls, and explicit T3/T4/T5 exclusions. The stub aliases only the existing two-method view and keeps `VerifiedScope` opaque. The expanded docs scan passes all 13 files; I’ll audit the mappings, make local commits, and rerun gates at the final commit.The narrowed PREP is committed locally at `7e932987`; the worktree is clean. Final gates pass: 57 scope cases, 45 rejection controls, four documentation-oracle mutants killed, and 13 files scanned. Full naming checks, host tests, typechecking, production T2 mutants, and the reviewed S4Q8F integration gate remain open. No push was made."
+    }
+  ],
+  "narrative_truncated": false
+}
