@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-DC0T7
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN XN4YJ v3.1 targeted diff/contract check
+:PROPERTIES:
+:UID: 8a07e58b-72b7-5162-9fe3-323dabf969ff
+:ID: CONV-DC0T7
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: 
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: 
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE:  ~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-dc0t7-review
+:RUNS:  run-01M68TZ2VVQ150ZS2HPECMSWHE
+:CREATED_AT: 2026-10-31T11:19:03Z
+:END:
