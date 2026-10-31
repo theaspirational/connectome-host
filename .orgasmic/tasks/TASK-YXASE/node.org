@@ -1,0 +1,18 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-YXASE
+#+orgasmic_version: 2
+
+* IN_PROGRESS TASK-YXASE T2 core: dynamic scope selector compiler, test/stub-only (LOCAL ONLY)
+:PROPERTIES:
+:UID: 5fb05ea9-206a-54eb-8208-2f2839d4a05d
+:ID: TASK-YXASE
+:PRIORITY: P1
+:END:
+
+** Description
+Implementation of the T2 core brief v4.3 (immutable: /srv/review-drop/tarn-rtaln-20261030/T2CORE-BRIEF-v4.3.md, sha256 6482ad0684a699c4c227d6413e5aa46b20b6dd38970263804e68b9ec69e91730). Brief review chain: CONV-66NPK check 1 → CONV-FMD5N re-check 1 and delta checks 2-4; the last one has no HIGH. Base aecd4a8cafe470ad2bbe47b5087c1ec454eef62f. Test/stub-only under qualifier Soma's rule (59396): no src/ change, no production issuance/brand/constructor, no real-loader qualification, no completeness claim. LOCAL ONLY, #931-held via B ancestry. Operator Tarn; not an owner decision.
+** Acceptance
+- First commit: per-row table for all 49 rows (class, witness, responsible slice) and per-class counts.
+- §2-§4 of the brief as written; child truth table C1-C6; the discriminating negatives from §4; the named mutant kills.
+- docs-contract is reported as FAILED (the declared filename FP), never "all gates pass".
+- The report separates stub-of-projector / stub-of-AF-view coverage from real coverage.
