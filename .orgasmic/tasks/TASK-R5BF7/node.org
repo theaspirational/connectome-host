@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-R5BF7
 #+orgasmic_version: 2
 
-* IN_REVIEW TASK-R5BF7 F-host H brief: freeze boundaries, inputs and the first implementation slice (.3) of the original host work (docs, local only)
+* DONE TASK-R5BF7 F-host H brief: freeze boundaries, inputs and the first implementation slice (.3) of the original host work (docs, local only)
 :PROPERTIES:
 :UID: b9091244-8b39-5775-90ce-2fb9ba655515
 :ID: TASK-R5BF7
