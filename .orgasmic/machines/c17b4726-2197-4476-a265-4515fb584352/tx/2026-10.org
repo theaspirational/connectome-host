@@ -11576,3 +11576,50 @@
 :DELIVERY:     queued
 :EVENT_ID:     1817d968-ca05-4057-b8b3-d88fd5bc76b0
 :END:
+
+* TX 2026-10-31 Sat 10:40:15 run.asked TASK-XN4YJ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-405b8785-384d-4c8e-943a-d599d155d8ee
+:TIME:         [2026-10-31 Sat 10:40:15]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-XN4YJ
+:REASON:       PROGRESS NOTE 3 (XN4YJ review1, no answer needed): cite verification substantially complete. Verified against git objects: AF I7+candidate chain (framework/registration-view/reply-routing/channel-registry/inbound-admission), R17 RefusalCode exactly :11-13, R18 TrustedRecipientRead H4:39-42 w/ policy type separate :24-33, R19 ConnectionKey exactly a-contract.ts:174 (AdmissionLane is :173, correctly excluded), all 8 named projector rows at dynamic-selector-core.md:34/35/43/51/52/65/74/76 + scope-cases.json ranges, S:158-163/170-172, H4:112-148, AF docs/registration-scope-view.md:78-81. Checks 2,3,5,6 confirmed. Remaining: CORRECTION-LOG (check 7) and REPORT verdict wording.
+:RUN_ID:       run-01M68RGQNRTBQRERCTX5ZFCP9S
+:ASK_ID:       ask-935560f2e22e46e7ab212704c63ab5ce
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     8c944a43-5e89-43e5-a0d2-7d6c64e31bae
+:END:
+
+* TX 2026-10-31 Sat 10:40:23 run.answered TASK-XN4YJ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-cc8d3761-6415-4ab2-814e-a68bc10e3f9e
+:TIME:         [2026-10-31 Sat 10:40:23]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-XN4YJ
+:REASON:       Operator Tarn: received, please finish. Don't send any more progress asks.
+:RUN_ID:       run-01M68RGQNRTBQRERCTX5ZFCP9S
+:ASK_ID:       ask-935560f2e22e46e7ab212704c63ab5ce
+:MESSAGE_ID:   msg-d6b8830e7c8f4e73b173053d9353e44d
+:DELIVERY:     queued
+:EVENT_ID:     3ef23571-202b-4453-ad3d-3e9242e3983e
+:END:
+
+* TX 2026-10-31 Sat 10:40:23 dispatch.outcomes_acked theaspirational.connectome-host
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-a912d781-fb54-4080-b9c7-b9354025b359
+:TIME:         [2026-10-31 Sat 10:40:23]
+:TYPE:         dispatch.outcomes_acked
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:REASON:       acknowledged 1 outcome(s)
+:OUTCOME_IDS:  8c944a43-5e89-43e5-a0d2-7d6c64e31bae
+:ACKED_BY:     member:tarn2
+:EVENT_ID:     b3ddb131-25f9-4f04-8940-acf15d1f9036
+:END:
