@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-FZ592
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN XN4YJ v3 bounded review: DELTA + N11 + N10 + v2.1 diff
+:PROPERTIES:
+:UID: 32e39710-d128-587b-a3c0-83f41a667d16
+:ID: CONV-FZ592
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: 
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: 
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE:  ~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-fz592-review
+:RUNS:  run-01M68SWEVDC06YQ2T7GM21JMNV
+:CREATED_AT: 2026-10-31T11:00:11Z
+:END:
