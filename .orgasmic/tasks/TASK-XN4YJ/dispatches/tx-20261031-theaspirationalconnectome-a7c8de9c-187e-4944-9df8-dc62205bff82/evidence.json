@@ -1,0 +1,25 @@
+{
+  "event_count": 381,
+  "tool_call_count": 22,
+  "unparsed_events": 0,
+  "bounded_events": 5,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-XN4YJ-implementer-20261031T100653-run-01M68PTAAT3HDVZJKC7BTYEVNJ.jsonl",
+    "size_bytes": 489356
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T10-06-54-01a1916d-2ed7-72c0-bca0-55a4b546f525.jsonl",
+    "session_id": "01a1916d-2ed7-72c0-bca0-55a4b546f525",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll verify the frozen inputs first, then draft only in the evidence directory. I won’t edit source or tests, run builds, make git writes, or call adapters or APIs.The frozen objects and document hashes check out. The committed allocation has all 8 projector rows and matches the supplied responsibility counts. It also preserves an important distinction: parent-access revocation denies a later send without undoing earlier storage or wake eligibility. I’ll keep that distinction in the truth table and mark missing native-truth and attestation inputs explicitly.The three requested drafts are written. They flag two frozen-interface gaps: H has no issuance bridge to AF’s settled registration facts, and T2’s shared parent fact cannot express operation-specific ancestor permissions. I’ll finish the citation and hash audit next; no implementation or test execution has occurred.## Changed\nBoth briefs, unknown-input ledger and SHA256SUMS are complete. [Report with deliverable hashes]( /home/orgasmic/.orgasmic/runs/run-01M68PTAAT3HDVZJKC7BTYEVNJ/evidence/report.md).\n\n## Verification Gates\nFrozen objects, ancestry, hashes and all eight rows verified. Tracked tree remains clean.\n\n## Unmet Criteria\nNo drafting criteria unmet. Commit/finalize omitted under the task’s write/API restrictions.\n\n## Residual Risk\nNative evidence, attestation, issuance and lifecycle interfaces remain engineering blockers. The requested literal §3a heading is absent; the actual allocation table is verified."
+    }
+  ],
+  "narrative_truncated": false
+}
