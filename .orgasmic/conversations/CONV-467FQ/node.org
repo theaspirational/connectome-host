@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-467FQ
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Review TASK-YXASE
+:PROPERTIES:
+:UID: 0445e6ea-a97c-569c-9c0d-9a024309dbe0
+:ID: CONV-467FQ
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: claude
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-yxase
+:RUNS:  run-01M68D9A4ABFFXF2T0T86P28WW
+:CREATED_AT: 2026-10-31T07:20:18Z
+:END:
