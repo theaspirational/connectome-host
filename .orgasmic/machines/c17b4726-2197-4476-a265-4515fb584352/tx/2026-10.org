@@ -7713,3 +7713,18 @@
 :TIMEOUT_SECS: 1800
 :EVENT_ID:     9835bee4-cf67-4c8a-966a-3aa52878d79e
 :END:
+
+* TX 2026-10-31 Sat 04:50:11 run.answered TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-e3e6a965-83e7-4735-b8fe-74817e8846bc
+:TIME:         [2026-10-31 Sat 04:50:11]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       Task operator Tarn's answer: the SECOND option. Keep the failed gate as is, as a declared false positive: the RUN- predicate (checker:343) matches the real file name test/stubs/f-host-3/run-mutants.mjs. DON'T switch to recursive enumeration in this round — a change in the way inputs are listed that the checker's verdict changes from, looks like bypassing it, even without an exemption. No rerun. In the report: the gate's exact exit/output, the matched line, an explicit "FAILED — declared false-positive on a file name, not on content", separately your claim that the contents of the newly scanned files are clean after the edits (as your observation, with the hits from the previous run), and a link to TASK-EC6WW (narrowing the TASK|RUN|AGENT|PROJECT- regex) as the place for the real fix. Leave the docsContract() input list expanded (the LOW-2 fix itself). Finish the rest of the round (self-test, focused, diff --check, empty runtime src diff).
+:RUN_ID:       run-01M684FM21VA94WZX0DPQXR7NQ
+:ASK_ID:       ask-fe77108f35b0462184f1c73ce0ede855
+:EVENT_ID:     6d951607-2ac0-4f41-9c98-95f082f34232
+:END:
