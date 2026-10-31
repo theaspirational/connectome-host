@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-XN4YJ
 #+orgasmic_version: 2
 
-* DONE TASK-XN4YJ EM8Q2 projector (8 rows) and issuance briefs: drafting only, from frozen source contracts
+* IN_PROGRESS TASK-XN4YJ EM8Q2 projector (8 rows) and issuance briefs: drafting only, from frozen source contracts
 :PROPERTIES:
 :UID: 4719fc32-62de-52d8-a157-a212c604c48f
 :ID: TASK-XN4YJ

@@ -63,3 +63,19 @@ Operator record (qualifier Soma, 1793441667): the worker read the harness finali
 :TO_STATE: in_progress
 :EVENT_ID: dfd1e595-63f0-4a7c-a806-156bb931ad22
 :END:
+
+* tx-20261031-theaspirationalconnectome-1c443b69-7595-41fa-91ce-31cfb863ae40 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-1c443b69-7595-41fa-91ce-31cfb863ae40
+:TIME:    [2026-10-31 Sat 10:48:15]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-XN4YJ
+:TARGET: .orgasmic/tasks/TASK-XN4YJ/node.org
+:REASON: The approve close moved it to done. The drafts are input for the N11/N10 decisions; the task isn't finished.
+:FROM_STATE: done
+:TO_STATE: in_progress
+:EVENT_ID: b83c0389-d155-4221-86ef-ced750d10804
+:END:
