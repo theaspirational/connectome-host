@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-YZ48F
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Review TASK-A821A
+:PROPERTIES:
+:UID: 03b400e6-9d2d-513f-a8ea-da69488e2851
+:ID: CONV-YZ48F
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: claude
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-a821a
+:RUNS:  run-01M67VHGXW51108CRPXGFA4HE3
+:CREATED_AT: 2026-10-31T02:10:13Z
+:END:
