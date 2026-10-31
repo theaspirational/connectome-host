@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-019AD
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Review TASK-XN4YJ
+:PROPERTIES:
+:UID: 1cb99778-adf4-582f-b487-2487ea307dab
+:ID: CONV-019AD
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: claude
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-xn4yj
+:RUNS:  run-01M68Q918FV44PEXAEAN1KRH2G
+:CREATED_AT: 2026-10-31T10:14:55Z
+:END:

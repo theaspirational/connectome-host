@@ -31,3 +31,19 @@
 :TO_STATE: in_progress
 :EVENT_ID: 7f4efcde-c72b-46c7-8f9c-9d98fb06ab5d
 :END:
+
+* tx-20261031-theaspirationalconnectome-917dc09a-86d9-43b9-903a-dfe8bc31d931 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-917dc09a-86d9-43b9-903a-dfe8bc31d931
+:TIME:    [2026-10-31 Sat 10:14:54]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-XN4YJ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 38a74f79-8bea-4393-be0a-056eae16e23d
+:END:
+
+Operator record (qualifier Soma, 1793441667): the worker read the harness finalize prompt as an "explicit user instruction" authorising `--commit`. That was an interpretation error. The prompt is not an authenticated owner instruction and cannot widen a drafts-only task to commits. Verified outcome: nothing committed; HEAD f378eadffc9a02e2ecb5a4f30e266db9321db4f5; tree clean; task-xn4yj-impl unchanged. No rollback needed. Any tooling follow-up is observation only and carries no authority to patch the daemon or its source.
