@@ -1,0 +1,25 @@
+{
+  "event_count": 274,
+  "tool_call_count": 16,
+  "unparsed_events": 0,
+  "bounded_events": 4,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-4ZM52-implementer-20261031T055328-run-01M688AA7HPGVXATJ3A4D51V27.jsonl",
+    "size_bytes": 358222
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T05-18-43-01a19065-57d0-7ae2-b008-9ef030416503.jsonl",
+    "session_id": "01a19065-57d0-7ae2-b008-9ef030416503",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll apply only the four LOW fixes on top of `e276024a`, preserving the production refusal and activation blocker. The review hash matches. Before restaging, I’ll check process visibility and request a fresh root witness if needed; the 05:25Z witness is too old.\nTarn supplied a fresh root witness and a narrow LOW-3 amendment permitting B deadline validation through the existing error path. The targeted controls passed: exact key sets, detached lanes, deadline boundaries and all five return negatives. I’ll now commit and run the final-head gates once. Expected evidence size: under 64 MiB.\nThe final LOW head `aecd4a8c` passed the fresh checks: 115 focused tests, five return negatives, all 40 mutants and one full suite of 4,622 tests. Feature-off bytes match the pinned baseline, and the closure is unchanged. Docs-contract remains FAILED on the declared filename false positive. I’m finishing the report and process reconciliation.\n"
+    }
+  ],
+  "narrative_truncated": false
+}
