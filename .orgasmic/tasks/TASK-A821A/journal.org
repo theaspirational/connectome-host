@@ -127,3 +127,19 @@ Soma 1793413267.355179 (passed on by the task operator Tarn to run-01M67W4JC6WTS
 :END:
 
 FROZEN as local 2a input at 8e92bfbe30d141140531b170e9ef0421c6a16cad (Soma 1793413874.435079). Chain: e5184b31 (input, review 1 APPROVE + F1–F4) → 8dd238b5 (fix, delta review APPROVE, 4 LOWs, /srv/review-drop/TASK-A821A-FIX1-REVIEW.md 5dec2e35…8a5747) → 8e92bfbe (LOW 1/2 code, 3/4 notes; report /srv/review-drop/TASK-A821A-LOWS.md c4ade91f…f634). My check: the diff is exactly 2 files +12/-4 as described; targeted gates in a git-archive mirror (Node 22.23.3): all three modes exit 0; removing ci.yml / f-host-2a-brief.md / stubs.ts → --docs-contract exit 1 "input missing or unreadable: <path>", no stack trace; --self-test and default exit 0; the mirror deleted. Remains: stub-types PENDING until the host's declared closure (TS ^7.0.2); LOCAL ONLY / ancestry hold; the 2a implementation waits for INT-1 and the reviewed S4Q8F head.
+
+* tx-20261031-theaspirationalconnectome-5946a120-4e73-4a44-964c-30daf9ce1c67 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-5946a120-4e73-4a44-964c-30daf9ce1c67
+:TIME:    [2026-10-31 Sat 04:03:38]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-A821A
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: fdcf6cad-220f-4b7e-9c95-e0494a472502
+:END:
+
+F1 stub-types: the receipt is REUSED from 6JAEQ (the task operator Tarn checked the binding, per Soma's rule). Stub bytes: tree test/stubs/f-host-2a/v0 = 6c0ca9a2cbe571f2daba61d4346a5355674467e9 identically at 8e92bfbe (the A821A freeze), d7154d79 and 9c6f6ea1 (stubs.ts aa34d68c, tsconfig.json 984f3a5f, typecheck.ts 67e9d78c). tsconfig is self-contained: files [stubs.ts, typecheck.ts], types [], only a relative import './stubs' — the rest of the 6JAEQ tree doesn't affect it. Command: `npx tsc --noEmit -p test/stubs/f-host-2a/v0/tsconfig.json` (as in A821A). Compiler: TypeScript 7.0.2 from the host's own lock (package-lock.json 7f0e4849…e020, npm ci --ignore-scripts, isolated root), tsc launcher 2219f428…2ffd, lib/tsc.js cbdfbf11…ac572e, native @typescript/typescript-linux-x64 4f2de678…34a4; node 22.23.3 fde6a4bf…8f48, npm 10.9.9. Receipts: run-01M680D8DBYQXRDKQ7C4C9C6Q8 gate final-head-v0-types-01M681ERVF95SPE2QK8PGZ71KT (HEAD 9c6f6ea1 clean, exit 0, PIPESTATUS 0 0, 16G scope) and final-base-v0-types-01M681EQ9Y0WYY489SYQ0BG5QN (base d7154d79). F1 = PASS (reused receipt, labelled). This does NOT clear real AF integration or the private-ancestry hold.
