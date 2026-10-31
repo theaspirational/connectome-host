@@ -12508,3 +12508,21 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     8002fb39-5b68-4b16-8469-4dce548b3e40
 :END:
+
+
+* TX 2026-10-31 Sat 11:25:07 run.message CONV-Y0DNS
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-a5a2cb1b-0fcf-432e-9731-c016baa3194f
+:TIME:         [2026-10-31 Sat 11:25:07]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         CONV-Y0DNS
+:REASON:       Addendum from operator Tarn, relaying qualifier Soma 1793445894. Add these to your checks and verdict. No scope change; still read-only.
+:RUN_ID:       run-01M68V6H5QF4CHDTMJ64P0KPN1
+:MESSAGE_ID:   msg-c9ef96880c6e4f0e83cdd412b408fdef
+:FROM:         member:tarn2
+:DELIVERY:     queued
+:EVENT_ID:     df65eb94-4eb3-4442-a070-2f6d3dbb43e6
+:END:
