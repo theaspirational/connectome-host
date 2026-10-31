@@ -7320,3 +7320,18 @@
 :TIMEOUT_SECS: 1800
 :EVENT_ID:     998873ee-3624-42c5-a673-7b82d2463aab
 :END:
+
+* TX 2026-10-31 Sat 04:20:48 run.answered TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-57e61df2-7f2f-4044-89ac-e3a40df81a55
+:TIME:         [2026-10-31 Sat 04:20:48]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       Task operator Tarn's answer: YES. Keep the first result (lsof +D: no holders, status 1, the stat warnings on unrelated Docker overlay/netns) as INCOMPLETE — don't suppress it. Supplementary, as a separately named gate: (1) a direct /proc scan over ALL visible pids: readlink /proc/*/cwd, /proc/*/root, /proc/*/exe, /proc/*/fd/*, plus /proc/*/maps — any reference to the realpath of the head root (and its symlink targets); record pids you couldn't read (EACCES) as a separate count; (2) lsof limited to this root's filesystem/path (without +D on the other mounts). Quiescence = 0 references in (1) and (2), and the unreadable pids belong to other users/containers that don't have access to the root (state why). If there's any reference — STOP, don't stage. Then the first staging as a separate gate, and immediately before and after — a repeat of (1). Under sudo you don't have that — the scan runs as orgasmic; that's enough for processes that can write to the root (they're all uid orgasmic or root; you won't see root ones — record that as a residual gap, not a reason to stop).
+:RUN_ID:       run-01M682G1X93YCCNXW0A8725SAN
+:ASK_ID:       ask-6c5124aac9ac4208b3a019bebd1767b3
+:EVENT_ID:     d936078e-ee41-404a-8a88-c8c449d30e55
+:END:
