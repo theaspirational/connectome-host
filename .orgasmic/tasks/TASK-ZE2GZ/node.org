@@ -1,0 +1,28 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-ZE2GZ
+#+orgasmic_version: 2
+
+* BACKLOG TASK-ZE2GZ A2: exact composed AF dependency/artifact plan for the host (plan-only)
+:PROPERTIES:
+:UID: 899d4a5f-e4d9-55cf-9043-5a049601fd59
+:ID: TASK-ZE2GZ
+:PARENT: TASK-XN4YJ
+:PRIORITY: P1
+:END:
+
+** Description
+A2: a plan-only task for host dependency/artifact work (local H scope), from XN4YJ-DRAFTS-v3-REVIEW1 (sha256 057a7fafd0f330a60758d9924bc69599c1cd00c27ce083f056e36d6f829f40f0) H1, scoped by qualifier Soma (Slack 1793445107).
+
+The host declares ^0.30.0, which can't resolve the 0.31 registration surface. The plan must bind:
+- the exact composed AF payload, its declarations and integrity
+- a compatible host manifest/lock strategy
+- portable release-set consumption
+
+The version 0.31.0 alone is not an identity. No registry assumption, no private absolute paths, no package publication.
+
+Plan only: no acquisition, install, lock change or execution.
+
+** Acceptance
+- A reviewed plan.
+- An accepted A2, plus actual A1 (the composed artifact and declaration closure) and A3 (the mutant harness), are prerequisites to an H implementation assignment.
+- This does not block separately planned AF build/types work that doesn't consume the host manifest.

@@ -1,0 +1,17 @@
+#+title: orgasmic journal TASK-ZE2GZ
+#+orgasmic_version: 2
+
+* tx-20261031-theaspirationalconnectome-c82d8eac-111b-410d-9eb0-2f106e81d2b1 task.created
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-c82d8eac-111b-410d-9eb0-2f106e81d2b1
+:TIME:    [2026-10-31 Sat 11:12:10]
+:TYPE:    task.created
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-ZE2GZ
+:TARGET: .orgasmic/tasks/TASK-ZE2GZ/node.org
+:REASON: created task TASK-ZE2GZ
+:EVENT_ID: 19adeece-cbac-4d02-9c61-d20ac9620a09
+:REQUEST_REPLAY_V1: {"request_id":"tarn-a2-plan-task-1/tx","mutation":{"operation":"task.created","project_id":"theaspirational.connectome-host","payload_sha256":"79e45d58d553523253e6569b4a2f27020940cde458146ad898bada353ba807a6"},"mutation_id":"TASK-ZE2GZ","written_paths":[{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-ZE2GZ/node.org"},{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-ZE2GZ/journal.org"}]}
+:END:
