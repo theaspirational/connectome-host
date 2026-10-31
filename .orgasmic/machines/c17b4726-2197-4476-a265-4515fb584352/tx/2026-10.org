@@ -12884,3 +12884,21 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     ee584b54-da29-4bfa-8dcc-9eadd7a2244f
 :END:
+
+
+* TX 2026-10-31 Sat 11:47:34 run.message CONV-4K15S
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-e3ee4ab7-5105-444f-85b2-a1449fe41955
+:TIME:         [2026-10-31 Sat 11:47:34]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         CONV-4K15S
+:REASON:       Operator addendum (qualifier Soma 1793447209), read-only. For the helper note, make it a real check. Read the source of a2-v11-doc-check.py (sha 15f0707a…28b7) and a2-v11-seal.py (sha dc324a7e…e196) in the run evidence dir ~/.orgasmic/runs/run-01M68W3A0HN6Z4G7SXS9GF62HD/evidence/. Establish, with line cites, every import, every file read and write (paths), and every subprocess or process call, plus any git invocation and whether it could write refs, the index or locks. Confirm that the source, lock and ref state at HEAD f378eadf is unchanged. DO NOT run them. -I -B alone proves nothing. If they are only bounded text/hash checks and sealing of the intended a2-v1.1 output, say so narrowly; otherwise name the exact deviation or unknown. Also do not treat updater UNSUPPORTED as an implemented refusal: it is a plan/exit gate only.
+:RUN_ID:       run-01M68WDEWCARZ41WZ4EY1WJEBD
+:MESSAGE_ID:   msg-12b51135886b41beb3cfd365c68ca2a6
+:FROM:         member:tarn2
+:DELIVERY:     queued
+:EVENT_ID:     2852c5e1-8405-4e66-ac67-7bb7ea3e8f6b
+:END:

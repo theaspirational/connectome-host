@@ -47,3 +47,33 @@
 :TO_STATE: in_progress
 :EVENT_ID: 87f6fe2a-543c-4d36-9ba9-1efe629b1d7f
 :END:
+
+* tx-20261031-theaspirationalconnectome-b2132895-ab21-42a0-ab56-6818dd75c078 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-b2132895-ab21-42a0-ab56-6818dd75c078
+:TIME:    [2026-10-31 Sat 11:47:34]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-ZE2GZ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: e5bde5a3-7c10-4d96-995e-737994ca8f00
+:END:
+
+Operator record (Tarn; qualifier Soma 1793447209). These are the A2 v1.1 worker helper invocations in run-01M68W3A0HN6Z4G7SXS9GF62HD. Recorded as a deviation from the operator's knowledge. They are NOT verified as text-only.
+
+1. Doc check
+   - argv: `orgasmic dispatch gate a2-v11-doc-check -- python3 -I -B "$ORGASMIC_EVIDENCE_DIR/a2-v11-doc-check.py"`
+   - script sha256: 15f0707a5ef995f853ff647df81b5b100077806cb7c30fa9a1e8f40dfccf28b7
+   - gate log: gate-a2-v11-doc-check-01M68W869DKR80MCT26WY35YD6.log, sha256 62c24693dc1b6c66311211e15812d63a9d7ca5efc6ba69b635c8d98c82b165a0
+   - result: exited 0; HEAD f378eadf, clean=yes
+2. Seal, run twice
+   - argv: `orgasmic dispatch gate a2-v11-seal -- python3 -I -B "$ORGASMIC_EVIDENCE_DIR/a2-v11-seal.py"`
+   - script sha256: dc324a7e78d1a0965b80b19279b492e21d6e0a74fe8bbde9b0c938fafb64e196
+   - gate logs: …01M68WB10SZ7TEQTK0VJH4MZSQ (f332b926f16d7d00af8e04e680417b7f2aed3120162e5cd115159d17117a1943) and …01M68WBVX121K7JW1D6YN4NJ89 (d4c2b7787d63c6a8daf777c94653c166fc56bae6068ee8cc7f494b6e7f80eed8)
+   - designated log: a2-v11-seal.log, sha256 989f543c35df9f9eb588382cd245dae7089b7583f001b6eb035efc57a883621c
+   - result: both exited 0; clean=yes
+
+`-I -B` prevents neither file I/O nor subprocesses. The actual reads, writes, imports and process calls are UNKNOWN until the targeted reviewer, CONV-4K15S run-01M68WDEWCARZ41WZ4EY1WJEBD, inspects the source, without rerunning it. My earlier statement in Slack 1793447100 that I counted them as stdlib text checks was unverified, and I withdraw it. Updater UNSUPPORTED is a plan/exit gate only, not an implemented refusal.
