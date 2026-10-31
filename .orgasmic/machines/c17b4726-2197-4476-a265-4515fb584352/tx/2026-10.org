@@ -7648,3 +7648,21 @@
 :EFFORT_OVERRIDE: medium
 :EVENT_ID:     cf20c144-4be1-4394-9948-2142da250db2
 :END:
+
+
+* TX 2026-10-31 Sat 04:47:11 run.message TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-ce71b46e-ca0e-47ef-a3e2-44043d6f3a16
+:TIME:         [2026-10-31 Sat 04:47:11]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       Addition (Soma): in the LOW-1 doc sentence, state exactly what is guarded: an own key `recipientPolicy` of a server definition directly under the servers field (`mcplServers.<id>.recipientPolicy`), including in tombstones and behind duplicate ids/roots; and that a top-level or otherwise misplaced key (env, args, unknown objects, arrays) is NOT a protected/active policy and isn't refused. Don't edit or replace the old quiescence receipts.
+:RUN_ID:       run-01M684FM21VA94WZX0DPQXR7NQ
+:MESSAGE_ID:   msg-5a49d2724aa1493fa2ac851630c11350
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     b67c33d0-5274-4662-b9bf-617b6c85d8a6
+:END:
