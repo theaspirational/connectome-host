@@ -1,0 +1,20 @@
+{
+  "event_count": 213,
+  "tool_call_count": 0,
+  "unparsed_events": 0,
+  "bounded_events": 1,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-CONV-FMD5N-reviewer-20261031T064744-run-01M68BDP5CAQZQJXJPCX5PFQTH.jsonl",
+    "size_bytes": 326670
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.claude/projects/-home-orgasmic--orgasmic-worktrees-theaspirational-connectome-host-task-conv-fmd5n-review/9999b018-18ed-4210-85ba-1929274adb77.jsonl",
+    "session_id": "9999b018-18ed-4210-85ba-1929274adb77",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [],
+  "narrative_truncated": false
+}
