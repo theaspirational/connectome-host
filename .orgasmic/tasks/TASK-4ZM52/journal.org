@@ -1,0 +1,17 @@
+#+title: orgasmic journal TASK-4ZM52
+#+orgasmic_version: 2
+
+* tx-20261031-theaspirationalconnectome-ea5c5f45-305b-4418-b088-351aef392c20 task.created
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-ea5c5f45-305b-4418-b088-351aef392c20
+:TIME:    [2026-10-31 Sat 04:53:17]
+:TYPE:    task.created
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-4ZM52
+:TARGET: .orgasmic/tasks/TASK-4ZM52/node.org
+:REASON: created task TASK-4ZM52
+:EVENT_ID: c9665e24-f4cf-47f7-a9af-6edcb115b4c7
+:REQUEST_REPLAY_V1: {"request_id":"tarn-fhost4-task-1/tx","mutation":{"operation":"task.created","project_id":"theaspirational.connectome-host","payload_sha256":"c6674a8a246c33169e6ada2e33186071ae9faaeb67cf9d2a4fa2c76d11d78808"},"mutation_id":"TASK-4ZM52","written_paths":[{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-4ZM52/node.org"},{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-4ZM52/journal.org"}]}
+:END:

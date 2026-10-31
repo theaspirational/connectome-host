@@ -1,0 +1,20 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-4ZM52
+#+orgasmic_version: 2
+
+* BACKLOG TASK-4ZM52 F-host.4: B resolver + synchronous authorize (compiler-core, LOCAL ONLY)
+:PROPERTIES:
+:UID: e3c4f190-87be-5dd9-870a-776beffa82ae
+:ID: TASK-4ZM52
+:PRIORITY: P1
+:END:
+
+** Description
+F-host.4 per the H brief (d7154d79, the .4 row, 8–12 h): host resolver + synchronous authorize for B, stub-testable and fail-closed; runtime binding PENDING on I6/I7/.2a.
+Brief v3: /srv/review-drop/tarn-rtaln-20261030/FHOST4-BRIEF-v3.md (sha256 37dcdbae1f050d2ce3278817689cd634cb8b11ee06fda2a9d98d8d9b53114d68).
+Inputs: .3 frozen c353e1c8d19a11697b5515bf3b03110de5dd85de (TASK-6JAEQ); A contract /srv/review-drop/af-a869bb3a-contract/; B contract /srv/review-drop/af-b29edcf8-contract/ (SHA256SUMS 4a1aa6b9…).
+LOCAL ONLY guard: everything descended from 2c396622..a316200c..bff8c46e..d7154d79 stays local; no push/PR/publication/live operations; public work needs a fresh clean tree on a public base + a full-range privacy check.
+** Acceptance
+(a) core: resolver/authorize + stub controls/mutants under the brief; profile-off byte-identical with c353e1c8; production stays fail-closed. (b) runtime binding — PENDING, not claimed.
+Order: a bounded independent brief/contract check (read-only) → covered implementation.
+Task operator: Tarn; qualifier: Soma; not decisions by the owner Vasyl.
