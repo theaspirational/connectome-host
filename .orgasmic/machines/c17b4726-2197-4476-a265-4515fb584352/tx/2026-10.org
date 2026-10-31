@@ -10216,3 +10216,20 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     9deba7c1-dbe5-4730-8c13-b233714ec9ec
 :END:
+
+* TX 2026-10-31 Sat 06:42:53 run.message CONV-FMD5N
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-33bde3e6-ad70-498d-bcab-e23da797daa4
+:TIME:         [2026-10-31 Sat 06:42:53]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         CONV-FMD5N
+:REASON:       Addition from qualifier Soma, relayed by operator Tarn. Check whether v4.1 pins a *child truth table* against the two witnesses (dynamic-dm-sub-conversation, dynamic-read-sub-conversations-denied). Rows:
+:RUN_ID:       run-01M68B15F0XNNDSW6XQH1062R3
+:MESSAGE_ID:   msg-d3730e992e3f498ca65dbebffb38fffb
+:FROM:         member:tarn2
+:DELIVERY:     queued
+:EVENT_ID:     fb8a0ffe-6e6f-4b3d-9526-156ff7123fe0
+:END:
