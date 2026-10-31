@@ -47,3 +47,19 @@
 :END:
 
 Operator teardown disposition (Tarn, 2026-10-31 ~07:05Z). This is a separate operator action, not compliance with a general "kill holders" rule. After the base aecd4a8c full suite, the worker stopped correctly before staging the head: 3 orphaned mock-headless-child.ts processes were holding the build root. Their identities were 892709 (start tick 31262496), 892747 (31262530) and 893064 (31262910), all ppid 1830, all in cgroup user@1002/app.slice/run-u71373.scope, which held only those 3. I checked pid, start tick and cgroup together, sent SIGTERM, and after 5 s 0 remained. Fresh witness: /srv/review-drop/TASK-YXASE-ROOT-WITNESS-2.json (96453ba9…57b3be). No wider cleanup. Base observations kept: historical LOWS1 4622/0 vs current 4591/31, an unexplained discrepancy (not "environmental"). Reproducibility and qualification are open.
+
+* tx-20261031-theaspirationalconnectome-c16e74ef-c22a-469d-9921-436102755898 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-c16e74ef-c22a-469d-9921-436102755898
+:TIME:    [2026-10-31 Sat 07:14:23]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-YXASE
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: c191cc4d-4cca-44f1-9b9a-8ab718415cc9
+:END:
+
+Operator teardown disposition 2 (Tarn, 07:14Z), separate and not a general rule. After the head suite: holders 929169/929207/929543. Checked ppid 1830, scope run-u71397.scope (only these three), and cmdline mock-headless-child. SIGTERM, 0 remain. Witness /srv/review-drop/TASK-YXASE-ROOT-WITNESS-3.json (6b24f645…918b), 0 hits. Head 4640/31, identical per test to base on the 4622 existing tests; 49 new pass. The historical 4622/0 stays a separate receipt; the discrepancy is unexplained.
