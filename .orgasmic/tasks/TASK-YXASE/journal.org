@@ -79,3 +79,40 @@ Operator teardown disposition 2 (Tarn, 07:14Z), separate and not a general rule.
 :TO_STATE: in_progress
 :EVENT_ID: 3004e43d-8538-48ee-a952-f622348d2a04
 :END:
+
+* tx-20261031-theaspirationalconnectome-e9dfd0e3-fcaa-4c13-a1f0-c1d0d71b4df7 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-e9dfd0e3-fcaa-4c13-a1f0-c1d0d71b4df7
+:TIME:    [2026-10-31 Sat 08:10:30]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-YXASE
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: fb174bbc-28d3-4947-923f-78b3ff7e0e95
+:END:
+
+ERRATUM (operator Tarn, 2026-10-31; qualifier Soma 1793434207) to T2CORE-BRIEF-v4.3 (/srv/review-drop/tarn-rtaln-20261030/T2CORE-BRIEF-v4.3.md, sha256 6482ad0684a699c4c227d6413e5aa46b20b6dd38970263804e68b9ec69e91730). The historical brief stays unchanged.
+§3.6 and §3b say "7 projector rows", which undercounts by one. `dynamic-unknown-native-root` is assigned to the projector by §3a ("unknown native root denies") and §3b's scope ("rejects … unknown native roots"). The committed allocation at f378eadffc9a02e2ecb5a4f30e266db9321db4f5 (docs/design/dynamic-selector-core.md) has 8 projector rows, which is correct:
+- t02-unreadable-parent
+- t02-parent-outside-read
+- t03-parent-access-revoked
+- dynamic-claimed-parent-widening
+- dynamic-claimed-parent-overrides-actual
+- dynamic-parent-not-asserted
+- dynamic-parent-claim-native-disagreement
+- dynamic-unknown-native-root
+
+Responsibility counts:
+
+| Slice | Rows |
+|---|---:|
+| compiler-core | 21 |
+| compiler-core + T4 lifecycle | 9 |
+| projector | 8 |
+| T4 | 10 (incl. 3 parent-family) |
+| I6 attestation | 1 |
+
+These are separate from the proof classes 19/11/19. Documentation correction only, no test run. The projector brief will name all 8.
