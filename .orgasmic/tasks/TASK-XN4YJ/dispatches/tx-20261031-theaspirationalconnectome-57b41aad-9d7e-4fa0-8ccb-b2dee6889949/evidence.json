@@ -1,0 +1,20 @@
+{
+  "event_count": 848,
+  "tool_call_count": 0,
+  "unparsed_events": 0,
+  "bounded_events": 3,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-XN4YJ-reviewer-20261031T103636-run-01M68RGQNRTBQRERCTX5ZFCP9S.jsonl",
+    "size_bytes": 1000893
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.claude/projects/-home-orgasmic--orgasmic-worktrees-theaspirational-connectome-host-task-xn4yj/f1f48a9b-2834-4770-a732-5ad845dcc6f4.jsonl",
+    "session_id": "f1f48a9b-2834-4770-a732-5ad845dcc6f4",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [],
+  "narrative_truncated": false
+}
