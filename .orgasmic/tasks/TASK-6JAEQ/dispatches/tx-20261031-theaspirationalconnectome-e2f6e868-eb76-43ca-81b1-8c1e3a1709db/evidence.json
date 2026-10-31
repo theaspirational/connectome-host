@@ -1,0 +1,25 @@
+{
+  "event_count": 1174,
+  "tool_call_count": 73,
+  "unparsed_events": 5,
+  "bounded_events": 18,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-6JAEQ-implementer-20261031T033516-run-01M680D8DBYQXRDKQ7C4C9C6Q8.jsonl",
+    "size_bytes": 2185394
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T03-35-17-01a19006-a5ce-7c13-889d-67a248dd6c87.jsonl",
+    "session_id": "01a19006-a5ce-7c13-889d-67a248dd6c87",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll read the frozen brief and repository instructions, then build the isolated lockfile closure and run the base check before changing code. Publication will remain local only; real API and release integrations will stay explicitly PENDING.\nThe isolated install succeeded: 140 packages from the repository lockfile, with lifecycle scripts disabled. I’m recording the installed-tree and compiler hashes, then running the frozen stub controls and base typecheck. The runtime is Node 22.23.3/npm 10.9.9; Bun is absent, so the suite needs a verified Bun 1.4.3 payload or remains PENDING.\nThe base typecheck and frozen v0 stub check passed on the acquired TypeScript 7.0.2 closure. Bun 1.4.3 passed the official checksum check, and the declared base suite is running.\n\nThe operator supplied the pinned A contract sources and clarified the schema boundary: historical static policies are test/compiler inputs only. Production recipe and file loaders must reject any configured `recipientPolicy` until the dynamic schema and qualified AF release are available.\nThe first base suite run reported two missing `solid-js` module errors from web tests. I’ve added the repository’s separate web lockfile closure using script-disabled `npm ci`; the next matched base/head suite runs will include it.\n\nThe implementation now has shared recipe/file opt-in refusal, protected-overlay checks, neutral attestation/presentation helpers, and a static A compiler checked against the versioned contract stub. None is wired to an unqualified runtime.\nI’ll split the acceptance claim as requested: compiler-core scaffolding can be reviewed now; runtime binding remains PENDING on the canonical selector schema and qualified AF release.\n\nI’m also moving the historical static shape entirely into the versioned test stub. The host core will take compiled ceiling functions, giving T2 an interface to target without treating the superseded fixture schema as deployable.\nLocal commit `15021c4d` is created; nothing has been pushed. On the isolated base/head closures, typechecks, the four frozen compiler-error controls, focused tests, all 19 source mutants, and the byte-for-byte feature-off probe have passed. The documentation checks also passed, with naming coverage explicitly PARTIAL.\n\nThe matched full-suite runs are next to finish. Runtime binding remains PENDING, not claimed as functional completion.\nBoth full suites passed on the isolated closures: base 4,579 tests, head 4,596 tests.\n\nBefore closing, I’m adding the detached item to the host ceiling interface so later T2 predicates can distinguish triggering-author access without narrowing readable storage. I’ll add a storage-only control and rerun the affected gates at the resulting commit. This adds no wire or recipe fields.\nThe per-item evidence change is committed as `9c6f6ea1`. At that commit, typechecks, 90 focused tests, 21 mutants, documentation checks, and the feature-off comparison have passed. The matched base suite also passed again; the final head suite is running.\n\nI’m preparing the evidence report and process reconciliation. Nothing has been pushed.\nThe final head suite passed: 4,597 tests, with zero failures. The base suite passed 4,579 tests. The worktree is clean, and reconciliation found no remaining owned gate or build processes.\n\nThe evidence report separates delivered compiler-core scaffolding from PENDING runtime-binding acceptance. I’m finalizing this bounded slice locally; no push.\n"
+    }
+  ],
+  "narrative_truncated": false
+}
