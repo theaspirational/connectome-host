@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-FMD5N
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN T2 core brief v3: bounded re-check
+:PROPERTIES:
+:UID: 0d7ec45c-965e-5f86-bfe1-8a894c2d0446
+:ID: CONV-FMD5N
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: 
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: 
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE:  ~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-fmd5n-review
+:RUNS:  run-01M68A1FGEYEFBJCPJ3AP8QJ4C
+:CREATED_AT: 2026-10-31T06:23:21Z
+:END:
