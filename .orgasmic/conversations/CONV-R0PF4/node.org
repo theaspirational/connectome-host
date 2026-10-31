@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-R0PF4
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Review TASK-9MKQH
+:PROPERTIES:
+:UID: 1ea8a578-3c46-598f-a012-8646ef9bd4bb
+:ID: CONV-R0PF4
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: claude
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-9mkqh
+:RUNS:  run-01M67YZFS518D18Z5AAGX0EH2Y
+:CREATED_AT: 2026-10-31T03:10:16Z
+:END:
