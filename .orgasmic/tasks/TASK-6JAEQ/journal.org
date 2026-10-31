@@ -95,3 +95,35 @@ ask-9795ca2a: the task operator Tarn's call (engineering): the historical read/w
 :END:
 
 Review 1 APPROVE (a) only (25bea49a…). Fix round 1: run-01M682G1X93YCCNXW0A8725SAN — MEDIUM inference/request: the more restrictive wakeWithoutChannel&&addressed unless the H brief/T1 defines a different rule (then that one + documented on the interface), a widening mutant killed; LOW 1–4 (tombstone, overlay scanner, v1 compiler-control, loaders in feature-off). Without a new install (disk). Unmet: protected guards only via unit, bug-report.ts:346.
+
+* tx-20261031-theaspirationalconnectome-0a076cb4-dc93-44b3-8bbd-411429590ea4 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-0a076cb4-dc93-44b3-8bbd-411429590ea4
+:TIME:    [2026-10-31 Sat 04:46:27]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-6JAEQ
+:TARGET: .orgasmic/tasks/TASK-6JAEQ/node.org
+:REASON: transition TASK-6JAEQ to in_progress
+:FROM_STATE: done
+:TO_STATE: in_progress
+:EVENT_ID: 2a902eef-a50f-48e3-94fb-9c01a114658d
+:END:
+
+* tx-20261031-theaspirationalconnectome-ffb37384-3e7a-417b-817a-47ce0f2f4f36 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-ffb37384-3e7a-417b-817a-47ce0f2f4f36
+:TIME:    [2026-10-31 Sat 04:46:33]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-6JAEQ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: d292e3f3-9737-46cf-9397-4014bc35da54
+:END:
+
+Review 2 APPROVE on 9c6f6ea1..c9f0991d (27d354e4…), scaffolding only. LOW round 2: run-01M684FM21VA94WZX0DPQXR7NQ — LOW-1/4 docs only (the bug-report.ts and walker aren't changed), LOW-2 adding the staging doc and f-host-3/** to docs-contract (PARTIAL), LOW-3 explaining the label without editing the old receipt; src runtime diff must be empty, otherwise STOP. Task operator Tarn's call; Soma may change it.
