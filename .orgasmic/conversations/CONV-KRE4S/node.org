@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-KRE4S
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Implement TASK-ZE2GZ
+:PROPERTIES:
+:UID: 588f8d04-783f-5505-a95d-f99362d91625
+:ID: CONV-KRE4S
+:PURPOSE: implement
+:OWNER: ["member","tarn2"]
+:PROVIDER: codex
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-ze2gz
+:RUNS:  run-01M68TN0RAHK0KJHXZZ32NJ7P6
+:CREATED_AT: 2026-10-31T11:13:53Z
+:END:
