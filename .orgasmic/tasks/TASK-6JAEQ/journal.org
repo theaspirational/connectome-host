@@ -127,3 +127,19 @@ Review 1 APPROVE (a) only (25bea49a…). Fix round 1: run-01M682G1X93YCCNXW0A872
 :END:
 
 Review 2 APPROVE on 9c6f6ea1..c9f0991d (27d354e4…), scaffolding only. LOW round 2: run-01M684FM21VA94WZX0DPQXR7NQ — LOW-1/4 docs only (the bug-report.ts and walker aren't changed), LOW-2 adding the staging doc and f-host-3/** to docs-contract (PARTIAL), LOW-3 explaining the label without editing the old receipt; src runtime diff must be empty, otherwise STOP. Task operator Tarn's call; Soma may change it.
+
+* tx-20261031-theaspirationalconnectome-fe319a67-fd89-4f1f-a2ae-5a57eb7fcac9 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-fe319a67-fd89-4f1f-a2ae-5a57eb7fcac9
+:TIME:    [2026-10-31 Sat 04:47:57]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-6JAEQ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 1cb814da-6918-429f-a450-57bc1a62ebe0
+:END:
+
+Correction to the posting of review 2 (/srv/review-drop/TASK-6JAEQ-FIX1-REVIEW.md 27d354e4…): the 7 cases with the token `recipientPolicy` in a non-policy position (args string, server id, env key, top level, unknown top object, escaped string, array of objects) + numbers-and-escapes are IDENTICAL base d7154d79 vs head c9f0991d (ok:true), not "changed". The 11 changed = 3 corpus cases × 2 functions with a real server-level `mcplServers.<id>.recipientPolicy` (incl. a duplicate id/root) + 5 direct readOverlayEntry/composeOverlay calls with a tombstone+policy. Source: the reviewer's evidence probe/rv-overlay-diff.ts, rv-overlay-{base,head}.json. A bounded claim: no newly refused policy-free case in THIS synthetic corpus; not proof for every config. The guard scope = an own key recipientPolicy of a server definition directly under the servers field.
