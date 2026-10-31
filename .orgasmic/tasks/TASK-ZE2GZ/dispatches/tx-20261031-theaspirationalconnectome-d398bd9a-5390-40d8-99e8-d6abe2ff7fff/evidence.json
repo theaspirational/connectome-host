@@ -1,0 +1,25 @@
+{
+  "event_count": 235,
+  "tool_call_count": 8,
+  "unparsed_events": 0,
+  "bounded_events": 5,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-ZE2GZ-implementer-20261031T113910-run-01M68W3A0HN6Z4G7SXS9GF62HD.jsonl",
+    "size_bytes": 230795
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T11-13-54-01a191aa-87c6-7d33-b37e-18d9c63e2ec3.jsonl",
+    "session_id": "01a191aa-87c6-7d33-b37e-18d9c63e2ec3",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "## Changed\nWrote corrected documents, diff, finding ledger, report and progress copy to `$ORGASMIC_EVIDENCE_DIR/a2-v1.1/`.\n\nUpdater/packed-host paths are explicitly fail-closed **UNSUPPORTED**; inventory, citations, SC(a), local-only artifact and source/lock distinctions are corrected.\n\n## Verification Gates\nRead-only document checks exited 0. All **7/7** hashes verified; worktree unchanged. No commits or package execution.\n\nSHA256SUMS hash:\n```text\n4c0dac68b36829d02fba1312e24e58e09e668193fbb9f72b1d2db5fb080ef9cb\n```\n\n## Unmet Criteria\nIndependent review/acceptance remains outstanding. Payload and installer evidence remain UNRESOLVED.\n\n## Residual Risk\nManager behavior, compatibility enforcement and artifact/type identity remain unverified. No readiness claim."
+    }
+  ],
+  "narrative_truncated": false
+}
