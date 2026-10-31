@@ -8171,3 +8171,20 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     681fa5b3-92a7-4124-acd8-724e3d0804ab
 :END:
+
+
+* TX 2026-10-31 Sat 05:19:36 run.asked TASK-4ZM52
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-cca73bf9-8bc9-4eb4-99af-44c14a68f97e
+:TIME:         [2026-10-31 Sat 05:19:36]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-4ZM52
+:REASON:       §2.4 inventory found an existing timer/home automatic-post dependency: src/recipe.ts:1528–1536 exposes timer-expiry conversation closure turns (test/conversations-recipe.test.ts:24 explicitly asks to post the answer), src/recipe.ts:1476–1482 routes destination-less prose via fork home/latest-inbound, and src/index.ts:503,525,530 passes both to AF alongside the same mcplServers. B opt-in would make that unbound output private (B docs:90–98). Under v4.3 §5 I have stopped before edits or full cells. What operator disposition permits continuing, if any, for this existing conversation-closure/home dependency?
+:RUN_ID:       run-01M686AMRJEZ0YCY8ZTSHYA17Q
+:ASK_ID:       ask-428cedb00fc6453e9f115919dcf66ef0
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     98802d67-d9fc-4f6c-b810-e11c0e60004a
+:END:
