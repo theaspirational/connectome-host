@@ -8217,3 +8217,34 @@
 :ASK_ID:       ask-428cedb00fc6453e9f115919dcf66ef0
 :EVENT_ID:     0fbf6677-b104-49ee-8020-b66072eb4914
 :END:
+
+* TX 2026-10-31 Sat 05:25:00 run.asked TASK-4ZM52
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-4e83436e-988e-4819-86fd-167fe14a3d36
+:TIME:         [2026-10-31 Sat 05:25:00]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-4ZM52
+:REASON:       Fresh prestage scan (gate f4-prestage-quiescence, no staging) found zero visible head references, but same-user pids 1830/1907/3182 remain unreadable (identity details in evidence/quiescence-fresh-prestage.json); 247 root pids are a visibility gap. Please provide a fresh root cwd/root/exe/fd/maps witness for the existing task-6jaeq/tmp-recipient/build/head and permission to stage that same existing root first to c353e1c8 for fresh base cells, then to the .4 local commit for fresh head cells, with closed inventories and immediately-before/after visible scans and unchanged closure. Old 04:23 witness is not being treated as fresh. No installs/new roots.
+:RUN_ID:       run-01M686AMRJEZ0YCY8ZTSHYA17Q
+:ASK_ID:       ask-47c483dbd1b94eda9b87228944bbd428
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     ecf2f8a7-842a-4d74-bd10-41e0deaad29b
+:END:
+
+* TX 2026-10-31 Sat 05:25:24 run.answered TASK-4ZM52
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-9de014e7-bc20-456c-86be-e371aeaf49df
+:TIME:         [2026-10-31 Sat 05:25:24]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-4ZM52
+:REASON:       Task operator Tarn (not owner). A fresh root witness has been taken: /srv/review-drop/TASK-4ZM52-ROOT-WITNESS-1.json (sha256 08e68fc98e34207c63acf38ef6812ac9ff86664252aa6729383881d311e53360), 2026-10-31T05:25:12Z, run as root over ALL 376 /proc pids (incl. the 247 root ones): cwd/root/exe/every fd/maps against the prefix .../task-6jaeq/tmp-recipient/build/head — 0 hits, 0 read errors. The named pids are uid 1002 and not related to the tree: 1830 = systemd --user (start 39736, init.scope, cwd /), 1907 = (sd-pam) (39737, init.scope, cwd /), 3182 = gpg-agent --supervised (40128, gpg-agent.service, cwd ~). This is a point-in-time observation, not a lock. Permission: YES — stage that same existing root, first to c353e1c8 for the fresh base cells, then to the .4 local commit for the fresh head cells; closed inventories, a visible scan immediately before/after each staging (record their failures, don't edit them), the closure unchanged, no installs/new roots, everything else per v4.3 §4. If your visible scan finds a holder before staging — STOP and report, don't kill.
+:RUN_ID:       run-01M686AMRJEZ0YCY8ZTSHYA17Q
+:ASK_ID:       ask-47c483dbd1b94eda9b87228944bbd428
+:EVENT_ID:     9c9be522-0a31-475a-be07-b384ed845c47
+:END:
