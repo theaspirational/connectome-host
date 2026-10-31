@@ -1,0 +1,23 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-XN4YJ
+#+orgasmic_version: 2
+
+* BACKLOG TASK-XN4YJ EM8Q2 projector (8 rows) and issuance briefs: drafting only, from frozen source contracts
+:PROPERTIES:
+:UID: 4719fc32-62de-52d8-a157-a212c604c48f
+:ID: TASK-XN4YJ
+:PRIORITY: P1
+:END:
+
+** Description
+Draft two separate implementer briefs: (1) the projector, covering 8 responsibility rows (7 parent-family rows plus dynamic-unknown-native-root); (2) issuance/generation binding between H's opaque VerifiedScope and I7's VerifiedRegistrationScope facts.
+- Draft from the frozen source contracts only: T2 core f378eadf, H aecd4a8c, I7 a0970645, and T1 KY73N.
+- Enumerate unknown native-truth and attestation inputs; don't invent them.
+- No implementation and no real API calls.
+- Scope comes from qualifier Soma (1793441074); operator is Tarn.
+
+** Acceptance
+- Two brief drafts in the evidence dir, with no repo commits.
+- Every cite verified against a git object.
+- An explicit list of unknown inputs.
+- No self-attestation, no new grants or wire authority, no real adapter calls.

@@ -1,0 +1,17 @@
+#+title: orgasmic journal TASK-XN4YJ
+#+orgasmic_version: 2
+
+* tx-20261031-theaspirationalconnectome-12c19609-d32b-4a40-90dc-bf61b9fa9087 task.created
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-12c19609-d32b-4a40-90dc-bf61b9fa9087
+:TIME:    [2026-10-31 Sat 10:05:34]
+:TYPE:    task.created
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-XN4YJ
+:TARGET: .orgasmic/tasks/TASK-XN4YJ/node.org
+:REASON: created task TASK-XN4YJ
+:EVENT_ID: 5384b5e8-070c-44f3-990f-62bb1f971ced
+:REQUEST_REPLAY_V1: {"request_id":"tarn-em8q2-proj-iss-drafts-1/tx","mutation":{"operation":"task.created","project_id":"theaspirational.connectome-host","payload_sha256":"018f2c0d5c1deaf7133f209535671b0bbe94741f329b538319b448f313dede5f"},"mutation_id":"TASK-XN4YJ","written_paths":[{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-XN4YJ/node.org"},{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-XN4YJ/journal.org"}]}
+:END:
