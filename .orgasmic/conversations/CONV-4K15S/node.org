@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-4K15S
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN A2 v1.1 targeted check
+:PROPERTIES:
+:UID: dc70c41e-e647-5c3c-ba63-f768a1461c65
+:ID: CONV-4K15S
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: 
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: 
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: 
+:RUNS: 
+:CREATED_AT: 2026-10-31T11:44:24Z
+:END:
