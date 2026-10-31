@@ -79,3 +79,19 @@ Operator calls by Tarn (not owner) on run-01M686AMRJEZ0YCY8ZTSHYA17Q: ask-47c483
 :TO_STATE: in_progress
 :EVENT_ID: 98a8916b-5d37-49f8-8870-59f7946ace9d
 :END:
+
+* tx-20261031-theaspirationalconnectome-d771d007-69d0-4eac-bd78-3bf709dab3ea comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-d771d007-69d0-4eac-bd78-3bf709dab3ea
+:TIME:    [2026-10-31 Sat 06:07:42]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-4ZM52
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 75dc2591-0c30-469a-8bb6-6530bc5de735
+:END:
+
+FREEZE .4 compiler-core (a) — task operator Tarn, qualifier Soma; not owner. Chain: c353e1c8 → 536b2e23 (failed first head, kept: v1/v2 TS2339) → e276024a (type-only, review APPROVE /srv/review-drop/TASK-4ZM52-REVIEW1.md 8f7c7341…) → aecd4a8cafe470ad2bbe47b5087c1ec454eef62f (LOW round, /srv/review-drop/TASK-4ZM52-LOWS1.md dfc8a3c7…). Fresh final head: suite 4622/0, focused 115/747, 23+17 named kills, 5 return negatives, feature-off 5af23aaa. Unchanged blobs (my check): recipient-policy.ts 9b7f4ffc, recipe.ts 7a3938b3, index.ts a5c37dbf, v1 static-policy ea06f80f. FAILED and kept: docs-contract (declared FP → EC6WW), f4-final-selectors helper; the zero-selection guarantee was proven separately by the reviewer. Limits: universal excess-property rejection is not claimed; LOWS1 not re-reviewed (operator call). Not closed: (b) runtime binding (I6/.2a/I7), stub-of-B, activation blocker timer/home (owner 6/7), LOCAL ONLY/private ancestry.

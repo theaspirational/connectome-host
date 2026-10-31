@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-66NPK
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN T2 core brief v2: bounded contract check
+:PROPERTIES:
+:UID: 09f32dbd-341d-54bf-830f-6c252ffda0b9
+:ID: CONV-66NPK
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: 
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: 
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: 
+:RUNS: 
+:CREATED_AT: 2026-10-31T06:07:59Z
+:END:
