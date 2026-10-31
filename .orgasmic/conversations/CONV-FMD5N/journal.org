@@ -30,3 +30,18 @@
 :RUN_ID: run-01M68A1FGEYEFBJCPJ3AP8QJ4C
 :EVENT_ID: 3de40516-b117-4f5c-a228-ab550354902a
 :END:
+
+* tx-20261031-theaspirationalconnectome-8646ab91-73f7-4f39-b3fe-108167f91b60 conversation.run_released
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-8646ab91-73f7-4f39-b3fe-108167f91b60
+:TIME:    [2026-10-31 Sat 06:33:18]
+:TYPE:    conversation.run_released
+:ACTOR:   orgasmic
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TARGET: ~/.orgasmic/ledgers/theaspirational.connectome-host/.orgasmic/conversations/CONV-FMD5N/node.org
+:REASON: worker finalize for CONV-FMD5N
+:NODE_ID: CONV-FMD5N
+:RUN_ID: run-01M68A1FGEYEFBJCPJ3AP8QJ4C
+:EVENT_ID: 084785ec-3cf2-4844-9408-ae6ae275b7fc
+:END:
