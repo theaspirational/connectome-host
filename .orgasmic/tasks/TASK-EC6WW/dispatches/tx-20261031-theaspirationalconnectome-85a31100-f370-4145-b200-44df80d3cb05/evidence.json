@@ -1,0 +1,25 @@
+{
+  "event_count": 102,
+  "tool_call_count": 9,
+  "unparsed_events": 1,
+  "bounded_events": 2,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-EC6WW-implementer-20261031T060556-run-01M68913ZJTD9137NBTA1RGTXS.jsonl",
+    "size_bytes": 237473
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T06-05-56-01a19090-93cb-77d2-b954-01b9f00c8826.jsonl",
+    "session_id": "01a19090-93cb-77d2-b954-01b9f00c8826",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll record the base results first, then narrow the predicate and add discriminating controls without removing scan inputs. All work will remain local; naming coverage will stay PARTIAL unless the private name list is supplied."
+    }
+  ],
+  "narrative_truncated": false
+}
