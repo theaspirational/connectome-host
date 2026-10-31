@@ -30,3 +30,18 @@
 :RUN_ID: run-01M68SWEVDC06YQ2T7GM21JMNV
 :EVENT_ID: 2b4e4fc1-2ad5-4307-8c6e-49d0321455fc
 :END:
+
+* tx-20261031-theaspirationalconnectome-bba621de-ba5e-4a7d-bede-da659f529bcb conversation.run_released
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-bba621de-ba5e-4a7d-bede-da659f529bcb
+:TIME:    [2026-10-31 Sat 11:09:45]
+:TYPE:    conversation.run_released
+:ACTOR:   orgasmic
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TARGET: ~/.orgasmic/ledgers/theaspirational.connectome-host/.orgasmic/conversations/CONV-FZ592/node.org
+:REASON: worker finalize for CONV-FZ592
+:NODE_ID: CONV-FZ592
+:RUN_ID: run-01M68SWEVDC06YQ2T7GM21JMNV
+:EVENT_ID: ff624404-1eef-4a02-bb8a-a4d25c051e07
+:END:
