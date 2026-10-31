@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-PGVMF
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Review TASK-R5BF7
+:PROPERTIES:
+:UID: 177e47bf-7a91-5cd5-8d56-b68590980bd4
+:ID: CONV-PGVMF
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: claude
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-r5bf7
+:RUNS:  run-01M67Z7FYQP05GV2555ZDYG6M5
+:CREATED_AT: 2026-10-31T03:14:39Z
+:END:
