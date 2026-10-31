@@ -95,3 +95,19 @@ Input from 6JAEQ (Soma 1793422270): the RUN- predicate (checker:343) gives a fal
 :TO_STATE: in_progress
 :EVENT_ID: 82dd466b-8c6d-4fd8-8a9d-85bd41222d4f
 :END:
+
+* tx-20261031-theaspirationalconnectome-bfe22dfc-65c6-43f4-8d74-76153752dd87 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-bfe22dfc-65c6-43f4-8d74-76153752dd87
+:TIME:    [2026-10-31 Sat 06:40:53]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-EC6WW
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 6f30a466-159a-4e15-ad40-2a24a57a173d
+:END:
+
+Operator diff check of r3 (8d211982..3e7034f7, check-scope-contract.mjs), by Tarn: the mintedNodeIdentifier/compactRunIdentifier/internalIdentifier bodies and neutral() are unchanged (the diff touches only comments around them). The real input scan loop in docsContract is unchanged; the new scanBenign=false flag affects only the benign synthetic identifier control samples, not publicTexts. Additions: 2 collision controls, the all-digit control, %2F and 7-family limitation controls (rejected=false, pinning the current MISS). Reviewed binding: r2 8d211982 APPROVE (REVIEW2 ae9e909e…, checker 02e8cf6b…); r3 3e7034f7 (checker 842b5634…) has no independent review — comments/controls only, Soma's ruling. Status: r3 may be ONE bounded input to the publication check; the 7 uncovered families, the collision class and %2F are limitations carried forward, not closed. 0-name/zebra are test scenarios, not clearance against the real naming list; without a list it's PARTIAL. r1 a5017576 is a known historical positive; fresh public ancestry + complementary checks + manual findings are required. No privacy-clean or retroactive PASS.

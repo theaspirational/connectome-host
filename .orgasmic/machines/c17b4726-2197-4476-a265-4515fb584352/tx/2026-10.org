@@ -10110,3 +10110,94 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     58da5cad-ba91-46c2-b62d-6e097dd58743
 :END:
+
+* TX 2026-10-31 Sat 06:40:53 reviewer.done CONV-FMD5N
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-af580ee4-c724-4709-908e-c6eb2c20a9f0
+:TIME:         [2026-10-31 Sat 06:40:53]
+:TYPE:         reviewer.done
+:ACTOR:        agent.reviewer
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         CONV-FMD5N
+:REASON:       Delta check 2 on v4: READY WITH CHANGES (D1 HIGH: the unconditional child deny breaks the witness for 2 rows; D2-D3 MEDIUM; D4-D6 LOW). Report /srv/review-drop/T2CORE-BRIEF-RECHECK2.md (2f343c0a…). Folded into v4.1 (3345ace2…).
+:MODEL:        opus[1m]
+:EFFORT:       medium
+:CLOSED_TX:    tx-20261031-theaspirationalconnectome-3f5ee189-6e7b-484c-a8f5-320cbd06bd97
+:CLEANUP_STATUS: ok
+:REPORT_PATH:  .orgasmic/conversations/CONV-FMD5N/dispatches/tx-20261031-theaspirationalconnectome-3f5ee189-6e7b-484c-a8f5-320cbd06bd97/report.md
+:VERDICT:      reject
+:EVENT_ID:     4c3b4a43-e830-4117-a49d-7d7c435d5299
+:RELEASES_CLAIM_RUN: run-01M68ANW8YK8WV5Z5VY27K2FFF
+:END:
+
+* TX 2026-10-31 Sat 06:40:54 manager.dispatch_started CONV-FMD5N
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-dfcf081e-6ea6-40f8-b69e-3a03dc916b75
+:TIME:         [2026-10-31 Sat 06:40:54]
+:TYPE:         manager.dispatch_started
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         CONV-FMD5N
+:TARGET:       .orgasmic/tmp/sessions/dispatch-CONV-FMD5N-reviewer-20261031T064054-run-01M68B15F0XNNDSW6XQH1062R3.jsonl
+:REASON:
+:KIND:         reviewer
+:HARNESS:      claude
+:PROTOCOL:     acp
+:TRANSPORT:    spawn
+:BRIDGE:       claude-agent-acp@0.75.1
+:MULTIPLEXER:  none
+:WORKTREE:     ~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-fmd5n-review-2
+:DETACHED_AT:  3e4cf9b39df97f00f9e62e09571201966142c0f3
+:BRIEF_PATH:   .orgasmic/tmp/dispatch/CONV-FMD5N-reviewer/CONV-FMD5N-reviewer-cbd9ef9bd0c24e18934bb9c82ac85b9c-brief.md
+:LAST_PATH:    .orgasmic/tmp/dispatch/CONV-FMD5N-reviewer/CONV-FMD5N-reviewer-cbd9ef9bd0c24e18934bb9c82ac85b9c-last.txt
+:STDOUT_PATH:  .orgasmic/tmp/dispatch/CONV-FMD5N-reviewer/CONV-FMD5N-reviewer-cbd9ef9bd0c24e18934bb9c82ac85b9c-stdout.log
+:DISPATCH_ATTEMPT: cbd9ef9bd0c24e18934bb9c82ac85b9c
+:STARTED_AT:   [2026-10-31 Sat 06:40:54]
+:LIVENESS:     3e4cf9b39df97f00f9e62e09571201966142c0f3
+:NEXT:         reviewer-watch-then-fix-or-close
+:PREFLIGHT:    unchecked:inconclusive
+:REQUESTER:    member:tarn2
+:CLAIM_RUN:    run-01M68B15F0XNNDSW6XQH1062R3
+:CACHE_SEED:   skipped
+:CACHE_SEED_DETAIL: reason=not-cargo
+:REVIEW_TREE:  private
+:MODEL:        opus[1m]
+:EFFORT:       medium
+:REASON_INITIAL: dispatch service participant worker
+:REQUEST_IDENTITY: {"branch":"","credential_mode":null,"effort":"medium","endpoint":"","from":"3e4cf9b39df97f00f9e62e09571201966142c0f3","governance":null,"harness":"claude","harness_args":null,"kind":"reviewer","mcp_isolation":null,"model":"opus[1m]","protocol":"acp","provider":null,"resume_from":null,"simulated":"false","speed":null,"subject":"CONV-FMD5N","transport":"spawn","worktree":"~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-fmd5n-review-2"}
+:EVENT_ID:     57df9d82-fc9c-4e0a-addf-ae926bf11fa0
+:END:
+
+* TX 2026-10-31 Sat 06:40:55 run.created CONV-FMD5N
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-48325d4f-4fec-43db-b2e4-1b85e7b4a0d8
+:TIME:         [2026-10-31 Sat 06:40:55]
+:TYPE:         run.created
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         CONV-FMD5N
+:TARGET:       .orgasmic/tmp/sessions/dispatch-CONV-FMD5N-reviewer-20261031T064054-run-01M68B15F0XNNDSW6XQH1062R3.jsonl
+:REASON:       dispatch service participant worker
+:RUN_ID:       run-01M68B15F0XNNDSW6XQH1062R3
+:ORIGIN:       cli_dispatch
+:WORKER:       reviewer-claude-acp
+:KIND:         reviewer
+:HARNESS:      claude
+:PROTOCOL:     acp
+:TRANSPORT:    spawn
+:BRIDGE:       claude-agent-acp@0.75.1
+:MULTIPLEXER:  none
+:WORKTREE:     ~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-fmd5n-review-2
+:BRIEF_PATH:   .orgasmic/tmp/dispatch/CONV-FMD5N-reviewer/CONV-FMD5N-reviewer-cbd9ef9bd0c24e18934bb9c82ac85b9c-brief.md
+:LAST_PATH:    .orgasmic/tmp/dispatch/CONV-FMD5N-reviewer/CONV-FMD5N-reviewer-cbd9ef9bd0c24e18934bb9c82ac85b9c-last.txt
+:STDOUT_PATH:  .orgasmic/tmp/dispatch/CONV-FMD5N-reviewer/CONV-FMD5N-reviewer-cbd9ef9bd0c24e18934bb9c82ac85b9c-stdout.log
+:DISPATCH_ATTEMPT: cbd9ef9bd0c24e18934bb9c82ac85b9c
+:PID:          869891
+:DISPATCH_TX:  tx-20261031-theaspirationalconnectome-dfcf081e-6ea6-40f8-b69e-3a03dc916b75
+:MODEL_OVERRIDE: opus[1m]
+:EFFORT_OVERRIDE: medium
+:EVENT_ID:     5309533d-e454-450d-bad0-5d7637987954
+:END:
