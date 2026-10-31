@@ -7225,3 +7225,20 @@
 :ASK_ID:       ask-0831d79e7de14bde9d792dbec07ddf49
 :EVENT_ID:     c499b9c9-58ce-49eb-8c14-a34806bdd563
 :END:
+
+* TX 2026-10-31 Sat 04:14:28 run.message TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-3a37e09a-14b8-4dd7-9351-55947df8c0d4
+:TIME:         [2026-10-31 Sat 04:14:28]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       Addition to ask-0831 (task operator Tarn + Soma): I verified it myself. T1 scope-contract (~:229-233 at 9c6f6ea1): "Channel-less pushes and inference keep the baseline lane-specific rules; these selectors do not add a channel-less scope escape". A 869bb3ad: the real inference path already has its own guards OUTSIDE the host compiler — framework.ts:~34932-34946 (render guard -32600, queue.isClosed → refuseServerItem), inference-router.ts:~257-311 (featureSetManager.validateInbound = the feature grant before and after admit, hook loop prevention isInHook before/after, admission.check() before/after, verdict.store&&mayWake required). Therefore: in the host compiler DON'T duplicate or invent a grant check, DON'T bypass these A guards; the host inference ceiling = explicit lane + key/abort (the common guard at recipient-admission.ts:~93) + the presence of featureSet/messages. In the interface doc, write that the grant/hook/render/queue guards belong to A (cite file:line from the contract dir /srv/review-drop/af-a869bb3a-contract/ if they're there, otherwise say that this is A code outside the copied contract). The rest — controls a–d and three mutants — unchanged. In the report, show these points in the diff/tests explicitly (I'll verify by the diff, not by delivery).
+:RUN_ID:       run-01M682G1X93YCCNXW0A8725SAN
+:MESSAGE_ID:   msg-a32f92c2bcd04673a82d1bf27eb08bb3
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     d37a1a04-50ba-4038-b3b5-bd8ab9864de3
+:END:
