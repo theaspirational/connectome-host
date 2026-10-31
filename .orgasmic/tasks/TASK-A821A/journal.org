@@ -111,3 +111,19 @@ Soma 1793413267.355179 (passed on by the task operator Tarn to run-01M67W4JC6WTS
 :TO_STATE: in_progress
 :EVENT_ID: f513b558-69a2-413f-897f-e2f074b96a7a
 :END:
+
+* tx-20261031-theaspirationalconnectome-c65fa590-5bd0-45b6-9018-80076234420d comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-c65fa590-5bd0-45b6-9018-80076234420d
+:TIME:    [2026-10-31 Sat 02:33:42]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-A821A
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 9d020b82-4670-4537-87c1-cdce2c373473
+:END:
+
+FROZEN as local 2a input at 8e92bfbe30d141140531b170e9ef0421c6a16cad (Soma 1793413874.435079). Chain: e5184b31 (input, review 1 APPROVE + F1–F4) → 8dd238b5 (fix, delta review APPROVE, 4 LOWs, /srv/review-drop/TASK-A821A-FIX1-REVIEW.md 5dec2e35…8a5747) → 8e92bfbe (LOW 1/2 code, 3/4 notes; report /srv/review-drop/TASK-A821A-LOWS.md c4ade91f…f634). My check: the diff is exactly 2 files +12/-4 as described; targeted gates in a git-archive mirror (Node 22.23.3): all three modes exit 0; removing ci.yml / f-host-2a-brief.md / stubs.ts → --docs-contract exit 1 "input missing or unreadable: <path>", no stack trace; --self-test and default exit 0; the mirror deleted. Remains: stub-types PENDING until the host's declared closure (TS ^7.0.2); LOCAL ONLY / ancestry hold; the 2a implementation waits for INT-1 and the reviewed S4Q8F head.
