@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-EC6WW
 #+orgasmic_version: 2
 
-* IN_PROGRESS TASK-EC6WW Scope checker: narrow the internal-id detector so the H brief can enter --docs-contract
+* IN_REVIEW TASK-EC6WW Scope checker: narrow the internal-id detector so the H brief can enter --docs-contract
 :PROPERTIES:
 :UID: 1a411b79-2ae6-5bd2-99ac-655ba256fd88
 :ID: TASK-EC6WW
