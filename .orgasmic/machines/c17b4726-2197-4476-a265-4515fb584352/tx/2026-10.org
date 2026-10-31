@@ -7287,3 +7287,20 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     39797aa1-ec6b-4184-a1b2-4ecc58b3b247
 :END:
+
+* TX 2026-10-31 Sat 04:18:09 run.message TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-d5c747bb-e91a-4ad0-b9d4-adf700de2f64
+:TIME:         [2026-10-31 Sat 04:18:09]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       Addition to ask-a7622379 (Soma's condition): for the head root, prove a CLOSED final src/test/stub inventory: (a) every tracked file of HEAD in these trees is present with the same sha256; (b) tracked deletions of this round are absent from the root; (c) there are NO extra/stale source files in the root under src/test/stubs that aren't in `git ls-tree HEAD` (ignored build outputs separately). Don't trust leftover build outputs: regenerate/verify the consumed build outputs (dist etc.) from the staged source. Staging only when nothing else reads/writes the head root (record the check, e.g. fuser/lsof). The installed closure stays unchanged (manifest before/after). Three separately labelled classes: original base d7154d79, reused old-head 9c6f6ea1 observations, fresh fix-head + new v1 gates. This is controlled synthetic staging, not shipping overlays and not production.
+:RUN_ID:       run-01M682G1X93YCCNXW0A8725SAN
+:MESSAGE_ID:   msg-0f212cb651ea4b388596038ac05a9439
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     bfc9c37f-ee1d-43d4-84cb-a2d3cf91e62d
+:END:
