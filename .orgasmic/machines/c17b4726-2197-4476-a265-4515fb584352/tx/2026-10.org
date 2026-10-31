@@ -11436,3 +11436,75 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     2cf76e25-d6ef-4d85-aecf-83c3fedb4433
 :END:
+
+* TX 2026-10-31 Sat 10:36:36 manager.dispatch_started TASK-XN4YJ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-57b41aad-9d7e-4fa0-8ccb-b2dee6889949
+:TIME:         [2026-10-31 Sat 10:36:36]
+:TYPE:         manager.dispatch_started
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-XN4YJ
+:TARGET:       .orgasmic/tmp/sessions/dispatch-TASK-XN4YJ-reviewer-20261031T103636-run-01M68RGQNRTBQRERCTX5ZFCP9S.jsonl
+:REASON:
+:KIND:         reviewer
+:HARNESS:      claude
+:PROTOCOL:     acp
+:TRANSPORT:    spawn
+:BRIDGE:       claude-agent-acp@0.75.1
+:MULTIPLEXER:  none
+:WORKTREE:     ~/.orgasmic/worktrees/theaspirational.connectome-host/task-xn4yj
+:DETACHED_AT:  f378eadffc9a02e2ecb5a4f30e266db9321db4f5
+:BRIEF_PATH:   .orgasmic/tmp/dispatch/TASK-XN4YJ-reviewer/TASK-XN4YJ-reviewer-097f419e49724461987b4914fcb9c274-brief.md
+:LAST_PATH:    .orgasmic/tmp/dispatch/TASK-XN4YJ-reviewer/TASK-XN4YJ-reviewer-097f419e49724461987b4914fcb9c274-last.txt
+:STDOUT_PATH:  .orgasmic/tmp/dispatch/TASK-XN4YJ-reviewer/TASK-XN4YJ-reviewer-097f419e49724461987b4914fcb9c274-stdout.log
+:DISPATCH_ATTEMPT: 097f419e49724461987b4914fcb9c274
+:STARTED_AT:   [2026-10-31 Sat 10:36:36]
+:LIVENESS:     f378eadffc9a02e2ecb5a4f30e266db9321db4f5
+:NEXT:         reviewer-watch-then-fix-or-close
+:PREFLIGHT:    unchecked:inconclusive
+:REQUESTER:    member:tarn2
+:CLAIM_RUN:    run-01M68RGQNRTBQRERCTX5ZFCP9S
+:CACHE_SEED:   skipped
+:CACHE_SEED_DETAIL: reason=not-cargo
+:REVIEW_TREE:  chain
+:MODEL:        opus[1m]
+:EFFORT:       medium
+:REVIEWS_TX:   tx-20261031-theaspirationalconnectome-1439294c-59a2-432c-ba97-d61b1c417fd6
+:REASON_INITIAL: dispatch service participant worker
+:REQUEST_IDENTITY: {"branch":"","credential_mode":null,"effort":"medium","endpoint":"","from":"f378eadffc9a02e2ecb5a4f30e266db9321db4f5","governance":null,"harness":"claude","harness_args":null,"kind":"reviewer","mcp_isolation":null,"model":"opus[1m]","protocol":"acp","provider":null,"resume_from":null,"simulated":"false","speed":null,"subject":"TASK-XN4YJ","transport":"spawn","worktree":"~/.orgasmic/worktrees/theaspirational.connectome-host/task-xn4yj"}
+:EVENT_ID:     62ad01be-9618-4d6f-8165-c924d6d07574
+:END:
+
+* TX 2026-10-31 Sat 10:36:37 run.created TASK-XN4YJ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-538e0a34-67db-4527-bb54-bf24a198f4da
+:TIME:         [2026-10-31 Sat 10:36:37]
+:TYPE:         run.created
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-XN4YJ
+:TARGET:       .orgasmic/tmp/sessions/dispatch-TASK-XN4YJ-reviewer-20261031T103636-run-01M68RGQNRTBQRERCTX5ZFCP9S.jsonl
+:REASON:       dispatch service participant worker
+:RUN_ID:       run-01M68RGQNRTBQRERCTX5ZFCP9S
+:ORIGIN:       cli_dispatch
+:WORKER:       reviewer-claude-acp
+:KIND:         reviewer
+:HARNESS:      claude
+:PROTOCOL:     acp
+:TRANSPORT:    spawn
+:BRIDGE:       claude-agent-acp@0.75.1
+:MULTIPLEXER:  none
+:WORKTREE:     ~/.orgasmic/worktrees/theaspirational.connectome-host/task-xn4yj
+:BRIEF_PATH:   .orgasmic/tmp/dispatch/TASK-XN4YJ-reviewer/TASK-XN4YJ-reviewer-097f419e49724461987b4914fcb9c274-brief.md
+:LAST_PATH:    .orgasmic/tmp/dispatch/TASK-XN4YJ-reviewer/TASK-XN4YJ-reviewer-097f419e49724461987b4914fcb9c274-last.txt
+:STDOUT_PATH:  .orgasmic/tmp/dispatch/TASK-XN4YJ-reviewer/TASK-XN4YJ-reviewer-097f419e49724461987b4914fcb9c274-stdout.log
+:DISPATCH_ATTEMPT: 097f419e49724461987b4914fcb9c274
+:PID:          1198328
+:DISPATCH_TX:  tx-20261031-theaspirationalconnectome-57b41aad-9d7e-4fa0-8ccb-b2dee6889949
+:MODEL_OVERRIDE: opus[1m]
+:EFFORT_OVERRIDE: medium
+:EVENT_ID:     fd627cd5-ed0b-44cc-a209-076c58f06cdd
+:END:
