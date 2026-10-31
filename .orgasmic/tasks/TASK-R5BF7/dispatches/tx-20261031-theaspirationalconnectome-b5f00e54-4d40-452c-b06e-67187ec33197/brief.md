@@ -1,0 +1,23 @@
+Your worktree is this work chain's shared tree, checked out detached at 0f18209b673058bab2b7c5ac695409d6ab632020 — the commit you review. Leave it exactly as you found it: no commits, no edits, no new files (ignored build output is fine). The next round of the chain runs here, and the daemon records anything you leave behind when your dispatch is closed.
+
+Reviewed implementer evidence ($ORGASMIC_REVIEWED_EVIDENCE_DIR): /home/orgasmic/.orgasmic/runs/run-01M67YVEVJ0E5T9ZN195TJ7NWM/evidence
+
+BOUNDED REVIEW of the H brief (TASK-R5BF7), range 8e92bfbe30d141140531b170e9ef0421c6a16cad..0f18209b673058bab2b7c5ac695409d6ab632020 (1 commit, only docs/design/f-host-h-brief.md, 408 lines). Task operator: Tarn; constraints: Soma (programme qualifier); not decisions by the owner Vasyl. Report: /srv/review-drop/TASK-R5BF7-H-BRIEF.md (sha256 463140b7ffd5b1e4c7f3232ba1bd5d7cc2ed55061e8a00963a659cf65ba9713d).
+CHECK with file:line against docs/design/generic-recipient-host.md at a316200c, the T1 contract, fixtures.md, 2a brief, package.json/lockfiles/ci.yml and src:
+(1) the H definition = the §6 table :666-694 VERBATIM (programmatic comparison), the hours/dependencies unchanged, no new bucket and no monolithic rewrite;
+(2) the H/T1–T5/AF boundaries are correct; what H doesn't do (live migration, policy weakening, public history);
+(3) the per-slice input table: is each AVAILABLE pin real (sha/line), and is each MISSING artifact named precisely; the toolchain (TS ^7.0.2 / lock 7.0.2, CI Node/Bun) is cited correctly; the acquisition plan is isolated from the repo's own lock, code-only, with no borrowing;
+(4) contract decisions are actually sourced; the "seven owner questions" = exactly the existing ones from host.md §4/§7, nothing added or relabelled as an owner question; engineering inputs kept separate;
+(5) VerifiedScope = OPERATIONS (an opaque type + trusted constructors/accessors), derived from T1 lines / host.md:703; no invented fields, no authority from a model/descriptor;
+(6) the .3 brief: the goal verbatim from §6, the src file:line insertion points exist, stub-testable vs needs real APIs is split correctly, the case ids exist in scope-cases.json/fixtures, mutants and feature-off controls are planned not claimed, gates PENDING without acquisition; is .3 justified as the first independently testable slice;
+(7) the claim that the docs-contract scan can't include the brief without logic changes (agent-config/agent-overlay in filenames) — reproduce it; is there a neutrality risk in the brief (git grep for internal names); the LOCAL ONLY Publication section.
+Run --self-test/--docs-contract yourself with a timeout. Verdict approve/reject, HIGH/MEDIUM/LOW with file:line. Don't change code.
+
+## Gates already passed at this commit
+
+orgasmic recorded these gate runs in the implementer's worktree, each on a clean tree it left clean, at 0f18209b673058bab2b7c5ac695409d6ab632020 — the commit your worktree is cut at — or at an ancestor of it whose gate inputs are identical to this commit's: the two trees differ only in paths this project marks as not gate inputs. Read the log instead of running the gate again. Run scoped probes and required gates that lack a reusable receipt. The manager names required gates; project policy also applies. Missing receipts do not assign a full suite.
+
+- `brief-source-check` — exit 0 — `bash test/stubs/f-host-2a/bounded-gate.sh 60s python3 /home/orgasmic/.orgasmic/runs/run-01M67YVEVJ0E5T9ZN195TJ7NWM/evidence/verify-brief.py` (cwd `.`) — at `0f18209b673058bab2b7c5ac695409d6ab632020` — log `/home/orgasmic/.orgasmic/runs/run-01M67YVEVJ0E5T9ZN195TJ7NWM/evidence/gate-brief-source-check-01M67Z5R80BTKGFVSAQ1C54RET.log`
+- `diff-check` — exit 0 — `bash test/stubs/f-host-2a/bounded-gate.sh 60s git diff --check 8e92bfbe30d141140531b170e9ef0421c6a16cad HEAD` (cwd `.`) — at `0f18209b673058bab2b7c5ac695409d6ab632020` — log `/home/orgasmic/.orgasmic/runs/run-01M67YVEVJ0E5T9ZN195TJ7NWM/evidence/gate-diff-check-01M67Z5R1QJG31B1WXR12HM27X.log`
+- `docs-contract` — exit 0 — `bash test/stubs/f-host-2a/bounded-gate.sh 60s node test/fixtures/generic-recipient/check-scope-contract.mjs --docs-contract` (cwd `.`) — at `0f18209b673058bab2b7c5ac695409d6ab632020` — log `/home/orgasmic/.orgasmic/runs/run-01M67YVEVJ0E5T9ZN195TJ7NWM/evidence/gate-docs-contract-01M67Z5QWDHPP72D8PXHEK51GD.log`
+- `self-test` — exit 0 — `bash test/stubs/f-host-2a/bounded-gate.sh 60s node test/fixtures/generic-recipient/check-scope-contract.mjs --self-test` (cwd `.`) — at `0f18209b673058bab2b7c5ac695409d6ab632020` — log `/home/orgasmic/.orgasmic/runs/run-01M67YVEVJ0E5T9ZN195TJ7NWM/evidence/gate-self-test-01M67Z5QQ2NEFSXE1T873BNPT4.log`
