@@ -6880,3 +6880,20 @@
 :DELIVERY:     delivered
 :EVENT_ID:     76236825-4723-45bf-b99a-d63056144afa
 :END:
+
+* TX 2026-10-31 Sat 03:45:17 run.message TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-92788898-d591-4366-beb5-31bffeacb87d
+:TIME:         [2026-10-31 Sat 03:45:17]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       A clarification to my answer to ask-9795ca2a (Soma's condition, programme qualifier): fail-closed for a configured recipientPolicy is INTERIM SCAFFOLDING, not a finished functional H binder — don't call it "H.3 complete" in the report/docs. Keep the superseded static inputs test-only. Explicitly name the missing canonical selector schema/representation as an INPUT GAP. Split acceptance into two separate parts: (a) compiler-core (pure validation/compilation/overlay/attestation on T1-contract input — can be accepted now), (b) runtime-binding (needs the canonical schema + the AF release — PENDING). The report must show that this doesn't create a cycle "H waits for T2 / T2 waits for H": state what T2 needs from H (compiler-core interfaces) and what H needs from T2 (the schema), and that (a) unblocks T2 without (b). Engineering contract work within T1 is allowed; no invented T2 fields, no weakening of source policy; profile-off unchanged.
+:RUN_ID:       run-01M680D8DBYQXRDKQ7C4C9C6Q8
+:MESSAGE_ID:   msg-de328f3fc4fa40efbc9f3563ba9d1f35
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     5665f097-efc2-44c6-a297-7b65c5f1946b
+:END:
