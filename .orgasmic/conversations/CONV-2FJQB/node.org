@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-2FJQB
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Review TASK-EC6WW
+:PROPERTIES:
+:UID: 673e2de2-71f2-5a8c-a677-8e1e46608a3e
+:ID: CONV-2FJQB
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: claude
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-ec6ww
+:RUNS:  run-01M689CS59XDM6G7J7TKZTRFFR
+:CREATED_AT: 2026-10-31T06:12:18Z
+:END:
