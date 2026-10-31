@@ -7179,3 +7179,49 @@
 :EFFORT_OVERRIDE: high
 :EVENT_ID:     f819327b-3c48-42bf-b13c-8121b7d8610a
 :END:
+
+
+* TX 2026-10-31 Sat 04:12:22 run.asked TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-2ba756c3-a36f-4521-ba9a-c217ed950174
+:TIME:         [2026-10-31 Sat 04:12:22]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       Host design:204–208 explicitly gives channel-less push its wakeWithoutChannel rule but says inference can be explicitly allowed by lane with no channel reply intent; T1:229–233 retains baseline lane-specific rules. Preserving that distinct rule makes inference allow-only-by-configured-lane, still returning store/mayWake true after the common lane guard. Please confirm that I should document this explicit exemption and kill a widening mutant that returns unconditional true BEFORE the lane/key/abort guard (with separate inference denied-lane/key/abort tests), rather than impose the push ceiling contrary to the cited separate rule. The brief's phrase 'back to unconditional true' is otherwise ambiguous for this documented exemption; no source change to this lane until your answer.
+:RUN_ID:       run-01M682G1X93YCCNXW0A8725SAN
+:ASK_ID:       ask-0831d79e7de14bde9d792dbec07ddf49
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     3c6396a5-90e9-4fb0-96eb-3a45a3f8f30a
+:END:
+
+* TX 2026-10-31 Sat 04:12:47 dispatch.outcomes_acked theaspirational.connectome-host
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-41b58a71-d014-4940-b4d9-363468f5b179
+:TIME:         [2026-10-31 Sat 04:12:47]
+:TYPE:         dispatch.outcomes_acked
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:REASON:       acknowledged 1 outcome(s)
+:OUTCOME_IDS:  3c6396a5-90e9-4fb0-96eb-3a45a3f8f30a
+:ACKED_BY:     member:tarn2
+:EVENT_ID:     ce5feaf3-4e8c-48e6-8651-adf706c9928b
+:END:
+
+* TX 2026-10-31 Sat 04:12:47 run.answered TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-2ec5e5ea-48ae-4677-9dd2-48b232dc6298
+:TIME:         [2026-10-31 Sat 04:12:47]
+:TYPE:         run.answered
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       Task operator Tarn's answer (with Soma's condition, programme qualifier; not the owner): CONFIRMED — do NOT impose the push ceiling. I checked generic-recipient-host.md at 9c6f6ea1: "Inference can be explicitly allowed by lane, with no channel reply intent" — a separate documented rule, and borrowing the push rule could cut off legitimate explicit/scheduled requests. Do: (1) documented exemption on the CompiledRecipientAdmissionPolicy interface (:16-24) and in recipient-policy-staging.md: for inference/request the ceiling is ONLY the explicit lane allowance (+ the common key/epoch/abort guard and any existing feature-grant check, if present in the common guard — don't remove it); read/wake/wakeWithoutChannel/addressed don't apply; no reply intent/destination — with citations host:204-208 and T1:229-233. The doc must NOT advertise "all-lane ceilings" to T2. (2) Discriminating controls: (a) deny-all policy WITHOUT inference in lanes → refused, no store/wake; (b) with inference in lanes, but read/wake=false and wakeWithoutChannel=false → store/mayWake true (pins the documented exemption); (c) wrong key/stale epoch/abort → refused; (d) no replyIntent on any path. (3) Mutants killed: unconditional true BEFORE the lane/key/abort guard; dropping the lane check; and a "push-ceiling borrow" mutant (applying wakeWithoutChannel&&addressed) — it must be killed by control (b). (4) Profile-off/unconfigured inference unchanged — byte-identical in the feature-off probe. (5) If you find that the "maintenance/scheduled" meaning of inference in H/T1/A is defined differently than in host:204-208 — record it as a contract gap, don't decide. LOW 1–4 as in the brief.
+:RUN_ID:       run-01M682G1X93YCCNXW0A8725SAN
+:ASK_ID:       ask-0831d79e7de14bde9d792dbec07ddf49
+:EVENT_ID:     c499b9c9-58ce-49eb-8c14-a34806bdd563
+:END:
