@@ -47,3 +47,19 @@ Input from 6JAEQ (Soma 1793422270): the RUN- predicate (checker:343) gives a fal
 :TO_STATE: in_progress
 :EVENT_ID: 07153d5c-3d55-4958-8742-72875c3433e4
 :END:
+
+* tx-20261031-theaspirationalconnectome-c5da9cff-b1ab-46a9-9ea6-4e75ff20af89 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-c5da9cff-b1ab-46a9-9ea6-4e75ff20af89
+:TIME:    [2026-10-31 Sat 06:10:04]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-EC6WW
+:TARGET: .orgasmic/tasks/TASK-EC6WW/node.org
+:REASON: Fix round: real ids in the controls
+:FROM_STATE: in_review
+:TO_STATE: in_progress
+:EVENT_ID: 2677d9f8-e6ab-453a-b94a-6c797e8f6e74
+:END:
