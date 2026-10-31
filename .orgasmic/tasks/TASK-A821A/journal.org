@@ -15,3 +15,19 @@
 :EVENT_ID: d69c1b75-5bf1-4bc4-9a7e-7ac3ac4d0a45
 :REQUEST_REPLAY_V1: {"request_id":"tarn-fhost-2a-brief-task/tx","mutation":{"operation":"task.created","project_id":"theaspirational.connectome-host","payload_sha256":"d58aaf93aa2f470466163fffbfc3e232798d48a9bb713479fdef6c82628643e0"},"mutation_id":"TASK-A821A","written_paths":[{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-A821A/node.org"},{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-A821A/journal.org"}]}
 :END:
+
+* tx-20261031-theaspirationalconnectome-4a33dedc-6b3b-4e94-8423-d1014bba3d2b task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-4a33dedc-6b3b-4e94-8423-d1014bba3d2b
+:TIME:    [2026-10-31 Sat 02:04:42]
+:TYPE:    task.state_transitioned
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-A821A
+:TARGET: .orgasmic/tasks/TASK-A821A/node.org
+:REASON: transition TASK-A821A to in_progress
+:FROM_STATE: backlog
+:TO_STATE: in_progress
+:EVENT_ID: a8ce4680-3e90-43e3-8450-c29c381bb779
+:END:

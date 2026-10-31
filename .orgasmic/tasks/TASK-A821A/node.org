@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-A821A
 #+orgasmic_version: 2
 
-* BACKLOG TASK-A821A F-host.2a: a bounded brief + API stubs for the harness (from frozen T1)
+* IN_PROGRESS TASK-A821A F-host.2a: a bounded brief + API stubs for the harness (from frozen T1)
 :PROPERTIES:
 :UID: 6412b31b-f0bc-5d7d-8630-1314b9b3005b
 :ID: TASK-A821A

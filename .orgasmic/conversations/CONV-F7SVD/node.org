@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-F7SVD
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Implement TASK-A821A
+:PROPERTIES:
+:UID: d109e427-09ac-555d-beb9-85c80ec73dc9
+:ID: CONV-F7SVD
+:PURPOSE: implement
+:OWNER: ["member","tarn2"]
+:PROVIDER: codex
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-a821a
+:RUNS:  run-01M67V7D9Z9PVK724JFM32R2DK
+:CREATED_AT: 2026-10-31T02:04:42Z
+:END:
