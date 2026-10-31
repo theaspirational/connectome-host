@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-M8YB5
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN F-host.4 brief/contract check (read-only)
+:PROPERTIES:
+:UID: 1cec6bda-40a3-59e6-b453-66187cbb5a33
+:ID: CONV-M8YB5
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: 
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: 
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE:  ~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-m8yb5-review
+:RUNS:  run-01M684X06K5QWATMHANGGGRKCN
+:CREATED_AT: 2026-10-31T04:53:34Z
+:END:

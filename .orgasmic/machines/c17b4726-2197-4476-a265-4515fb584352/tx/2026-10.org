@@ -7795,3 +7795,74 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     ad68b573-e89a-45b4-aba8-00281e6ddf7f
 :END:
+
+* TX 2026-10-31 Sat 04:53:46 manager.dispatch_started CONV-M8YB5
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-83a083be-5d75-4bf3-a47c-7c802bff4323
+:TIME:         [2026-10-31 Sat 04:53:46]
+:TYPE:         manager.dispatch_started
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         CONV-M8YB5
+:TARGET:       .orgasmic/tmp/sessions/dispatch-CONV-M8YB5-reviewer-20261031T045346-run-01M684X06K5QWATMHANGGGRKCN.jsonl
+:REASON:
+:KIND:         reviewer
+:HARNESS:      claude
+:PROTOCOL:     acp
+:TRANSPORT:    spawn
+:BRIDGE:       claude-agent-acp@0.75.1
+:MULTIPLEXER:  none
+:WORKTREE:     ~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-m8yb5-review
+:BRANCH:       task-conv-m8yb5-review
+:BRIEF_PATH:   .orgasmic/tmp/dispatch/CONV-M8YB5-reviewer/CONV-M8YB5-reviewer-b32eaac521034c8a9a9c993c466f18c7-brief.md
+:LAST_PATH:    .orgasmic/tmp/dispatch/CONV-M8YB5-reviewer/CONV-M8YB5-reviewer-b32eaac521034c8a9a9c993c466f18c7-last.txt
+:STDOUT_PATH:  .orgasmic/tmp/dispatch/CONV-M8YB5-reviewer/CONV-M8YB5-reviewer-b32eaac521034c8a9a9c993c466f18c7-stdout.log
+:DISPATCH_ATTEMPT: b32eaac521034c8a9a9c993c466f18c7
+:STARTED_AT:   [2026-10-31 Sat 04:53:46]
+:LIVENESS:     3e4cf9b39df97f00f9e62e09571201966142c0f3
+:NEXT:         reviewer-watch-then-fix-or-close
+:PREFLIGHT:    unchecked:inconclusive
+:REQUESTER:    member:tarn2
+:CLAIM_RUN:    run-01M684X06K5QWATMHANGGGRKCN
+:CACHE_SEED:   skipped
+:CACHE_SEED_DETAIL: reason=not-cargo
+:REVIEW_TREE:  private
+:MODEL:        opus[1m]
+:EFFORT:       medium
+:REASON_INITIAL: dispatch service participant worker
+:REQUEST_IDENTITY: {"branch":"task-conv-m8yb5-review","credential_mode":null,"effort":"medium","endpoint":"","from":"3e4cf9b39df97f00f9e62e09571201966142c0f3","governance":null,"harness":"claude","harness_args":null,"kind":"reviewer","mcp_isolation":null,"model":"opus[1m]","protocol":"acp","provider":null,"resume_from":null,"simulated":"false","speed":null,"subject":"CONV-M8YB5","transport":"spawn","worktree":"~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-m8yb5-review"}
+:EVENT_ID:     7bfd90ff-6706-41af-873a-b93ff21aaf72
+:END:
+
+* TX 2026-10-31 Sat 04:53:47 run.created CONV-M8YB5
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-f2c10293-5a35-439d-9035-f4811c5bd0c1
+:TIME:         [2026-10-31 Sat 04:53:47]
+:TYPE:         run.created
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         CONV-M8YB5
+:TARGET:       .orgasmic/tmp/sessions/dispatch-CONV-M8YB5-reviewer-20261031T045346-run-01M684X06K5QWATMHANGGGRKCN.jsonl
+:REASON:       dispatch service participant worker
+:RUN_ID:       run-01M684X06K5QWATMHANGGGRKCN
+:ORIGIN:       cli_dispatch
+:WORKER:       reviewer-claude-acp
+:KIND:         reviewer
+:HARNESS:      claude
+:PROTOCOL:     acp
+:TRANSPORT:    spawn
+:BRIDGE:       claude-agent-acp@0.75.1
+:MULTIPLEXER:  none
+:WORKTREE:     ~/.orgasmic/worktrees/theaspirational.connectome-host/task-conv-m8yb5-review
+:BRIEF_PATH:   .orgasmic/tmp/dispatch/CONV-M8YB5-reviewer/CONV-M8YB5-reviewer-b32eaac521034c8a9a9c993c466f18c7-brief.md
+:LAST_PATH:    .orgasmic/tmp/dispatch/CONV-M8YB5-reviewer/CONV-M8YB5-reviewer-b32eaac521034c8a9a9c993c466f18c7-last.txt
+:STDOUT_PATH:  .orgasmic/tmp/dispatch/CONV-M8YB5-reviewer/CONV-M8YB5-reviewer-b32eaac521034c8a9a9c993c466f18c7-stdout.log
+:DISPATCH_ATTEMPT: b32eaac521034c8a9a9c993c466f18c7
+:PID:          557925
+:DISPATCH_TX:  tx-20261031-theaspirationalconnectome-83a083be-5d75-4bf3-a47c-7c802bff4323
+:MODEL_OVERRIDE: opus[1m]
+:EFFORT_OVERRIDE: medium
+:EVENT_ID:     feedd4bd-e26b-498f-b730-74e884ee7325
+:END:
