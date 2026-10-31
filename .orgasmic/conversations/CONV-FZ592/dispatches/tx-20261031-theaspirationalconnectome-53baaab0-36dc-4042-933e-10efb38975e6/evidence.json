@@ -1,0 +1,20 @@
+{
+  "event_count": 328,
+  "tool_call_count": 0,
+  "unparsed_events": 0,
+  "bounded_events": 5,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-CONV-FZ592-reviewer-20261031T110028-run-01M68SWEVDC06YQ2T7GM21JMNV.jsonl",
+    "size_bytes": 536693
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.claude/projects/-home-orgasmic--orgasmic-worktrees-theaspirational-connectome-host-task-conv-fz592-review/099c575f-0e9e-4343-87fb-93c2d41347c2.jsonl",
+    "session_id": "099c575f-0e9e-4343-87fb-93c2d41347c2",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [],
+  "narrative_truncated": false
+}
