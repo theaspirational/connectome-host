@@ -5515,3 +5515,21 @@
 :EFFORT_OVERRIDE: high
 :EVENT_ID:     72757b38-19ac-4de0-80bf-309b8f2cd502
 :END:
+
+
+* TX 2026-10-31 Sat 02:22:01 run.message TASK-A821A
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-0f2c60db-62bd-4e49-a8aa-38298bb25ac5
+:TIME:         [2026-10-31 Sat 02:22:01]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-A821A
+:REASON:       Clarification (Soma 1793413267, passed on by the task operator Tarn): F3: making --self-test robust must NOT turn missing required stubs into PASS/PARTIAL; in normal validation (--docs-contract) a missing required stub file = a clear FAIL (nonzero, a named file), not a stack trace and not a skip. Only modes that don't use the stubs (--self-test/default) don't depend on them. Add a control: a mirror without the file → --docs-contract FAIL with the file name, --self-test exit 0. F4: make the readonly assertion discriminate (it witnesses specifically TS2542 after narrowing), but its validation on the pinned compiler stays PENDING; don't claim it's checked. F1 stays PENDING until the host's declared closure exists; no compiler acquisition. No source/CI permission changes and no new repo secrets. LOCAL ONLY.
+:RUN_ID:       run-01M67W4JC6WTSCP6Q62QW7KBY1
+:MESSAGE_ID:   msg-30100b9905c642f8821f0a2d5f4841e0
+:FROM:         member:tarn2
+:DELIVERY:     delivered
+:EVENT_ID:     7f4c665d-39af-4e80-a8a7-713e9ffa6d9c
+:END:
