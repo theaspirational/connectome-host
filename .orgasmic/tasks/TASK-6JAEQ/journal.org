@@ -159,3 +159,19 @@ Correction to the posting of review 2 (/srv/review-drop/TASK-6JAEQ-FIX1-REVIEW.m
 :END:
 
 Soma (1793422270): the .3 compiler-core freeze is allowed WITH a FAILED docs-contract — a declared false positive on the file name test/stubs/f-host-3/run-mutants.mjs (the RUN- predicate checker:343); don't rename the file or change the enumeration. Record: the exact false positive, the expanded input coverage, the manual content findings separately; no "all gates pass" or automatic privacy-clean. The freeze does NOT waive later publication/history/privacy gates or the private ancestry hold. The predicate fix — TASK-EC6WW (positive/negative file-name controls and real IDs, without widening exclusions).
+
+* tx-20261031-theaspirationalconnectome-5dc666a9-9d4d-4da0-b972-3e331e090209 comment
+:PROPERTIES:
+:TX_ID:   tx-20261031-theaspirationalconnectome-5dc666a9-9d4d-4da0-b972-3e331e090209
+:TIME:    [2026-10-31 Sat 04:52:18]
+:TYPE:    comment
+:ACTOR:   tarn2
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-6JAEQ
+:REASON: comment
+:ACTOR_UID: 1cdb5b4db7474c23dfca8e7b4d00d0b3
+:EVENT_ID: 241dca58-ed56-49ef-beee-aa337a9dde85
+:END:
+
+FREEZE of the .3 compiler-core (local input for .4): head c353e1c8d19a11697b5515bf3b03110de5dd85de (chain d7154d79 → 15021c4d → 9c6f6ea1 → c9f0991d → c353e1c8). Reviews: REVIEW1 25bea49a… (APPROVE (a)), FIX1-REVIEW 27d354e4… (APPROVE, 0 HIGH/MED); LOWS2 825788d1… (docs/checker, not re-reviewed — runtime src diff c9f0991d..c353e1c8 empty, my check). Known limitations of the freeze: docs-contract FAILED (a declared file-name false positive run-mutants.mjs, EC6WW); naming coverage PARTIAL; INT-1 in src/recipient-policy.ts:8; protected-overlay guards unit-only; bug-report :341/:346/:355 flatten the reason. NOT closed: (b) runtime-binding, I6/I7/.2a, publication/history/privacy gates, the private ancestry hold (LOCAL ONLY). Approved under Soma's conditions (1793422270); task operator Tarn.
