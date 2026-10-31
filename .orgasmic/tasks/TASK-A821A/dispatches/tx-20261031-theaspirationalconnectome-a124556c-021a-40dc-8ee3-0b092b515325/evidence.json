@@ -1,0 +1,25 @@
+{
+  "event_count": 117,
+  "tool_call_count": 4,
+  "unparsed_events": 0,
+  "bounded_events": 0,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-A821A-implementer-20261031T023139-run-01M67WRSBCZG2VARTM1KWXE9Y7.jsonl",
+    "size_bytes": 148554
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T02-04-42-01a18fb3-ba72-7111-9015-d8f5741fa6c7.jsonl",
+    "session_id": "01a18fb3-ba72-7111-9015-d8f5741fa6c7",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll verify the review hash, make only the requested wording and guarded-read changes, then run the bounded checks. Compiler validation stays pending.The two scoped commits are complete, and all four gates pass at the clean final commit. All seven missing-input controls passed, including removal of the checker source after Node loaded it. The brief now states the caller’s fallback-log cleanup responsibility and accurately describes two independent detection rules plus a message discriminator."
+    }
+  ],
+  "narrative_truncated": false
+}
