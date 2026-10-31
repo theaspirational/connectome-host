@@ -7335,3 +7335,19 @@
 :ASK_ID:       ask-6c5124aac9ac4208b3a019bebd1767b3
 :EVENT_ID:     d936078e-ee41-404a-8a88-c8c449d30e55
 :END:
+
+* TX 2026-10-31 Sat 04:23:04 run.asked TASK-6JAEQ
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-ab323a49-a871-403d-b5e2-075b8d2b9653
+:TIME:         [2026-10-31 Sat 04:23:04]
+:TYPE:         run.asked
+:ACTOR:        orgasmic
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-6JAEQ
+:REASON:       Head is still unstaged. Supplementary /proc scan found 0 head references, 252 unreadable root-owned pids (accepted residual), 85 other-user pids barred by ~ mode 750, plus THREE unreadable uid-1002 services: pid 1830 systemd + pid 1907 sd-pam in user init.scope (started Oct 27), pid 3182 gpg-agent in gpg-agent.service (also Oct 27). These are not ours and I will not kill/alter them. Their cwd/root/exe/fd/maps are EACCES. Please authorize a specific treatment of these visibility gaps or provide a quiescence witness; I won't stage based on an unexplained same-user gap. Also retained: the first supplementary helper failed before scanning on an empty Groups field regex; corrected parser produced this complete result, not a package/test retry. No head gate/staging has run.
+:RUN_ID:       run-01M682G1X93YCCNXW0A8725SAN
+:ASK_ID:       ask-5a0bd504382c48249e91443b97154a60
+:TIMEOUT_SECS: 1800
+:EVENT_ID:     15065af0-9925-4b1a-a042-c5d7af9a0f4d
+:END:
