@@ -9697,3 +9697,21 @@
 :ACKED_BY:     member:tarn2
 :EVENT_ID:     f648dedf-5d1b-4dc1-a785-df305141eb6d
 :END:
+
+
+* TX 2026-10-31 Sat 06:25:36 run.message TASK-EC6WW
+:PROPERTIES:
+:TX_ID:        tx-20261031-theaspirationalconnectome-e9c4e3a1-6771-4680-b643-b7f6db9f2e95
+:TIME:         [2026-10-31 Sat 06:25:36]
+:TYPE:         run.message
+:ACTOR:        tarn2
+:MACHINE:      c17b4726-2197-4476-a265-4515fb584352
+:PROJECT:      theaspirational.connectome-host
+:TASK:         TASK-EC6WW
+:REASON:       An addition to the check (qualifier Soma via operator Tarn): classify the initial m1/m4 failures at c77c54c5 (logs gate-r2-m1-01M689SB…, gate-r2-m4-01M689SBG…, and the reruns gate-r2-m*-expectation-corrected-*; harnesses identifier-mutants.initial.mjs vs .pre-shapes.mjs in the implementer's evidence). For each attempt: was it a harness/preflight error (wrong expected kill name) or a surviving mutant; were the inputs/code identical between the attempt and the rerun (checker sha, mutant sha, harness diff — only the expectation?). Bind the receipts and the harness repair diff to each attempt. A later kill doesn't erase an earlier survivor and doesn't establish stability by itself. Rerun nothing in a loop — inspection plus at most one rerun of your own, if needed, explicitly labelled. The task-based collision and the uncovered families are limitations; PASS = only the actual controls/inputs.
+:RUN_ID:       run-01M68A21674M4N5JXMXK2XMDJW
+:MESSAGE_ID:   msg-d36715ba0b844877ac1e46309dab8b26
+:FROM:         member:tarn2
+:DELIVERY:     queued
+:EVENT_ID:     fae11999-8c97-405d-8f36-1cd688b533cb
+:END:
