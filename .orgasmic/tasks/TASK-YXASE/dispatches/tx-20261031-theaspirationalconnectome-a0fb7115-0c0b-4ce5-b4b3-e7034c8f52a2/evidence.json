@@ -1,0 +1,25 @@
+{
+  "event_count": 230,
+  "tool_call_count": 9,
+  "unparsed_events": 0,
+  "bounded_events": 5,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-YXASE-implementer-20261031T073046-run-01M68DWEVFGBZ1KXZJ4M7SV89E.jsonl",
+    "size_bytes": 228210
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T06-53-13-01a190bb-db90-7841-92c3-078f56da6e5b.jsonl",
+    "session_id": "01a190bb-db90-7841-92c3-078f56da6e5b",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll verify the review hash, make the two documentation reclassifications, and correct the report’s accounting and neutrality caveat. I’ll leave the code, checker and first commit untouched, then run only the two requested checks.\n\nI’ll add the explicit lane limitation and links to the existing controls in both the doc and report. I’ll also record F2 as **12 behavioural kills + 1 source-assert kill (reply-skips-read)**, with conversion to a verdict fixture assigned to the projector slice. The reviewer probe will remain supplementary evidence, not a docs-contract pass or privacy clearance.\n\nThe doc now has **19 independent / 11 shared / 19 witness-only** rows, the four-family shared breakdown, and the lane limitation with links. Both follow-up commits are docs-only; the first commit is unchanged. The full report now explains the fail-fast scan and supplementary evidence. I’m running only diff-check and count consistency.\n\n"
+    }
+  ],
+  "narrative_truncated": false
+}
