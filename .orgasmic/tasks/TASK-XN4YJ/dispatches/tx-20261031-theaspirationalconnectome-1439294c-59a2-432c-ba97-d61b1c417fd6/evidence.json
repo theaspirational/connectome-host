@@ -1,0 +1,25 @@
+{
+  "event_count": 233,
+  "tool_call_count": 19,
+  "unparsed_events": 0,
+  "bounded_events": 3,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-XN4YJ-implementer-20261031T102744-run-01M68R0G27BVVD436P1HHA7ZJZ.jsonl",
+    "size_bytes": 354674
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/10/31/rollout-2026-10-31T10-06-54-01a1916d-2ed7-72c0-bca0-55a4b546f525.jsonl",
+    "session_id": "01a1916d-2ed7-72c0-bca0-55a4b546f525",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll preserve v1, re-verify the review’s AF call-path claims, and write the corrections only under the new evidence directory. I won’t implement, commit, or run tests.The scoped read confirms AF already pins the target registration ref when both `replyAuthority` and `registrationScope` are configured, then ANDs AF validity with host authorization at send time. I’ve corrected the host-retention claim to defence-in-depth. V2 also marks the frozen wake/reply C6 positives as shared-reader model artifacts and leaves the actual per-operation parent checks uncovered.The six v2 documents and checksum manifest are written, and v1 remains unchanged. The coverage table records 31 entries without promoting any projector row to qualified evidence. I’ll submit the report now without `--commit`; the tracked tree is clean at the frozen HEAD."
+    }
+  ],
+  "narrative_truncated": false
+}
