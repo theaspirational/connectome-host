@@ -1,0 +1,19 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-59AGK
+#+orgasmic_version: 2
+
+* IN_PROGRESS TASK-59AGK Fix bot-review findings on connectome-host#523
+:PROPERTIES:
+:UID: 4b8f44a7-5785-569e-8789-ed0e4698049a
+:ID: TASK-59AGK
+:PRIORITY: P2
+:END:
+
+** Description
+Fix the 3 unresolved github-actions review findings on anima-research/connectome-host#523 (fork branch `agent-retry-turn-policy`, head 925e4f70758a8d6e738bc70f0f3c1eb773be0a27) that drafting task TASK-M8XJE (connectome-coordinator) classified as Needs fix. Findings, evidence and draft replies: /srv/review-drop/TASK-M8XJE/pr-connectome-host-523.md. Owner go: `botrv:nf:fix` (TG 1620).
+
+** Acceptance
+- Each Needs-fix finding is either fixed with a regression test, or, where the drafting report marks it a policy decision, given a short documented rationale. Mark that rationale as the implementer's proposal; it isn't decided.
+- New commits on top of 925e4f70758a8d6e738bc70f0f3c1eb773be0a27, no history rewrite. No push.
+- The project's full test suite and typecheck pass, compared against the same suite at 925e4f70758a8d6e738bc70f0f3c1eb773be0a27.
+- For each thread url: an updated reply draft, "Addressed in <sha>. …", in English, with no internal names or task ids. Put them in replies.md.
