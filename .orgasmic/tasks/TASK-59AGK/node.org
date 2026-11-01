@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-59AGK
 #+orgasmic_version: 2
 
-* IN_REVIEW TASK-59AGK Fix bot-review findings on connectome-host#523
+* DONE TASK-59AGK Fix bot-review findings on connectome-host#523
 :PROPERTIES:
 :UID: 4b8f44a7-5785-569e-8789-ed0e4698049a
 :ID: TASK-59AGK
