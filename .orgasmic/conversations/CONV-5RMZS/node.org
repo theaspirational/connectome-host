@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-5RMZS
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Review TASK-59AGK
+:PROPERTIES:
+:UID: aab508e7-4689-5598-83ff-1299b09d3cfa
+:ID: CONV-5RMZS
+:PURPOSE: review
+:OWNER: ["member","tarn2"]
+:PROVIDER: claude
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-59agk
+:RUNS:  run-01M6BAQ2HWAF251W437HVPKD22
+:CREATED_AT: 2026-11-01T10:33:07Z
+:END:
