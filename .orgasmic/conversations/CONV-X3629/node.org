@@ -1,0 +1,23 @@
+#+title: orgasmic Conversation CONV-X3629
+#+orgasmic_version: 2
+
+#+todo: OPEN | ARCHIVED
+
+* OPEN Review TASK-JY8YM
+:PROPERTIES:
+:UID: f0af8b1c-574f-56d5-a1cd-a8e5c6faa1b7
+:ID: CONV-X3629
+:PURPOSE: review
+:OWNER: ["member","alnold"]
+:PROVIDER: codex
+:MODEL: 
+:EFFORT: 
+:ACCESS: 
+:SERVICE_TIER: 
+:HARNESS_ARGS: 
+:MODE: chat
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:WORKTREE: ~/.orgasmic/worktrees/theaspirational.connectome-host/task-jy8ym
+:RUNS: 
+:CREATED_AT: 2026-11-02T10:35:53Z
+:END:
