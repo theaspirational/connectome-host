@@ -1,0 +1,25 @@
+{
+  "event_count": 802,
+  "tool_call_count": 83,
+  "unparsed_events": 2,
+  "bounded_events": 11,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-JY8YM-implementer-20261102T094313-run-01M6DT8DDR5HRY1NJMPRW3AK56.jsonl",
+    "size_bytes": 1219146
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/11/02/rollout-2026-11-02T09-43-14-01a19ba4-3d21-7b40-968a-aef98cd811c6.jsonl",
+    "session_id": "01a19ba4-3d21-7b40-968a-aef98cd811c6",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll verify the review file first, then read the repository instructions and confirm that the available upstream main is newer than the PR base. I’ll keep all work local and record the requested test evidence within the 60-minute budget.\nThe checksum matches, and I’ve read the full review. The available upstream main is `5d60376e`, 133 commits beyond the PR merge-base; the rebase completed without conflicts and brings in agent-framework 0.32.0. I’ll take the reviewer’s preferred turn-default completion option, preserving the deadline schedule, overload allowance and stated-wait ceilings.\nThe rebased pre-fix source and web typechecks pass. The full suite is still running; a release-notice test has failed so far. I’ve also started a separate main baseline to help distinguish pre-existing failures from regressions.\nThe targeted regressions now pass after showing the failures before the fixes. Deadline tests use the registered expiry symbol and verify one fresh call even with `maxRetries: 0` or `8`. Real subagent launch tests also retain 120-second 429 and 360-second 529 waits within one run, without throttling or restarting; they record the selected sleep rather than waiting minutes. The full baselines are still running, and both have reproduced the same three failures so far.\nAll four findings are committed locally in three fix commits. The supplemental pre-fix suite finished with 4,605 pass / 8 fail and 2 missing-web-dependency errors; it started before the web install completed. The separate main run started after that install and is still running. I’m now running the required gates at the committed head.\nThe main baseline finished with 4,592 pass / 5 fail / 0 skip. Both source and web typechecks pass on main and at head, and the 40 targeted retry tests pass at the committed head. The full head suite is still running; its two failures so far also failed on main. The report includes the per-finding reply and PR-update drafts.\nThe head suite finished with 4,633 pass / 4 fail / 0 skip. All four failures also failed on main; there are no new named failures or import errors. Both typechecks pass, as do all 40 targeted retry tests. I’m finalizing the report with the commit table, red/green logs and drafts.\n"
+    }
+  ],
+  "narrative_truncated": false
+}

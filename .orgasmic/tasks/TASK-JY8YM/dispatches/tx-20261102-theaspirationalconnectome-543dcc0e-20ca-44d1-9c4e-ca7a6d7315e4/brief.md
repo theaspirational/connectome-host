@@ -1,0 +1,15 @@
+Standing rules (read first):
+- Environment: run every command with NO_UPDATE_NOTIFIER=1 and npm_config_update_notifier=false from the very first command; install with `npm ci --ignore-scripts` (or the repo's existing lockfile tool with scripts off). A loopback-only network guard is in force: do not try to reach the network. Credential variables are unset; do not look for tokens.
+- Run heavy test commands under the memory scope: `XDG_RUNTIME_DIR=/run/user/1002 systemd-run --user --scope -p MemoryMax=4G -p MemorySwapMax=0 <cmd>`.
+- Do not push, open PRs or post anywhere. Commit on your branch only.
+- Public text (commit messages, changelog, docs, PR-body draft, reply draft) must not mention agents, hosts, orgasmic, private names or internal task ids. Cite the reviewer's finding ids (R2-n / R3-n / R1-n) in commit messages as the review asks.
+
+Input: the maintainer's nightly review of anima-research/connectome-host#523, full text at `/srv/review-drop/upstream-reviews/connectome-host-523-R1-5732399297.md`. FIRST verify `sha256sum /srv/review-drop/upstream-reviews/connectome-host-523-R1-5732399297.md` equals `97a22890fe57f109a26d64610bc72c0e92f577e0ae81cec30141359a09cf8f02`; if not, STOP and report. Read the whole file before changing code.
+
+Task: address every finding in that review (blockers, majors, minors, nits) on top of the PR head you start from. For each behavioural finding add a regression test that is red before your fix and green after (show both). Where the review offers options, take the reviewer's stated preference unless it contradicts another finding; say which option you took and why. Where a finding is out of scope or you disagree, do not silently skip it: explain in the report and in the reply draft.
+
+Gates: full test suite and typecheck at the base and at your head (report pass/fail/skip counts for both); note any pre-existing failures that also fail at base.
+
+Report (keep it complete, under ~25 KB): 1) table finding-id → disposition → commit → test; 2) gate numbers base vs head; 3) a draft reply to the review for the PR thread, plain and short, one bullet per finding id with the commit sha; 4) a draft of any PR title/body updates the review asks for; 5) anything you could not finish. Work budget: 60 minutes from your first note; then commit what you have and report.
+
+Note: main has moved ~133 commits and now locks agent-framework 0.32.0. First rebase (or merge, whichever keeps the history reviewable; prefer rebase onto current upstream main as fetched in your worktree, and say which main sha you used) and resolve conflicts, then fix R1-1 (the blocker: an explicit agent.retry must not drop the framework's `deadline` schedule) and the rest. If your worktree does not have an upstream main newer than the PR base, STOP and report instead of guessing.
