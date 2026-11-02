@@ -2,7 +2,7 @@
 #+title: orgasmic task TASK-JY8YM
 #+orgasmic_version: 2
 
-* IN_REVIEW TASK-JY8YM #523 R1 fixes: rebase onto current main (AF 0.32) and keep the framework deadline schedule
+* DONE TASK-JY8YM #523 R1 fixes: rebase onto current main (AF 0.32) and keep the framework deadline schedule
 :PROPERTIES:
 :UID: 99b8a37a-5ae6-5f2d-8757-96214057181a
 :ID: TASK-JY8YM
