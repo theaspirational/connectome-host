@@ -1,0 +1,33 @@
+#+title: orgasmic journal TASK-JY8YM
+#+orgasmic_version: 2
+
+* tx-20261102-theaspirationalconnectome-aead0b4a-7053-42a6-ab4b-e973f920d98f task.created
+:PROPERTIES:
+:TX_ID:   tx-20261102-theaspirationalconnectome-aead0b4a-7053-42a6-ab4b-e973f920d98f
+:TIME:    [2026-11-02 Mon 09:43:09]
+:TYPE:    task.created
+:ACTOR:   alnold
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-JY8YM
+:TARGET: .orgasmic/tasks/TASK-JY8YM/node.org
+:REASON: created task TASK-JY8YM
+:EVENT_ID: c27ca239-99ca-4a7a-b18d-c0247d1de09b
+:REQUEST_REPLAY_V1: {"request_id":"alnold-upfix-523-task/tx","mutation":{"operation":"task.created","project_id":"theaspirational.connectome-host","payload_sha256":"c534eb1470224c53e16668f98fc8acec36e1e2bd34569205d0162a433aaf8cca"},"mutation_id":"TASK-JY8YM","written_paths":[{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-JY8YM/node.org"},{"project":"theaspirational.connectome-host","relative":".orgasmic/tasks/TASK-JY8YM/journal.org"}]}
+:END:
+
+* tx-20261102-theaspirationalconnectome-df675009-2652-4043-899a-477ff6906ea9 task.state_transitioned
+:PROPERTIES:
+:TX_ID:   tx-20261102-theaspirationalconnectome-df675009-2652-4043-899a-477ff6906ea9
+:TIME:    [2026-11-02 Mon 09:43:11]
+:TYPE:    task.state_transitioned
+:ACTOR:   alnold
+:MACHINE: c17b4726-2197-4476-a265-4515fb584352
+:PROJECT: theaspirational.connectome-host
+:TASK: TASK-JY8YM
+:TARGET: .orgasmic/tasks/TASK-JY8YM/node.org
+:REASON: transition TASK-JY8YM to in_progress
+:FROM_STATE: backlog
+:TO_STATE: in_progress
+:EVENT_ID: 0ee19805-20f3-4e0b-aca3-edfaa911ff88
+:END:

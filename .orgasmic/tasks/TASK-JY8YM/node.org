@@ -1,0 +1,15 @@
+#+plugin: tasks schema=1
+#+title: orgasmic task TASK-JY8YM
+#+orgasmic_version: 2
+
+* IN_PROGRESS TASK-JY8YM #523 R1 fixes: rebase onto current main (AF 0.32) and keep the framework deadline schedule
+:PROPERTIES:
+:UID: 99b8a37a-5ae6-5f2d-8757-96214057181a
+:ID: TASK-JY8YM
+:PRIORITY: P1
+:END:
+
+** Description
+Fix round for the maintainer's latest nightly review on anima-research/connectome-host#523 (owner asked us to answer all comments and run fix rounds). Start from PR head c27bbc2d6fe44ef91ac35ed728388269101cdb33. Full review text: /srv/review-drop/upstream-reviews/connectome-host-523-R1-5732399297.md (sha256 97a22890fe57f109a26d64610bc72c0e92f577e0ae81cec30141359a09cf8f02).
+** Acceptance
+Every finding dispositioned with commit+test or a reasoned reply; gates base vs head; reply draft and PR-body draft in the report. No push.
