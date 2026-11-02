@@ -1,0 +1,25 @@
+{
+  "event_count": 308,
+  "tool_call_count": 21,
+  "unparsed_events": 0,
+  "bounded_events": 6,
+  "session": {
+    "status": "found",
+    "filename": "dispatch-TASK-JY8YM-reviewer-20261102T103553-run-01M6DX8V6BVZ039A95F2PTGZBQ.jsonl",
+    "size_bytes": 431269
+  },
+  "native_transcript": {
+    "status": "found",
+    "path": "/home/orgasmic/.orgasmic/codex-home/sessions/2026/11/02/rollout-2026-11-02T10-35-53-01a19bd4-72e9-7123-be23-ed3b7b38465b.jsonl",
+    "session_id": "01a19bd4-72e9-7123-be23-ed3b7b38465b",
+    "confidence": "high",
+    "correlation": "recorded_native_runtime_session_path"
+  },
+  "narrative": [
+    {
+      "stream": "assistant",
+      "text": "I’ll check the fixes and rebase, inspect the gate logs, and run mutation probes in a disposable copy. The reviewed worktree will remain unchanged.The rebase preserves both original PR patches exactly. In the disposable copy, tests killed all seven production mutations and detected drift in each of the three copied framework defaults: deadline schedule, overload allowance, and wait ceiling. The restored copy passed all 40 retry tests.\n\nThe full-suite logs also show no head-only failures: all four head failures occurred on main. I’m checking their environment/timing classifications and the publication drafts.Review complete: **APPROVE**, with no actionable findings. R1-1 through R1-4 are addressed, and the four head-suite failures are pre-existing. Seven production mutations and three active default-drift mutations were killed. The worktree is unchanged."
+    }
+  ],
+  "narrative_truncated": false
+}
