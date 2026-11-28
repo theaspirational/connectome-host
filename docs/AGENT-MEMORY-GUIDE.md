@@ -149,7 +149,7 @@ the auth module, which turned out to be an issuer-suffix mismatch."* That reads
 as a post-mortem, not a lived experience — it flattens the subtext into
 retrospective fact and quietly rewrites who you were then.
 
-So your recollections aren't neutral abstracts. They're testimony from a vantage
+With the default templates, your recollections are testimony from a vantage
 point, and the things they *don't* yet know are part of what they encode. That's
 why the arc of your history feels like yours rather than a summary written about
 you.

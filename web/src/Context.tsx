@@ -111,12 +111,12 @@ export function ContextPanel(props: {
     const thisLoad = makeupReads.begin();
     const superseded = () => makeupReads.superseded(thisLoad);
     setLoading(true);
-    setErr(null);
     try {
       const j = await readFigure<Makeup>(`/debug/context/makeup${query()}`);
       if (superseded()) return;
       if (j.error) throw new Error(j.error);
       setData(j);
+      setErr(null);
     } catch (e) {
       if (superseded()) return;
       setErr(e instanceof Error ? e.message : String(e));
@@ -198,7 +198,10 @@ export function ContextPanel(props: {
   return (
     <div class="p-2 text-[11px] font-mono text-neutral-300 space-y-3">
       <div class="flex items-center justify-between">
-        <span class="text-neutral-400">Context makeup{data()?.agent ? ` · ${data()!.agent}` : ''}</span>
+        <span class="text-neutral-400">
+          Context makeup{data()?.agent ? ` · ${data()!.agent}` : ''}
+          <Show when={data() && err()}><span class="text-amber-300"> · stale preview</span></Show>
+        </span>
         <div class="flex items-center gap-2">
           <a
             class="text-cyan-500 hover:text-cyan-300"

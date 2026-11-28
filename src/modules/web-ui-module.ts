@@ -2555,8 +2555,9 @@ export class WebUiModule implements Module {
           peek(name?: string): Promise<Array<{
             name: string;
             status: string;
-            messageCount: number;
-            lastMessageSnippet: string;
+            messageCount?: number;
+            lastMessageSnippet?: string;
+            contextError?: string;
             currentStream: string;
             pendingToolCalls: Array<{ name: string; input?: unknown }>;
             elapsedMs: number;
@@ -2585,8 +2586,9 @@ export class WebUiModule implements Module {
       peek(name?: string): Promise<Array<{
         name: string;
         status: string;
-        messageCount: number;
-        lastMessageSnippet: string;
+        messageCount?: number;
+        lastMessageSnippet?: string;
+        contextError?: string;
         currentStream: string;
         pendingToolCalls: Array<{ name: string; input?: unknown }>;
         elapsedMs: number;
@@ -2606,7 +2608,7 @@ export class WebUiModule implements Module {
 
     const headerBits: string[] = [
       `status=${snap.status}`,
-      `msgs=${snap.messageCount}`,
+      snap.contextError ?? `msgs=${snap.messageCount}`,
       `elapsed=${Math.round(snap.elapsedMs / 1000)}s`,
     ];
     if (snap.isZombie) headerBits.push('zombie');

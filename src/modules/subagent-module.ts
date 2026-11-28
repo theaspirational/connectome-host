@@ -279,8 +279,9 @@ export interface SubagentPeekSnapshot {
   status: 'running' | 'completed' | 'failed' | 'cancelled';
   startedAt: number;
   elapsedMs: number;
-  messageCount: number;
-  lastMessageSnippet: string;
+  messageCount?: number;
+  lastMessageSnippet?: string;
+  contextError?: string;
   currentStream: string;
   pendingToolCalls: Array<{ name: string; input?: unknown }>;
   toolCallsCount: number;
@@ -2065,14 +2066,13 @@ export class SubagentModule implements Module {
 
     const entry = this.runningEntry(displayName);
 
-    let messageCount = 0;
-    let lastMessageSnippet = '';
+    let context: Pick<SubagentPeekSnapshot, 'messageCount' | 'lastMessageSnippet' | 'contextError'>;
     try {
       // A dry compile: unlike a real one, it commits none of the stream's fold
       // state and queues no compression. It still refuses a plan over the hard budget.
       const compiled = await live.contextManager.compile(undefined, undefined, { dryRun: true });
       const said = compiledWithoutStoredInjections(compiled);
-      messageCount = said.length;
+      let lastMessageSnippet = '';
       if (said.length > 0) {
         const last = said[said.length - 1];
         const textBlocks = last.content
@@ -2081,7 +2081,10 @@ export class SubagentModule implements Module {
         const fullText = textBlocks.join(' ');
         lastMessageSnippet = fullText.length > 500 ? fullText.slice(-500) : fullText;
       }
-    } catch {
+      context = { messageCount: said.length, lastMessageSnippet };
+    } catch (e) {
+      const detail = (e instanceof Error ? e.message : String(e)).split(/\r?\n/, 1)[0]!;
+      context = { contextError: `Context unavailable: ${detail.length > 200 ? detail.slice(0, 200) + '…' : detail}` };
     }
 
     const elapsedMs = entry ? Date.now() - entry.startedAt : 0;
@@ -2100,8 +2103,7 @@ export class SubagentModule implements Module {
       status: entry?.status ?? 'running',
       startedAt: entry?.startedAt ?? 0,
       elapsedMs,
-      messageCount,
-      lastMessageSnippet,
+      ...context,
       currentStream: live.currentStream,
       pendingToolCalls: live.pendingToolCalls,
       toolCallsCount: entry?.toolCallsCount ?? 0,

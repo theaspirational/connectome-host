@@ -89,6 +89,7 @@ export function ContextDocument(props: {
   const [exactBy, setExactBy] = createSignal<string | undefined>(undefined);
   const [err, setErr] = createSignal<string | null>(null);
   const [loading, setLoading] = createSignal(false);
+  const [hasSnapshot, setHasSnapshot] = createSignal(false);
 
   const query = () => props.scope && props.scope !== 'local'
     ? `?scope=${encodeURIComponent(props.scope)}`
@@ -99,7 +100,7 @@ export function ContextDocument(props: {
     const thisLoad = ++latestLoad;
     const superseded = () => thisLoad !== latestLoad;
     const local = !isChildScope(props.scope);
-    setLoading(true); setErr(null);
+    setLoading(true);
     try {
       const q = query();
       const [ctxRes, mkRes] = await Promise.all([
@@ -114,22 +115,26 @@ export function ContextDocument(props: {
       if (superseded()) return;
       const servedIn = typeof ctx?.sessionId === 'string' ? ctx.sessionId : null;
       if (local && servedIn !== props.session) return;
+      if (!mkRes.ok) {
+        const body = (await mkRes.json().catch(() => null)) as { error?: string } | null;
+        throw new Error(body?.error ?? `context makeup HTTP ${mkRes.status}`);
+      }
+      const mk = await mkRes.json();
+      if (superseded()) return;
+      if (mk.error) throw new Error(mk.error);
+      const count = contextPageView(mk).count;
       setMsgs((ctx?.request?.messages ?? []) as Msg[]);
       setMsgsSession(servedIn);
-      if (mkRes.ok) {
-        const mk = await mkRes.json();
-        if (superseded()) return;
-        setStats(mk.stats); setExact(mk.exactTotalTokens);
-        const count = contextPageView(mk).count;
-        setExactBy('tokens' in count ? countedBy(count) : undefined);
-      }
+      setStats(mk.stats); setExact(mk.exactTotalTokens);
+      setExactBy('tokens' in count ? countedBy(count) : undefined);
+      setHasSnapshot(true); setErr(null);
     } catch (e) {
       if (superseded()) return;
       setErr(e instanceof Error ? e.message : String(e));
     } finally { if (!superseded()) setLoading(false); }
   };
   createEffect(on(() => [props.scope, props.session], () => {
-    setMsgs([]); setMsgsSession(null); setStats(null); setExact(null); setErr(null);
+    setMsgs([]); setMsgsSession(null); setStats(null); setExact(null); setHasSnapshot(false); setErr(null);
     void load();
   }));
   // An undo or a redo moves the window the document is compiled from: read
@@ -170,7 +175,11 @@ export function ContextDocument(props: {
       <div class="sticky top-0 z-10 bg-neutral-950/95 backdrop-blur border-b border-neutral-800 pb-2 mb-3 -mx-1 px-1">
         <div class="flex items-center justify-between text-[11px] font-mono text-neutral-500 mb-1">
           <span>
-            context · {fmt(exact() ?? stats()?.total.tokens ?? 0)} tokens<Show when={exact() != null}><span title={exactBy()}> (exact)</span></Show> · {fmt(msgs().length)} msgs
+            context
+            <Show when={hasSnapshot()} fallback={err() ? ' · unavailable' : ''}>
+              {' · '}{fmt(exact() ?? stats()?.total.tokens ?? 0)} tokens<Show when={exact() != null}><span title={exactBy()}> (exact)</span></Show> · {fmt(msgs().length)} msgs
+              <Show when={err()}><span class="text-amber-300"> · stale preview</span></Show>
+            </Show>
           </span>
           <button type="button" class="px-2 py-0.5 border border-neutral-700 rounded hover:text-neutral-200" onClick={load} disabled={loading()}>
             {loading() ? '…' : 'refresh'}
@@ -225,7 +234,8 @@ export function ContextDocument(props: {
                       <Show when={rollbackable}>
                         <button
                           type="button"
-                          class="opacity-40 group-hover:opacity-100 focus:opacity-100 px-1.5 py-0.5 rounded border border-neutral-700 text-neutral-400 hover:border-amber-700 hover:text-amber-200 transition-opacity"
+                          class="opacity-40 group-hover:opacity-100 focus:opacity-100 px-1.5 py-0.5 rounded border border-neutral-700 text-neutral-400 hover:border-amber-700 hover:text-amber-200 transition-opacity disabled:cursor-not-allowed disabled:opacity-40"
+                          disabled={loading() || !!err()}
                           title="roll back: fork the chronicle at this message, or, on a presented window, at the write that showed it to the agent, and make the fork the live branch (the current branch keeps everything after it; rows shown to the agent in the same write as this message stay in its context, and rows stored before it was shown re-enter it at its next turn — the result says how many; a row another resident stored before that write stays on the fork too, in neither count)"
                           onClick={() => props.onRollback?.(m.sourceMessageId!, `${who}: ${t.replace(/\s+/g, ' ').slice(0, 90)}`, msgsSession())}
                         >⏪ roll back to here</button>

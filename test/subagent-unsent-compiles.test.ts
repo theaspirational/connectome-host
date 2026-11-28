@@ -9,6 +9,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { AgentFramework } from '@animalabs/agent-framework';
 import type { Module, ToolCall } from '@animalabs/agent-framework';
+import { AutobiographicalStrategy, ContextManager } from '@animalabs/context-manager';
 import { Membrane, MockAdapter, NativeFormatter } from '@animalabs/membrane';
 import { SubagentModule } from '../src/modules/subagent-module.js';
 import { presentedRow } from './presented-host.js';
@@ -71,6 +72,21 @@ function call(name: 'fork' | 'spawn', id: string, input: Record<string, unknown>
   return { id, name, input, callerAgentName: 'parent' } as unknown as ToolCall;
 }
 
+function peekWith(cm: { compile: Compile }) {
+  const mod = new SubagentModule({ provider: 'mock' });
+  const view = mod as unknown as {
+    liveSubagents: Map<string, unknown>;
+    frameworkNameIndex: Map<string, string>;
+    handlePeek(input: { name?: string }, caller?: string): Promise<{ success: boolean; data: unknown }>;
+  };
+  view.liveSubagents.set('scout', {
+    frameworkAgentName: 'fw-scout', displayName: 'scout', systemPrompt: 'test', contextManager: cm,
+    currentStream: '', pendingToolCalls: [], activeCallIds: new Set(),
+  });
+  view.frameworkNameIndex.set('fw-scout', 'scout');
+  return view.handlePeek({ name: 'scout' });
+}
+
 describe("a peek's and a fork's read of another context are dry; launch checks are real", () => {
   test("a fork compiles its parent's context dry and seeds its stream from that compile; its launch check is a real compile", async () => {
     const h = await harness();
@@ -115,22 +131,37 @@ describe("a peek's and a fork's read of another context are dry; launch checks a
 
   test("a peek compiles the stream's context dry", async () => {
     const seen: Seen[] = [];
-    const mod = new SubagentModule({ provider: 'mock' });
-    const view = mod as unknown as {
-      liveSubagents: Map<string, unknown>;
-      frameworkNameIndex: Map<string, string>;
-      handlePeek(input: { name?: string }, caller?: string): Promise<{ success: boolean; data: unknown }>;
-    };
     const cm = { compile: (async () => ({ messages: [{ content: [{ type: 'text', text: 'working on it' }] }] })) as Compile };
     record(cm, 'stream', seen);
-    view.liveSubagents.set('scout', {
-      frameworkAgentName: 'fw-scout', displayName: 'scout', systemPrompt: 'test', contextManager: cm,
-      currentStream: '', pendingToolCalls: [], activeCallIds: new Set(),
-    });
-    view.frameworkNameIndex.set('fw-scout', 'scout');
-    const result = await view.handlePeek({ name: 'scout' });
+    const result = await peekWith(cm);
     expect(result.success).toBe(true);
     expect(seen.map((s) => s.dry)).toEqual([true]);
     expect(JSON.stringify(result.data)).toContain('working on it');
+  });
+
+  test("a peek reports a refused context rather than an empty snapshot", async () => {
+    const path = mkdtempSync(join(tmpdir(), 'sub-peek-budget-'));
+    const cm = await ContextManager.open({ path, strategy: new AutobiographicalStrategy({
+      adaptiveResolution: true, headWindowTokens: 0, recentWindowTokens: 0,
+      overBudgetGraceRatio: 0.25, autoTickOnNewMessage: false, speculativeProduction: false,
+    }) });
+    try {
+      for (let i = 0; i < 4; i++) {
+        cm.addMessage('user', [{ type: 'text', text: `line ${i} ` + 'word '.repeat(30) }]);
+      }
+      // Run the real compile with a small budget so the fixture can stay small.
+      const result = await peekWith({
+        compile: (_budget, _injections, opts) => cm.compile({ maxTokens: 100, reserveForResponse: 0 }, undefined, opts),
+      });
+      expect(result.success).toBe(true); // Lifecycle information is still available.
+      const [snapshot] = result.data as Array<Record<string, unknown>>;
+      expect(snapshot).toMatchObject({ name: 'scout', status: 'running' });
+      expect(snapshot.contextError).toMatch(/^Context unavailable: .*exceed hard budget/);
+      expect(snapshot).not.toHaveProperty('messageCount');
+      expect(snapshot).not.toHaveProperty('lastMessageSnippet');
+    } finally {
+      await cm.close();
+      rmSync(path, { recursive: true, force: true });
+    }
   });
 });
